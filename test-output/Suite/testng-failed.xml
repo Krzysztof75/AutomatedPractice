@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="browserName" value="FF"/>
+  <test name="ValidateLinksFF(failed)">
+    <parameter name="browserName" value="FF"/>
+    <classes>
+      <class name="Tests.ValidateMainPageLinks">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="beforeMethod"/>
+          <include name="test20M"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- Tests.ValidateMainPageLinks -->
+    </classes>
+  </test> <!-- ValidateLinksFF(failed) -->
+</suite> <!-- Failed suite [Suite] -->
