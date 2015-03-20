@@ -21,11 +21,12 @@ public class LogInPage extends BaseClass {
 	
 	public static WebElement emailCreateBox(){
 		try{
-			element = driver.findElement(By.id("email_create"));
+			element = driver.findElement(By.id(prop.getProperty("emailCreateBox_id")));
 		}catch(NoSuchElementException e){
 			log.error("Could not find element emailCreate ");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -36,6 +37,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element SubmitCreate");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 	
@@ -46,6 +48,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element email");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -56,16 +59,18 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element email");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
-	public static WebElement SignIn_btn(){
+	public static WebElement signIn_btn(){
 		try{
 			element = driver.findElement(By.id("SubmitLogin"));
 		}catch(NoSuchElementException e){
 			log.error("Could not find element email");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 
@@ -95,7 +100,9 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element firstNameCust");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
+		
 	}
 	
 	public static WebElement lastNameCust(){
@@ -105,36 +112,40 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element lastNameCust");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
 	public static WebElement days(){
 		try{
-			element = driver.findElement(By.id("days"));
+			element = driver.findElement(By.id("uniform-days"));
 		}catch(NoSuchElementException e){
 			log.error("Could not find element days");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 	
 	public static WebElement months(){
-		try{
-			element = driver.findElement(By.id("months"));
+		try{										
+			element = driver.findElement(By.id("uniform-months"));
 		}catch(NoSuchElementException e){
 			log.error("Could not find element months");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 	
 	public static WebElement years(){
 		try{
-			element = driver.findElement(By.id("years"));
+			element = driver.findElement(By.id("uniform-years"));
 		}catch(NoSuchElementException e){
 			log.error("Could not find element years");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 	
@@ -145,6 +156,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element firstName");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -155,6 +167,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element lastName");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -165,6 +178,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element company");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -175,6 +189,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element address1");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -185,6 +200,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element address2");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -195,16 +211,18 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element city");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
 	public static WebElement state(){
 		try{
-			element = driver.findElement(By.id("id_state"));
+			element = driver.findElement(By.id("uniform-id_state"));
 		}catch(NoSuchElementException e){
 			log.error("Could not find element state");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 	
@@ -215,6 +233,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element postcode");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -225,6 +244,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element country");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 	
@@ -235,6 +255,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element addInfo");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -245,6 +266,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element phone");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -255,6 +277,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element phoneMobile");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -265,6 +288,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element alias");
 			throw e;
 		}
+		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 	
@@ -275,6 +299,7 @@ public class LogInPage extends BaseClass {
 			log.error("Could not find element submitAccount");
 			throw e;
 		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 		return element;
 	}
 	}

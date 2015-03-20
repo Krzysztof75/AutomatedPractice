@@ -25,6 +25,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.AfterTest;
 import org.testng.Assert;
+import org.testng.Reporter;
 
 import com.google.common.base.Predicate;
 
@@ -37,12 +38,14 @@ public class ValidateMainPageLinks {
 	static Logger log;
 	HomePage page; 
 	
-  @Test 
+  @Test
+  // check the right title of the page this test may be redundant can combine with other test  
   public void test1M() {
 	  
 	  String expectedTitle = "My Store";
-	  Assert.assertEquals(page.getTitle(), expectedTitle);
+	  Assert.assertEquals(HomePage.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Opened page "+ driver.getTitle() + "|");
   }
   
   @Test
@@ -51,6 +54,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle = "Contact us - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Contact us link ok |");
   }
   
   @Test
@@ -59,6 +63,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle = "Login - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Login link ok |");
   }
   
   @Test
@@ -67,6 +72,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle = "My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("logo link ok |");
   }
   
   @Test
@@ -75,6 +81,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Order - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("cart link ok |");
   }
   
   @Test
@@ -83,6 +90,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Search - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("search link ok |");
   }
   
   @Test
@@ -91,6 +99,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Women - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Women link ok |");
   }
   
   @Test
@@ -99,6 +108,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Tops - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-tops link ok |");
   }
   
   @Test
@@ -107,6 +117,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="T-shirts - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-t-shirts link ok |");
   }
   
   @Test
@@ -115,6 +126,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Blouses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Blouses link ok |");
   }
   
   @Test
@@ -123,6 +135,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Dresses link ok |");
   }
   
   @Test
@@ -131,6 +144,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Casual Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Casual Dresses link ok |");
   }
   
   @Test
@@ -139,6 +153,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Evening Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Evening Dresses link ok |");
   }
   
   @Test
@@ -147,6 +162,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Summer Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Summer Dresses link ok |");
   }
   
   @Test
@@ -155,6 +171,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Dresses link ok |");
   }
   
   @Test
@@ -163,6 +180,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Casual Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Dresses-casual dresses link ok |");
   }
   
   @Test
@@ -171,6 +189,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Evening Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Dresses-evening dresses link ok |");
   }
   
   @Test
@@ -179,6 +198,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Summer Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-Dresses-summer dresses link ok |");
   }
   
   @Test
@@ -187,6 +207,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="T-shirts - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("header-T-shirts dresses link ok |");
   }
   
   @Test
@@ -196,6 +217,7 @@ public class ValidateMainPageLinks {
 	  BaseClass.wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Slider link ok |");
   }
   
   @Test
@@ -205,6 +227,7 @@ public class ValidateMainPageLinks {
 	  BaseClass.wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("ContainerTop-contentTop link ok |");
   }
   
   @Test
@@ -214,22 +237,24 @@ public class ValidateMainPageLinks {
 	  BaseClass.wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("ContainerTop-contentButton link ok |");
   }
   
   @Test
+  // check whether correct products are displayed in popular category
   public void test23M(){
-	  WebElement tabClass = driver.findElement(By.xpath("//*[@id='home-page-tabs']/li[1]"));
-	  Assert.assertEquals("active", tabClass.getAttribute("class"));
-	  log.info("Popular is active");
 	  Assert.assertTrue(HomePage.ContainerTop.validatePopular());
-	  log.info("tab Popular the right products are displayed");  
+	  log.info("tab Popular the right products are displayed"); 
+	  Reporter.log("tab popular ok |");
   }
   
   @Test
+//check whether correct products are displayed in bestsellers category
   public void test24M(){
 	  HomePage.ContainerTop.tabBestSellers().click();
 	  Assert.assertTrue(HomePage.ContainerTop.validateBestSeller());
-	  log.info("tab BestSellers the right products are displayed");  
+	  log.info("tab BestSellers the right products are displayed");
+	  Reporter.log("tab bestsellers ok |");
   }
   
   @Test
@@ -238,6 +263,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Cont1 link ok |");
   }
   
   @Test
@@ -246,6 +272,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Cont2 link ok |");
   }
   
   @Test
@@ -254,6 +281,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Cont3 link ok |");
   }
   
   @Test
@@ -262,6 +290,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Cont4 link ok |");
   }
   
   @Test
@@ -270,6 +299,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Cont5 link ok |");
   }
   
   @Test
@@ -290,6 +320,7 @@ public class ValidateMainPageLinks {
 	  driver.switchTo().window(mainHandle);
 	  Assert.assertEquals(actualTitle, expectedTitle);
 	  log.info("facebook link ok");
+	  Reporter.log("Facebook link ok |");
   }
   
   @Test
@@ -309,6 +340,7 @@ public class ValidateMainPageLinks {
 	  driver.switchTo().window(mainHandle);
 	  Assert.assertEquals(actualTitle, expectedTitle);
 	  log.info("twitter link ok");
+	  Reporter.log("Twitter link ok |");
   }
   
   @Test
@@ -328,6 +360,7 @@ public class ValidateMainPageLinks {
 	  driver.switchTo().window(mainHandle);
 	  Assert.assertEquals(actualTitle, expectedTitle);
 	  log.info("youtube link ok");
+	  Reporter.log("Youtube link ok |");
   }
   
   @Test
@@ -347,6 +380,7 @@ public class ValidateMainPageLinks {
 	  driver.switchTo().window(mainHandle);
 	  Assert.assertEquals(actualTitle, expectedTitle);
 	  log.info("google link ok");
+	  Reporter.log("Google link ok |");
   }
   
   @Test
@@ -355,6 +389,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Women - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-women link ok |");
   }
   
   @Test
@@ -363,6 +398,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Prices drop - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-specials link ok |");
   }
   
   @Test
@@ -371,6 +407,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="New products - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-New Products link ok |");
   }
   
   @Test
@@ -379,6 +416,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Best sales - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-Best sales link ok |");
   }
   @Test
   public void test38M(){
@@ -386,6 +424,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Stores - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-our stores link ok |");
   }
   @Test
   public void test39M(){
@@ -393,6 +432,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Contact us - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-contact us link ok |");
   }
   @Test
   public void test40M(){
@@ -400,6 +440,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Terms and conditions of use - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-terms and conditions link ok |");
   }
   @Test
   public void test41M(){
@@ -407,13 +448,15 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="About us - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-about link ok |");
   }
   @Test
   public void test42M(){
-	  HomePage.Footer.about().click();
-	  String expectedTitle ="About us - My Store";
+	  HomePage.Footer.sitemap().click();
+	  String expectedTitle ="Sitemap - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-site map link ok |");
   }
   @Test
   public void test43M(){
@@ -421,6 +464,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Login - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-myAccount map link ok |");
   }
   
   public void test44M(){
@@ -428,6 +472,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Login - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-my orders link ok |");
   }
   @Test
   public void test45M(){
@@ -435,6 +480,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Login - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-my credit slips link ok |");
   }
   @Test
   public void test46M(){
@@ -442,6 +488,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Login - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-my adresses link ok |");
   }
   @Test
   public void test47M(){
@@ -449,6 +496,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Login - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
+	  Reporter.log("Footer-my personal info link ok |");
   }
   
   @Test
@@ -493,7 +541,8 @@ public class ValidateMainPageLinks {
 	};
 	
 	wait.until(s);
-	log.info("All the picures are displayed on the slider");  
+	log.info("All the picures are displayed on the slider");
+	Reporter.log("Slider displays all the expected pictures |");
   }
   
   @Test
@@ -562,7 +611,7 @@ public class ValidateMainPageLinks {
 	}
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a")).isDisplayed());
 	log.info("Slider-prev: First image on the slider displayed");
-	log.info("Manual slider control working correctly");
+	Reporter.log("Slider manual function correct | ");
 }
 	  
   

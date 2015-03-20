@@ -1,1 +1,146 @@
-2015-03-14 18:37:52,906 INFO  [HomePage] Returned LogIn 
+2015-03-20 17:52:24,740 INFO  [HomePage] Returned Blouse - title 
+2015-03-20 17:52:24,804 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:24,859 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:24,909 INFO  [HomePage] Returned Blouse - price 
+2015-03-20 17:52:24,989 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,019 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:25,069 INFO  [HomePage] Returned Blouse - image 
+2015-03-20 17:52:25,139 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,172 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:25,202 INFO  [HomePage] Returned Blouse - image 
+2015-03-20 17:52:25,289 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,321 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:25,351 INFO  [HomePage] Returned Blouse - addCart 
+2015-03-20 17:52:25,421 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,451 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:25,491 INFO  [HomePage] Returned Blouse - more 
+2015-03-20 17:52:25,541 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - title 
+2015-03-20 17:52:25,581 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,631 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:25,671 INFO  [HomePage] Returned Faded Short Sleeve T-shirts price 
+2015-03-20 17:52:25,731 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,751 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:25,791 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - image 
+2015-03-20 17:52:25,839 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,866 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:25,899 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - image 
+2015-03-20 17:52:25,954 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:25,981 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,011 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - addCart 
+2015-03-20 17:52:26,074 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:26,104 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,134 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - more 
+2015-03-20 17:52:26,184 INFO  [HomePage] Returned Printed Chiffon Dress - title 
+2015-03-20 17:52:26,214 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:26,254 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,299 INFO  [HomePage] Returned Printed Chiffon Dress - price 
+2015-03-20 17:52:26,367 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:26,405 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,435 INFO  [HomePage] Returned Printed Chiffon Dress - Image 
+2015-03-20 17:52:26,497 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:26,550 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,590 INFO  [HomePage] Returned Printed Chiffon Dress - Image 
+2015-03-20 17:52:26,731 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:26,762 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,804 INFO  [HomePage] Returned Printed Chiffon Dress - addCart 
+2015-03-20 17:52:26,849 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:26,869 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,899 INFO  [HomePage] Returned Printed Chiffon Dress - more 
+2015-03-20 17:52:26,939 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:26,959 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:26,999 INFO  [HomePage] Returned Printed Dress-Short - title 
+2015-03-20 17:52:27,019 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,039 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,069 INFO  [HomePage] Returned Printed Dress-Short - price 
+2015-03-20 17:52:27,109 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,129 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,159 INFO  [HomePage] Returned Printed Dress-Short - Image 
+2015-03-20 17:52:27,202 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,227 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,252 INFO  [HomePage] Returned Printed Dress-Short - Image 
+2015-03-20 17:52:27,322 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,347 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,372 INFO  [HomePage] Returned Printed Dress-Short - addCart 
+2015-03-20 17:52:27,425 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,448 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,478 INFO  [HomePage] Returned Printed Dress-Short - more 
+2015-03-20 17:52:27,513 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,533 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,573 INFO  [HomePage] Returned Printed Dress-Long - title 
+2015-03-20 17:52:27,603 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,623 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,653 INFO  [HomePage] Returned Printed Dress-Long - price 
+2015-03-20 17:52:27,683 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,713 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,743 INFO  [HomePage] Returned Printed Dress-Long - Image 
+2015-03-20 17:52:27,773 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,803 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,843 INFO  [HomePage] Returned Printed Dress-Long - Image 
+2015-03-20 17:52:27,903 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:27,933 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:27,953 INFO  [HomePage] Returned Printed Dress-Long - addCart 
+2015-03-20 17:52:28,038 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,058 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,098 INFO  [HomePage] Returned Printed Dress-Long - more 
+2015-03-20 17:52:28,148 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,168 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,208 INFO  [HomePage] Returned Printed Summer Dress-short - title 
+2015-03-20 17:52:28,228 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,248 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,278 INFO  [HomePage] Returned Printed Summer Dress-short - price 
+2015-03-20 17:52:28,308 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,328 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,358 INFO  [HomePage] Returned Printed Summer Dress-short - Image 
+2015-03-20 17:52:28,398 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,418 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,438 INFO  [HomePage] Returned Printed Summer Dress-short - Image 
+2015-03-20 17:52:28,511 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,534 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,554 INFO  [HomePage] Returned Printed Summer Dress-short - addCart 
+2015-03-20 17:52:28,614 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,644 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,674 INFO  [HomePage] Returned Printed Summer Dress-short - more 
+2015-03-20 17:52:28,714 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,734 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,784 INFO  [HomePage] Returned Printed Summer Dress-Long - title 
+2015-03-20 17:52:28,814 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,834 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,864 INFO  [HomePage] Returned Printed Summer Dress-Long - price 
+2015-03-20 17:52:28,894 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:28,924 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:28,954 INFO  [HomePage] Returned Printed Summer Dress-Long - Image 
+2015-03-20 17:52:29,001 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:29,024 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:29,041 INFO  [HomePage] Returned Printed Summer Dress-Long - Image 
+2015-03-20 17:52:29,101 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:29,136 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:29,164 INFO  [HomePage] Returned Printed Summer Dress-Long - addCart 
+2015-03-20 17:52:29,219 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:29,241 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:29,269 INFO  [HomePage] Returned Printed Summer Dress-Long - more 
+2015-03-20 17:52:29,344 INFO  [HomePage] Returned cont1 
+2015-03-20 17:52:29,426 INFO  [HomePage] Returned cont2 
+2015-03-20 17:52:29,516 INFO  [HomePage] Returned cont3 
+2015-03-20 17:52:29,585 INFO  [HomePage] Returned cont4 
+2015-03-20 17:52:29,635 INFO  [HomePage] Returned cont5 
+2015-03-20 17:52:29,707 INFO  [HomePage] returned newsletter 
+2015-03-20 17:52:29,775 INFO  [HomePage] returned newsletter submit button 
+2015-03-20 17:52:29,830 INFO  [HomePage] returned footer - women 
+2015-03-20 17:52:29,980 INFO  [HomePage] returned footer - specials 
+2015-03-20 17:52:30,090 INFO  [HomePage] returned footer - new products 
+2015-03-20 17:52:30,170 INFO  [HomePage] returned footer - best sellers 
+2015-03-20 17:52:30,290 INFO  [HomePage] returned footer - new products 
+2015-03-20 17:52:30,340 INFO  [HomePage] returned footer - Contact us 
+2015-03-20 17:52:30,460 INFO  [HomePage] returned footer - Terms and conditions of use 
+2015-03-20 17:52:30,580 INFO  [HomePage] returned footer - About us 
+2015-03-20 17:52:30,701 INFO  [HomePage] returned footer - Sitemap 
+2015-03-20 17:52:30,811 INFO  [HomePage] returned footer - My account 
+2015-03-20 17:52:30,931 INFO  [HomePage] returned footer - My orders 
+2015-03-20 17:52:31,061 INFO  [HomePage] returned footer - My credit slips 
+2015-03-20 17:52:31,181 INFO  [HomePage] returned footer - My addresses 
+2015-03-20 17:52:31,321 INFO  [HomePage] returned footer - My personal info 
+2015-03-20 17:52:31,381 INFO  [HomePage] returned footer - skype 
+2015-03-20 17:52:31,431 INFO  [HomePage] returned footer - email 
+2015-03-20 17:52:31,471 INFO  [HomePage] Returned tabPopular element 
+2015-03-20 17:52:31,747 INFO  [HomePage] Returned tabBestSellers element 
+2015-03-20 17:52:31,952 INFO  [HomePage] Returned LogIn 

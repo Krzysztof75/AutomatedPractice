@@ -24,14 +24,14 @@ import com.google.common.base.Predicate;
 
 public class test {
 
-	static WebDriver driver;
 
 	public static void main(String[] args) throws InterruptedException {
 		// TODO Auto-generated method stub
 
-		driver = new ChromeDriver();
+		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.automationpractice.com");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		
 		HomePage page1 = new HomePage(driver);
 		LogInPage page2 = new LogInPage(driver);
@@ -85,7 +85,7 @@ public class test {
 //	wait.until(s);
 		
 		// Check Manual working of the slider
-//
+
 //		WebElement element1 = driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a"));
 //		wait.until(ExpectedConditions.visibilityOf(element1));
 //		System.out.println("First image on the slider displayed");
@@ -116,135 +116,137 @@ public class test {
 //		System.out.println("Slider-prev: First image on the slider displayed");
 //		}
 //		System.out.println("Manual slider control working correctly");
-//			
-//	System.out.println("title " + HomePage.ContainerTop.slider().findElement(By.tagName("a")).getAttribute("title"));
 
 		// Confirm elements in the Header are located
 		
-			//		System.out.println(HomePage.Header.contactUs().getText());
-			//		System.out.println(HomePage.Header.cart().getText());
-			//		System.out.println(HomePage.Header.LogIn().getText());
-			//		System.out.println(HomePage.Header.searchBox().getAttribute("name"));
-			//		System.out.println(HomePage.Header.search().getAttribute("name"));
-			//		System.out.println(HomePage.Header.tShirts().getAttribute("title"));
-			//		System.out.println(HomePage.Header.women().getText());
-			//		System.out.println(HomePage.Header.women("Tops").getText());
-			//		System.out.println(HomePage.Header.women("T-SHIRTS").getText());
-			//		System.out.println(HomePage.Header.women("Blouses").getText());
-			//		System.out.println(HomePage.Header.women("Dresses").getText());
-			//		System.out.println(HomePage.Header.women("Casual dresses").getText());
-			//		System.out.println(HomePage.Header.women("Evening dresses").getText());
-			//		System.out.println(HomePage.Header.women("Summer dresses").getText());
-			//		System.out.println(HomePage.Header.dresses().getAttribute("title"));
-			//		System.out.println(HomePage.Header.dresses("casual dresses").getText());
-			//		System.out.println(HomePage.Header.dresses("evening dresses").getText());
-			//		System.out.println(HomePage.Header.dresses("summer dresses").getText());
+//					System.out.println(HomePage.Header.contactUs().getText());
+//					System.out.println(HomePage.Header.cart().getText());
+//					System.out.println(HomePage.Header.LogIn().getText());
+//					System.out.println(HomePage.Header.searchBox().getAttribute("name"));
+//					System.out.println(HomePage.Header.search().getAttribute("name"));
+//					System.out.println(HomePage.Header.tShirts().getAttribute("title"));
+//					System.out.println(HomePage.Header.women().getText());
+//					System.out.println(HomePage.Header.women("Tops").getText());
+//					System.out.println(HomePage.Header.women("T-SHIRTS").getText());
+//					System.out.println(HomePage.Header.women("Blouses").getText());
+//					System.out.println(HomePage.Header.women("Dresses").getText());
+//					System.out.println(HomePage.Header.women("Casual dresses").getText());
+//					System.out.println(HomePage.Header.women("Evening dresses").getText());
+//					System.out.println(HomePage.Header.women("Summer dresses").getText());
+//					System.out.println(HomePage.Header.dresses().getAttribute("title"));
+//					System.out.println(HomePage.Header.dresses("casual dresses").getText());
+//					System.out.println(HomePage.Header.dresses("evening dresses").getText());
+//					System.out.println(HomePage.Header.dresses("summer dresses").getText());
 		
 		// confirm ContainerTop elements located
 		
-			//		System.out.println(HomePage.ContainerTop.slider().getAttribute("title"));
-			//		System.out.println(HomePage.ContainerTop.shopNow().getText());
-			//		System.out.println(HomePage.ContainerTop.sliderNext().getText());
-			//		System.out.println(HomePage.ContainerTop.sliderPrev().getText());
-			//		System.out.println(HomePage.ContainerTop.contentTop().getAttribute("class"));
-			//		System.out.println(HomePage.ContainerTop.contentButton().getAttribute("class"));
-			//		System.out.println(HomePage.ContainerTop.tabPopular().getText());
-			//		System.out.println(HomePage.ContainerTop.tabBestSellers().getText());
+//					System.out.println(HomePage.ContainerTop.slider().getAttribute("title"));
+//					System.out.println(HomePage.ContainerTop.shopNow().getText());
+//					System.out.println(HomePage.ContainerTop.sliderNext().getText());
+//					System.out.println(HomePage.ContainerTop.sliderPrev().getText());
+//					System.out.println(HomePage.ContainerTop.contentTop().getAttribute("class"));
+//					System.out.println(HomePage.ContainerTop.contentButton().getAttribute("class"));
+//					HomePage.ContainerTop.tabBestSellers().click();
+//					Thread.sleep(2000);
+//					HomePage.ContainerTop.tabPopular().click();
+//					Thread.sleep(2000);
 		
 			// confirm Products elements are located
 		
-			//	    System.out.println("title " + HomePage.Product.Blouse.title());
-			//	    System.out.println("price " + HomePage.Product.Blouse.price());
-			//	    System.out.println("image title " + HomePage.Product.Blouse.image().getAttribute("title")); 
-			//		// getting the alt attribute from the image element 
-			//		JavascriptExecutor js = (JavascriptExecutor)driver;
-			//	    final String scriptGetChecked = "return arguments[0].getAttribute('alt')";
-			//	    WebElement image1 = HomePage.Product.Blouse.image();
-			//	    String alt1 = (String) js.executeScript(scriptGetChecked, image1);
-			//	    System.out.println("Image Alt " + alt1);
-			//	    System.out.println(HomePage.Product.Blouse.addToCart().getAttribute("title"));
-			//	    System.out.println(HomePage.Product.Blouse.more().getAttribute("title") + "\n");  
-			//	    System.out.println("title " + HomePage.Product.FadedShortSleeveTshirts.title());
-			//	    System.out.println("price " + HomePage.Product.FadedShortSleeveTshirts.price());
-			//	    System.out.println("image title " + HomePage.Product.FadedShortSleeveTshirts.image().getAttribute("title"));
-			//	    WebElement image2 = HomePage.Product.FadedShortSleeveTshirts.image();
-			//	    String alt2 = (String) js.executeScript(scriptGetChecked, image2);
-			//	    System.out.println("Image Alt" + alt2);
-			//	    System.out.println(HomePage.Product.FadedShortSleeveTshirts.addToCart().getAttribute("title"));
-			//	    System.out.println(HomePage.Product.FadedShortSleeveTshirts.more().getAttribute("title") + "\n");  
-			//	    System.out.println("title " + HomePage.Product.PrintedChiffonDress.title());
-			//	    System.out.println("price " + HomePage.Product.PrintedChiffonDress.price());
-			//	    System.out.println("image title " + HomePage.Product.PrintedChiffonDress.image().getAttribute("title"));
-			//	    WebElement image3 = HomePage.Product.PrintedChiffonDress.image();
-			//	    String alt3 = (String) js.executeScript(scriptGetChecked, image3);
-			//	    System.out.println("Image Alt " + alt3);
-			//	    System.out.println(HomePage.Product.PrintedChiffonDress.addToCart().getAttribute("title"));
-			//		
-			//	    System.out.println(HomePage.Product.PrintedChiffonDress.more().getAttribute("title") + "\n");   
-			//	    System.out.println("title " + HomePage.Product.PrintedDressShort.title());
-			//	    System.out.println("price " + HomePage.Product.PrintedDressShort.price());
-			//	    System.out.println("image title " + HomePage.Product.PrintedDressShort.image().getAttribute("title"));
-			//	    WebElement image4 = HomePage.Product.PrintedDressShort.image();
-			//	    String alt4 = (String) js.executeScript(scriptGetChecked, image4);
-			//	    System.out.println("Image Alt " + alt4);
-			//	    System.out.println(HomePage.Product.PrintedDressShort.addToCart().getAttribute("title"));
-			//	    System.out.println(HomePage.Product.PrintedDressShort.more().getAttribute("title") + "\n");
-			//	    
-			//	    System.out.println("title " + HomePage.Product.PrintedDressLong.title());
-			//	    System.out.println("price " + HomePage.Product.PrintedDressLong.price());
-			//	    System.out.println("image title " + HomePage.Product.PrintedDressLong.image().getAttribute("title"));
-			//	    WebElement image5 = HomePage.Product.PrintedDressLong.image();
-			//	    String alt5 = (String) js.executeScript(scriptGetChecked, image5);
-			//	    System.out.println("Image Alt " + alt5);
-			//	    System.out.println(HomePage.Product.PrintedDressLong.addToCart().getAttribute("title"));
-			//	    System.out.println(HomePage.Product.PrintedDressLong.more().getAttribute("title") + "\n");
-			//	    
-			//	    System.out.println("title " + HomePage.Product.PrintedSummerDressShort.title());
-			//	    System.out.println("price " + HomePage.Product.PrintedSummerDressShort.price());
-			//	    System.out.println("image title " + HomePage.Product.PrintedSummerDressShort.image().getAttribute("title"));
-			//	    WebElement image6 = HomePage.Product.PrintedSummerDressShort.image();
-			//	    String alt6 = (String) js.executeScript(scriptGetChecked, image6);
-			//	    System.out.println("Image Alt " + alt6);
-			//	    System.out.println(HomePage.Product.PrintedSummerDressShort.addToCart().getAttribute("title"));
-			//	    System.out.println(HomePage.Product.PrintedSummerDressShort.more().getAttribute("title") + "\n");
-			//	    
-			//	    System.out.println("title " + HomePage.Product.PrintedSummerDressLong.title());
-			//	    System.out.println("price " + HomePage.Product.PrintedSummerDressLong.price());
-			//	    System.out.println("image title " + HomePage.Product.PrintedSummerDressLong.image().getAttribute("title"));
-			//	    WebElement image7 = HomePage.Product.PrintedSummerDressLong.image();
-			//	    String alt7 = (String) js.executeScript(scriptGetChecked, image7);
-			//	    System.out.println("Image Alt " + alt7);
-			//	    System.out.println(HomePage.Product.PrintedSummerDressLong.addToCart().getAttribute("title"));
-			//	    System.out.println(HomePage.Product.PrintedSummerDressLong.more().getAttribute("title") + "\n");
+		System.out.println(HomePage.prop.get("Blouse_price_xpath"));
+		
+				    System.out.println("title " + HomePage.Product.Blouse.title());
+				    System.out.println("price " + HomePage.Product.Blouse.price());
+				    System.out.println("image title " + HomePage.Product.Blouse.image().getAttribute("title")); 
+					// getting the alt attribute from the image element 
+					JavascriptExecutor js = (JavascriptExecutor)driver;
+				    final String scriptGetChecked = "return arguments[0].getAttribute('alt')";
+				    WebElement image1 = HomePage.Product.Blouse.image();
+				    String alt1 = (String) js.executeScript(scriptGetChecked, image1);
+				    System.out.println("Image Alt " + alt1);
+				    System.out.println(HomePage.Product.Blouse.addToCart().getAttribute("title"));
+				    System.out.println(HomePage.Product.Blouse.more().getAttribute("title") + "\n");  
+				    System.out.println("title " + HomePage.Product.FadedShortSleeveTshirts.title());
+				    System.out.println("price " + HomePage.Product.FadedShortSleeveTshirts.price());
+				    System.out.println("image title " + HomePage.Product.FadedShortSleeveTshirts.image().getAttribute("title"));
+				    WebElement image2 = HomePage.Product.FadedShortSleeveTshirts.image();
+				    String alt2 = (String) js.executeScript(scriptGetChecked, image2);
+				    System.out.println("Image Alt" + alt2);
+				    System.out.println(HomePage.Product.FadedShortSleeveTshirts.addToCart().getAttribute("title"));
+				    System.out.println(HomePage.Product.FadedShortSleeveTshirts.more().getAttribute("title") + "\n");  
+				    System.out.println("title " + HomePage.Product.PrintedChiffonDress.title());
+				    System.out.println("price " + HomePage.Product.PrintedChiffonDress.price());
+				    System.out.println("image title " + HomePage.Product.PrintedChiffonDress.image().getAttribute("title"));
+				    WebElement image3 = HomePage.Product.PrintedChiffonDress.image();
+				    String alt3 = (String) js.executeScript(scriptGetChecked, image3);
+				    System.out.println("Image Alt " + alt3);
+				    System.out.println(HomePage.Product.PrintedChiffonDress.addToCart().getAttribute("title"));
+					
+				    System.out.println(HomePage.Product.PrintedChiffonDress.more().getAttribute("title") + "\n");   
+				    System.out.println("title " + HomePage.Product.PrintedDressShort.title());
+				    System.out.println("price " + HomePage.Product.PrintedDressShort.price());
+				    System.out.println("image title " + HomePage.Product.PrintedDressShort.image().getAttribute("title"));
+				    WebElement image4 = HomePage.Product.PrintedDressShort.image();
+				    String alt4 = (String) js.executeScript(scriptGetChecked, image4);
+				    System.out.println("Image Alt " + alt4);
+				    System.out.println(HomePage.Product.PrintedDressShort.addToCart().getAttribute("title"));
+				    System.out.println(HomePage.Product.PrintedDressShort.more().getAttribute("title") + "\n");
+				    
+				    System.out.println("title " + HomePage.Product.PrintedDressLong.title());
+				    System.out.println("price " + HomePage.Product.PrintedDressLong.price());
+				    System.out.println("image title " + HomePage.Product.PrintedDressLong.image().getAttribute("title"));
+				    WebElement image5 = HomePage.Product.PrintedDressLong.image();
+				    String alt5 = (String) js.executeScript(scriptGetChecked, image5);
+				    System.out.println("Image Alt " + alt5);
+				    System.out.println(HomePage.Product.PrintedDressLong.addToCart().getAttribute("title"));
+				    System.out.println(HomePage.Product.PrintedDressLong.more().getAttribute("title") + "\n");
+				    
+				    System.out.println("title " + HomePage.Product.PrintedSummerDressShort.title());
+				    System.out.println("price " + HomePage.Product.PrintedSummerDressShort.price());
+				    System.out.println("image title " + HomePage.Product.PrintedSummerDressShort.image().getAttribute("title"));
+				    WebElement image6 = HomePage.Product.PrintedSummerDressShort.image();
+				    String alt6 = (String) js.executeScript(scriptGetChecked, image6);
+				    System.out.println("Image Alt " + alt6);
+				    System.out.println(HomePage.Product.PrintedSummerDressShort.addToCart().getAttribute("title"));
+				    System.out.println(HomePage.Product.PrintedSummerDressShort.more().getAttribute("title") + "\n");
+				    
+				    System.out.println("title " + HomePage.Product.PrintedSummerDressLong.title());
+				    System.out.println("price " + HomePage.Product.PrintedSummerDressLong.price());
+				    System.out.println("image title " + HomePage.Product.PrintedSummerDressLong.image().getAttribute("title"));
+				    WebElement image7 = HomePage.Product.PrintedSummerDressLong.image();
+				    String alt7 = (String) js.executeScript(scriptGetChecked, image7);
+				    System.out.println("Image Alt " + alt7);
+				    System.out.println(HomePage.Product.PrintedSummerDressLong.addToCart().getAttribute("title"));
+				    System.out.println(HomePage.Product.PrintedSummerDressLong.more().getAttribute("title") + "\n");
 
 		// confirm ContainerButton elements located
 		
-//					System.out.println(HomePage.ContainerButton.Cont1().getAttribute("outerHTML"));
-//					System.out.println(HomePage.ContainerButton.Cont2().getAttribute("outerHTML"));
-//					System.out.println(HomePage.ContainerButton.Cont3().getAttribute("outerHTML"));
-//					System.out.println(HomePage.ContainerButton.Cont4().getAttribute("outerHTML"));
-//					System.out.println(HomePage.ContainerButton.Cont5().getAttribute("outerHTML"));
+					System.out.println(HomePage.ContainerButton.Cont1().getAttribute("outerHTML"));
+					System.out.println(HomePage.ContainerButton.Cont2().getAttribute("outerHTML"));
+					System.out.println(HomePage.ContainerButton.Cont3().getAttribute("outerHTML"));
+					System.out.println(HomePage.ContainerButton.Cont4().getAttribute("outerHTML"));
+					System.out.println(HomePage.ContainerButton.Cont5().getAttribute("outerHTML"));
 
 		// confirm Footer elements located
 		
-			//		System.out.println(HomePage.Footer.Newsletter.inputBox().getAttribute("id"));
-			//		System.out.println(HomePage.Footer.Newsletter.submit_btn().getAttribute("name"));
-			//		System.out.println(HomePage.Footer.women().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.specials().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.newProducts().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.bestSellers().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.ourStores().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.contactUs().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.termsCond().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.about().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.sitemap().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.myAccount().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.myOrders().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.myCreditSlips().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.myAdresses().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.myPersonalInfo().getAttribute("title"));
-			//		System.out.println(HomePage.Footer.skype().getAttribute("innerHTML"));
-			//		System.out.println(HomePage.Footer.email().getAttribute("innerHTML"));
+					System.out.println(HomePage.Footer.Newsletter.inputBox().getAttribute("id"));
+					System.out.println(HomePage.Footer.Newsletter.submit_btn().getAttribute("name"));
+					System.out.println(HomePage.Footer.women().getAttribute("title"));
+					System.out.println(HomePage.Footer.specials().getAttribute("title"));
+					System.out.println(HomePage.Footer.newProducts().getAttribute("title"));
+					System.out.println(HomePage.Footer.bestSellers().getAttribute("title"));
+					System.out.println(HomePage.Footer.ourStores().getAttribute("title"));
+					System.out.println(HomePage.Footer.contactUs().getAttribute("title"));
+					System.out.println(HomePage.Footer.termsCond().getAttribute("title"));
+					System.out.println(HomePage.Footer.about().getAttribute("title"));
+					System.out.println(HomePage.Footer.sitemap().getAttribute("title"));
+					System.out.println(HomePage.Footer.myAccount().getAttribute("title"));
+					System.out.println(HomePage.Footer.myOrders().getAttribute("title"));
+					System.out.println(HomePage.Footer.myCreditSlips().getAttribute("title"));
+					System.out.println(HomePage.Footer.myAdresses().getAttribute("title"));
+					System.out.println(HomePage.Footer.myPersonalInfo().getAttribute("title"));
+					System.out.println(HomePage.Footer.skype().getAttribute("innerHTML"));
+					System.out.println(HomePage.Footer.email().getAttribute("innerHTML"));
 
 
 
@@ -252,12 +254,12 @@ public class test {
 
 				// confirm tabs popular, bestseller work
 
-//					HomePage.ContainerTop.tabPopular().click();
-			//		System.out.println("Popular validated " + HomePage.Product.validatePopular());
-			//		
-			//		HomePage.Container.tabBestSellers().click();
-			//		
-			//		System.out.println("BestSelers validated " + HomePage.Product.validateBestSeller());
+					HomePage.ContainerTop.tabPopular().click();
+					System.out.println("Popular validated " + HomePage.ContainerTop.validatePopular());
+					
+					HomePage.ContainerTop.tabBestSellers().click();
+					
+					System.out.println("BestSelers validated " + HomePage.ContainerTop.validateBestSeller());
 		
 		// confirm LogInPage elements work
 		
@@ -280,10 +282,11 @@ public class test {
         System.out.println(LogInPage.alias().getAttribute("name"));
         System.out.println(LogInPage.city().getAttribute("name"));
         System.out.println(LogInPage.company().getAttribute("name"));
+        js.executeScript("document.getElementById('passwd').scrollIntoView(true);");
         System.out.println(LogInPage.country().getAttribute("name"));
-        System.out.println(LogInPage.days().getAttribute("name"));
-        System.out.println(LogInPage.months().getAttribute("name"));
-        System.out.println(LogInPage.years().getAttribute("name"));
+        System.out.println(LogInPage.days().getAttribute("id"));
+        System.out.println(LogInPage.months().getAttribute("id"));
+        System.out.println(LogInPage.years().getAttribute("id"));
         System.out.println(LogInPage.firstName().getAttribute("name"));
         System.out.println(LogInPage.firstNameCust().getAttribute("name"));
         System.out.println(LogInPage.lastName().getAttribute("name"));
@@ -291,7 +294,7 @@ public class test {
         System.out.println(LogInPage.phone().getAttribute("name"));
         System.out.println(LogInPage.phoneMobile().getAttribute("name"));
         System.out.println(LogInPage.postcode().getAttribute("name"));
-        System.out.println(LogInPage.state().getAttribute("name"));
+        System.out.println(LogInPage.state().getAttribute("id"));
        
        
         

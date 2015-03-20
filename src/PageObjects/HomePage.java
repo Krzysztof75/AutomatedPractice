@@ -22,7 +22,6 @@ public class HomePage extends BaseClass {
 
 
 	static Logger log = LogManager.getLogger(HomePage.class.getName());
-	Properties prop = new Properties();
 
 
 
@@ -30,11 +29,6 @@ public class HomePage extends BaseClass {
 		super(driver);
 
 		DOMConfigurator.configure("log4j.xml");
-	}
-
-	public String getTitle(){
-		return driver.getTitle();
-
 	}
 
 	/*
@@ -47,7 +41,7 @@ public class HomePage extends BaseClass {
 		// return Contact us
 		public static WebElement contactUs(){
 			try{
-				headerElement = driver.findElement(By.linkText("Contact us"));
+				headerElement = driver.findElement(By.linkText(prop.getProperty("ContactUs_linkText")));
 			} catch (NoSuchElementException e){
 				log.error("Could not find contactUs element");
 				throw e;
@@ -61,7 +55,7 @@ public class HomePage extends BaseClass {
 		public static WebElement LogIn(){
 
 			try{
-				headerElement = driver.findElement(By.linkText("Sign in"));
+				headerElement = driver.findElement(By.linkText(prop.getProperty("LogIn_linkText")));
 			} catch (NoSuchElementException e){
 				log.error("Could not find element Sign in");
 				throw e;
@@ -74,7 +68,7 @@ public class HomePage extends BaseClass {
 		public static WebElement searchBox(){
 
 			try{
-				headerElement = driver.findElement(By.id("search_query_top"));
+				headerElement = driver.findElement(By.id(prop.getProperty("searchBox_id")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element search box");
 				throw e;
@@ -88,7 +82,7 @@ public class HomePage extends BaseClass {
 		public static WebElement search(){
 
 			try{
-				headerElement = driver.findElement(By.name("submit_search"));
+				headerElement = driver.findElement(By.name(prop.getProperty("search_btn_name")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element search");
 				throw e;
@@ -100,7 +94,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement cart(){
 			try{
-				headerElement = driver.findElement(By.xpath(".//*[@id='header']/div[3]/div/div/div[3]/div/a"));
+				headerElement = driver.findElement(By.xpath(prop.getProperty("cart_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cart");
 				throw e;
@@ -114,7 +108,7 @@ public class HomePage extends BaseClass {
 		public static WebElement women (){
 
 			try{
-				headerElement = driver.findElement(By.xpath(".//a[@title='Women']"));
+				headerElement = driver.findElement(By.xpath(prop.getProperty("women_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Women in the main menu");
 				throw e;
@@ -139,7 +133,7 @@ public class HomePage extends BaseClass {
 			case "tops":
 
 				try{
-					headerElement = driver.findElement(By.xpath(".//a[@title='Tops']"));
+					headerElement = driver.findElement(By.xpath(prop.getProperty("women_tops_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element top under Women menu");
 					throw e;
@@ -150,7 +144,7 @@ public class HomePage extends BaseClass {
 			case "t-shirts":
 
 				try{
-					headerElement = driver.findElement(By.linkText("T-shirts"));
+					headerElement = driver.findElement(By.linkText(prop.getProperty("women_t-shirts_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element t-shirts under Women menu");
 					throw e;
@@ -161,7 +155,7 @@ public class HomePage extends BaseClass {
 			case "blouses":
 
 				try{
-					headerElement = driver.findElement(By.linkText("Blouses"));
+					headerElement = driver.findElement(By.linkText(prop.getProperty("women_blouses_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element blouses under Women menu");
 					throw e;
@@ -172,7 +166,7 @@ public class HomePage extends BaseClass {
 			case "dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[1]/ul/li[2]/a"));
+					headerElement = driver.findElement(By.xpath(prop.getProperty("women_dresses_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element dresses under Women menu");
 				}
@@ -182,7 +176,7 @@ public class HomePage extends BaseClass {
 			case "casual dresses":
 
 				try{
-					headerElement = driver.findElement(By.linkText("Casual Dresses"));
+					headerElement = driver.findElement(By.linkText(prop.getProperty("women_casual_dresses_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Casual dresses under Women menu");
 					throw e;
@@ -193,7 +187,7 @@ public class HomePage extends BaseClass {
 			case "evening dresses":
 
 				try{
-					headerElement = driver.findElement(By.linkText("Evening Dresses"));
+					headerElement = driver.findElement(By.linkText(prop.getProperty("women_evening_dresses_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Evening dresses under Women menu");
 					throw e;
@@ -204,7 +198,7 @@ public class HomePage extends BaseClass {
 			case "summer dresses":
 
 				try{
-					headerElement = driver.findElement(By.linkText("Summer Dresses"));
+					headerElement = driver.findElement(By.linkText(prop.getProperty("women_summer_dresses_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Summer dresses under Women menu");
 					throw e;
@@ -224,7 +218,7 @@ public class HomePage extends BaseClass {
 		public static WebElement dresses(){
 
 			try{
-				headerElement = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[2]/a"));
+				headerElement = driver.findElement(By.xpath(prop.getProperty("dresses-xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Dresses in the main menu");
 			}
@@ -247,7 +241,7 @@ public class HomePage extends BaseClass {
 			case "casual dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[2]/ul/li[1]/a"));
+					headerElement = driver.findElement(By.xpath(prop.getProperty("dresses_casual_dresses-xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Casual Dresses under Dresses menu");
 					throw e;
@@ -258,7 +252,7 @@ public class HomePage extends BaseClass {
 			case "evening dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[2]/ul/li[2]/a"));
+					headerElement = driver.findElement(By.xpath(prop.getProperty("dresses_evening_dresses_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Evening Dresses under Dresses menu");
 					throw e;
@@ -269,7 +263,7 @@ public class HomePage extends BaseClass {
 			case "summer dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[2]/ul/li[3]/a"));
+					headerElement = driver.findElement(By.xpath(prop.getProperty("dresses_summer_dresses_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Summer Dresses under Dresses menu");
 					throw e;
@@ -286,7 +280,7 @@ public class HomePage extends BaseClass {
 		}
 		public static WebElement tShirts(){
 			try{
-				headerElement = driver.findElement(By.xpath(".//*[@id='block_top_menu']/ul/li[3]/a"));
+				headerElement = driver.findElement(By.xpath(prop.getProperty("tShirts-xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element T-shirts in the main menu");
 				throw e;
@@ -302,11 +296,12 @@ public class HomePage extends BaseClass {
 		private static WebElement containerElement;
 
 		public static boolean validatePopular(){
-			List<WebElement>products = driver.findElements(By.className("product-container"));
-			boolean result = true;
+			boolean result;
+			List<WebElement>products = driver.findElements(By.className(prop.getProperty("products_className")));
+			result = true;
 			for(int i = 0; i < (products.size()-6); i++){
 				if(!products.get(i).isDisplayed()){
-					return result = false; 
+					result = false; 
 				}
 			}   
 			return result;
@@ -314,11 +309,12 @@ public class HomePage extends BaseClass {
 		}
 
 		public static boolean validateBestSeller(){
-			List<WebElement>products = driver.findElements(By.className("product-container"));
-			boolean result = true;
+			boolean result;
+			List<WebElement>products = driver.findElements(By.className(prop.getProperty("products_className")));
+			result = true;
 			for(int i = 7; i < products.size(); i++){
 				if(!products.get(i).isDisplayed()){
-					return result = false;
+					result = false;
 				}
 			}   
 			return result;
@@ -328,8 +324,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement slider(){
 			try{
-
-				containerElement = driver.findElement(By.id("homeslider"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("slider_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Slider");
 				throw e;
@@ -340,7 +335,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement sliderNext(){
 			try{										
-				containerElement = driver.findElement(By.xpath(".//*[@id='homepage-slider']/div/div[2]/div/a[2]"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("slider_next_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Slider Next");
 				throw e;
@@ -352,7 +347,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement sliderPrev(){
 			try{
-				containerElement = driver.findElement(By.xpath(".//*[@id='homepage-slider']/div/div[2]/div/a[1]"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("slider_prev_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Slider Next");
 				throw e;
@@ -364,7 +359,7 @@ public class HomePage extends BaseClass {
 		
 		public static WebElement shopNow(){
 			try{
-				containerElement = driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/div/p[2]/button"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("shopNow_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element shop-now");
 				throw e;
@@ -376,7 +371,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement contentTop(){
 			try{
-				containerElement = driver.findElement(By.xpath(".//*[@id='htmlcontent_top']/ul/li[1]/a"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("content_Top_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Content top");
 				throw e;
@@ -388,7 +383,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement contentButton(){
 			try{
-				containerElement = driver.findElement(By.xpath(".//*[@id='htmlcontent_top']/ul/li[2]/a"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("content_Button_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Content button");
 				throw e;
@@ -400,7 +395,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement tabPopular(){
 			try{
-				containerElement = driver.findElement(By.xpath(".//*[@id='home-page-tabs']/li[1]/a"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("tabPopular_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element tabPopular button");
 				throw e;
@@ -413,7 +408,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement tabBestSellers(){
 			try{
-				containerElement = driver.findElement(By.xpath(".//*[@id='home-page-tabs']/li[2]/a"));
+				containerElement = driver.findElement(By.xpath(prop.getProperty("tabBestSellers_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element tabBestSellers button");
 				throw e;
@@ -432,8 +427,8 @@ public class HomePage extends BaseClass {
 
 		// method checking whether tab Popular or Bestsellers is active so that we know the correct xpath to the product
 		public static String active(){
-			WebElement popularActive = driver.findElement(By.xpath("//*[@id='home-page-tabs']/li[1]"));
-			WebElement bestSellersActive = driver.findElement(By.xpath("//*[@id='home-page-tabs']/li[1]"));
+			WebElement popularActive = ContainerTop.tabPopular();
+			WebElement bestSellersActive = ContainerTop.tabBestSellers();
 			String active = "default";
 			if(popularActive.getAttribute("class").equalsIgnoreCase("active")){
 				active = "homefeatured";	
@@ -442,17 +437,24 @@ public class HomePage extends BaseClass {
 			}
 			return active;
 		}
+		
+		private static String generateXpath(String xpath){
+			
+			String path = xpath.substring(0, xpath.lastIndexOf("'")) + active() + xpath.substring(xpath.lastIndexOf("'"));
+			return path;
+			
+		}
 
 		public static class Blouse{
 
-			// action hover will help us make elements Add-To-Cart and More visible
-			private static WebElement blouse = driver.findElement(By.xpath(".//a[@title='Blouse']"));
+			// action hover will help us make elements "Add-To-Cart" and "More" visible
+			private static WebElement blouse = driver.findElement(By.xpath(prop.getProperty("Blouse-xpath")));
 			static Action hover = Product.action.moveToElement(blouse).build();
 
 			public static String title(){
 				String title = "DEFAULT";
 				try{
-					title = driver.findElement(By.xpath(".//a[@title='Blouse']")).getAttribute("title");	
+					title = blouse.getAttribute("title");	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse - title");
 					throw e;
@@ -462,9 +464,9 @@ public class HomePage extends BaseClass {
 			}
 
 			public static String price(){
-
+						
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[1]/div/div[1]/div/div[2]/span"));	
+					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse - price");
 					throw e;
@@ -475,7 +477,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[2]/div/div[1]/div/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse Image");
 					throw e;
@@ -487,7 +489,7 @@ public class HomePage extends BaseClass {
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[2]/div/div[2]/div[2]/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse - addCart");
 					throw e;
@@ -498,7 +500,7 @@ public class HomePage extends BaseClass {
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[2]/div/div[2]/div[2]/a[2]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse - more");
 					throw e;
@@ -509,13 +511,13 @@ public class HomePage extends BaseClass {
 		}
 		public static class FadedShortSleeveTshirts{
 
-			private static WebElement FadedShortSleeve = driver.findElement(By.xpath(".//a[@title='Faded Short Sleeve T-shirts']"));
+			private static WebElement FadedShortSleeve = driver.findElement(By.xpath(prop.getProperty("FadedShortSleeve_xpath")));
 			static Action hover = Product.action.moveToElement(FadedShortSleeve).build();
 
 			public static String title(){
 				String title = "DEFAULT";
 				try{
-					title = driver.findElement(By.xpath(".//a[@title='Faded Short Sleeve T-shirts']")).getAttribute("title");	
+					title = FadedShortSleeve.getAttribute("title");	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - title");
 					throw e;
@@ -526,7 +528,7 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[2]/div/div[1]/div/div[2]/span"));	
+					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - price");
 					throw e;
@@ -537,7 +539,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[1]/div/div[1]/div/a[1]/img"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_image_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - image");
 					throw e;
@@ -549,7 +551,7 @@ public class HomePage extends BaseClass {
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[1]/div/div[2]/div[2]/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_addToCart_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - addCart");
 					throw e;
@@ -560,7 +562,7 @@ public class HomePage extends BaseClass {
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[1]/div/div[2]/div[2]/a[2]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - more");
 					throw e;
@@ -579,7 +581,7 @@ public class HomePage extends BaseClass {
 			public static String title(){
 				String title = "DEFAULT";
 				try{
-					title = driver.findElement(By.xpath(".//a[@title='Printed Chiffon Dress']")).getAttribute("title");	
+					title = PrintedChiffonDress.getAttribute("title");	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress - title");
 					throw e;
@@ -590,7 +592,7 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[5]/div/div[1]/div/div[2]/span[1]"));	
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress - Price");
 					throw e;
@@ -601,7 +603,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[1]/div/div[1]/div/a[1]/img"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress Image");
 					throw e;
@@ -613,7 +615,7 @@ public class HomePage extends BaseClass {
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[7]/div/div[2]/div[2]/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress addCart");
 					throw e;
@@ -624,7 +626,7 @@ public class HomePage extends BaseClass {
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[7]/div/div[2]/div[2]/a[2]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress - more");
 					throw e;
@@ -634,15 +636,15 @@ public class HomePage extends BaseClass {
 			}
 		}
 
-		public static class PrintedDressShort{
+		public static class PrintedDressShort{				
 
-			private static WebElement PrintedDressShort = driver.findElement(By.xpath(".//*[@id='" + active() + "']/li[3]/div/div[1]/div/a[1]"));
+			private static WebElement PrintedDressShort = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_xpath").toString())));
 			static Action hover = Product.action.moveToElement(PrintedDressShort).build();	
 
 			public static String title(){
 				String title = "DEFAULT";
 				try{
-					title = driver.findElement(By.xpath(".//*[@id='" + active() + "']/li[3]/div/div[1]/div/a[1]")).getAttribute("title");	
+					title = PrintedDressShort.getAttribute("title");	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short - title");
 					throw e;
@@ -653,7 +655,7 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath(".//*[@id='" + active() + "']/li[3]/div/div[1]/div/div[2]/span"));	
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short - Price");
 					throw e;
@@ -664,7 +666,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(".//*[@id='" + active() + "']/li[3]/div/div[1]/div/a[1]/img"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short Image");
 					throw e;
@@ -676,7 +678,7 @@ public class HomePage extends BaseClass {
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(".//*[@id='" + active() + "']/li[3]/div/div[2]/div[2]/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short addCart");
 					throw e;
@@ -687,7 +689,7 @@ public class HomePage extends BaseClass {
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(".//*[@id='" + active() + "']/li[3]/div/div[2]/div[2]/a[2]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short - more");
 					throw e;
@@ -699,13 +701,13 @@ public class HomePage extends BaseClass {
 
 		public static class PrintedDressLong{
 
-			private static WebElement PrintedDressLong = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[4]/div/div[1]/div/a[1]/img"));
+			private static WebElement PrintedDressLong = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_xpath").toString())));
 			static Action hover = Product.action.moveToElement(PrintedDressLong).build();	
 
 			public static String title(){
 				String title = "DEFAULT";
 				try{
-					title = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[4]/div/div[1]/div/a[1]/img")).getAttribute("title");	
+					title = PrintedDressLong.getAttribute("title");	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long - title");
 					throw e;
@@ -716,7 +718,7 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[4]/div/div[1]/div/div[2]/span"));	
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long - Price");
 					throw e;
@@ -727,7 +729,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[4]/div/div[1]/div/a[1]/img"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_image_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long Image");
 					throw e;
@@ -739,7 +741,7 @@ public class HomePage extends BaseClass {
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[4]/div/div[2]/div[2]/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long addCart");
 					throw e;
@@ -748,9 +750,9 @@ public class HomePage extends BaseClass {
 				return product;		
 			}
 			public static WebElement more(){
-				hover.perform();
+				hover.perform();						
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[4]/div/div[2]/div[2]/a[2]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long - more");
 					throw e;
@@ -762,13 +764,13 @@ public class HomePage extends BaseClass {
 
 		public static class PrintedSummerDressShort{
 
-			private static WebElement PrintedSummerDressShort = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[6]/div/div[1]/div/a[1]/img"));
+			private static WebElement PrintedSummerDressShort = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_xpath").toString())));
 			static Action hover = Product.action.moveToElement(PrintedSummerDressShort).build();	
 
 			public static String title(){
 				String title = "DEFAULT";
 				try{
-					title = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[6]/div/div[1]/div/a[1]/img")).getAttribute("title");	
+					title = PrintedSummerDressShort.getAttribute("title");	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short - title");
 					throw e;
@@ -779,7 +781,7 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[6]/div/div[1]/div/div[2]/span"));	
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short - Price");
 					throw e;
@@ -790,7 +792,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[6]/div/div[1]/div/a[1]/img"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short Image");
 					throw e;
@@ -802,7 +804,7 @@ public class HomePage extends BaseClass {
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[6]/div/div[2]/div[2]/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short addCart");
 					throw e;
@@ -813,7 +815,7 @@ public class HomePage extends BaseClass {
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[6]/div/div[2]/div[2]/a[2]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short - more");
 					throw e;
@@ -825,13 +827,13 @@ public class HomePage extends BaseClass {
 
 		public static class PrintedSummerDressLong{
 
-			private static WebElement PrintedSummerDressLong = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[5]/div/div[1]/div/a[1]/img"));
+			private static WebElement PrintedSummerDressLong = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_xpath").toString())));
 			static Action hover = Product.action.moveToElement(PrintedSummerDressLong).build();	
 
 			public static String title(){
 				String title = "DEFAULT";
 				try{
-					title = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[5]/div/div[1]/div/a[1]/img")).getAttribute("title");	
+					title = PrintedSummerDressLong.getAttribute("title");	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long - title");
 					throw e;
@@ -842,7 +844,7 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[5]/div/div[1]/div/div[2]/span[1]"));	
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_price_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long - Price");
 					throw e;
@@ -853,7 +855,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[5]/div/div[1]/div/a[1]/img"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long Image");
 					throw e;
@@ -865,7 +867,7 @@ public class HomePage extends BaseClass {
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[5]/div/div[2]/div[2]/a[1]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long addCart");
 					throw e;
@@ -876,7 +878,7 @@ public class HomePage extends BaseClass {
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath("//*[@id='" + active() + "']/li[5]/div/div[2]/div[2]/a[2]"));
+					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long - more");
 					throw e;
@@ -892,7 +894,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement Cont1(){
 			try{
-				contButton = driver.findElement(By.xpath("//*[@id='htmlcontent_home']/ul/li[1]/a/img"));
+				contButton = driver.findElement(By.xpath(prop.getProperty("Cont1_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont1");
 				throw e;
@@ -905,7 +907,7 @@ public class HomePage extends BaseClass {
 		public static WebElement Cont2(){
 			try{
 
-				contButton = driver.findElement(By.xpath("//*[@id='htmlcontent_home']/ul/li[2]/a/img"));
+				contButton = driver.findElement(By.xpath(prop.getProperty("Cont2_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Cont2");
 				throw e;
@@ -917,7 +919,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement Cont3(){
 			try{
-				contButton = driver.findElement(By.xpath("//*[@id='htmlcontent_home']/ul/li[3]/a/img"));
+				contButton = driver.findElement(By.xpath(prop.getProperty("Cont3_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont3");
 				throw e;
@@ -929,7 +931,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement Cont4(){
 			try{
-				contButton = driver.findElement(By.xpath("//*[@id='htmlcontent_home']/ul/li[4]/a/img"));
+				contButton = driver.findElement(By.xpath(prop.getProperty("Cont4_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont4");
 				throw e;
@@ -941,7 +943,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement Cont5(){
 			try{
-				contButton = driver.findElement(By.xpath("//*[@id='htmlcontent_home']/ul/li[5]/a/img"));
+				contButton = driver.findElement(By.xpath(prop.getProperty("Cont5_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont5");
 				throw e;
@@ -961,7 +963,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement inputBox(){
 				try{
-					fotterElement = driver.findElement(By.id("newsletter-input"));
+					fotterElement = driver.findElement(By.id(prop.getProperty("inputBox_id")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element newsletter");
 					throw e;
@@ -973,7 +975,7 @@ public class HomePage extends BaseClass {
 
 			public static WebElement submit_btn(){
 				try{
-					fotterElement = driver.findElement(By.xpath("//*[@id='newsletter_block_left']/div/form/div/button"));
+					fotterElement = driver.findElement(By.xpath(prop.getProperty("submit_btn_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element newsletter submit button");
 					throw e;
@@ -987,7 +989,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement facebook(){
 			try{
-				fotterElement = driver.findElement(By.xpath("//*[@id='social_block']/ul/li[1]/a"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("facebook_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element facebook");
 				throw e;
@@ -1000,7 +1002,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement twitter(){
 			try{							
-				fotterElement = driver.findElement(By.xpath("//*[@id='social_block']/ul/li[2]/a"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("twitter_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element twitter");
 				throw e;
@@ -1013,7 +1015,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement youTube(){
 			try{					
-				fotterElement = driver.findElement(By.xpath("//*[@id='social_block']/ul/li[3]/a"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("youTube_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element youtube");
 				throw e;
@@ -1025,7 +1027,7 @@ public class HomePage extends BaseClass {
 
 		public static WebElement google(){
 			try{
-				fotterElement = driver.findElement(By.xpath("//*[@id='social_block']/ul/li[4]/a"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("google_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element google");
 				throw e;
@@ -1039,7 +1041,7 @@ public class HomePage extends BaseClass {
 		public static WebElement women(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath("//*[@id='footer']/div/section[2]/div/div/ul/li/a"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("Footer_women_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - women");
 				throw e;
@@ -1053,7 +1055,7 @@ public class HomePage extends BaseClass {
 		public static WebElement specials(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("Specials"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("specials_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - specials");
 				throw e;
@@ -1067,7 +1069,7 @@ public class HomePage extends BaseClass {
 		public static WebElement newProducts(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("New products"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("newProducts_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - new products");
 				throw e;
@@ -1081,7 +1083,7 @@ public class HomePage extends BaseClass {
 		public static WebElement bestSellers(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath("//*[@id='block_various_links_footer']/ul/li[3]/a"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("bestSellers_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - best sellers");
 				throw e;
@@ -1095,7 +1097,7 @@ public class HomePage extends BaseClass {
 		public static WebElement ourStores(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("Our stores"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("ourStores_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - new products");
 				throw e;
@@ -1109,7 +1111,7 @@ public class HomePage extends BaseClass {
 		public static WebElement contactUs(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("Contact us"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("contactUs-linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - Contact us");
 				throw e;
@@ -1123,7 +1125,7 @@ public class HomePage extends BaseClass {
 		public static WebElement termsCond(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("Terms and conditions of use"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("termsCond_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - Terms and conditions of use");
 				throw e;
@@ -1137,7 +1139,7 @@ public class HomePage extends BaseClass {
 		public static WebElement about(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("About us"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("about_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - About us");
 				throw e;
@@ -1151,7 +1153,7 @@ public class HomePage extends BaseClass {
 		public static WebElement sitemap(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("Sitemap"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("sitemap_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - Sitemap");
 				throw e;
@@ -1165,7 +1167,7 @@ public class HomePage extends BaseClass {
 		public static WebElement myAccount(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("My account"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("myAccount-linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My account");
 				throw e;
@@ -1179,7 +1181,7 @@ public class HomePage extends BaseClass {
 		public static WebElement myOrders(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("My orders"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("myOrders_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My orders");
 				throw e;
@@ -1193,7 +1195,7 @@ public class HomePage extends BaseClass {
 		public static WebElement myCreditSlips(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("My credit slips"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("myCreditSlips_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My credit slips");
 				throw e;
@@ -1207,7 +1209,7 @@ public class HomePage extends BaseClass {
 		public static WebElement myAdresses(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("My addresses"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("myAdresses_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My addresses");
 				throw e;
@@ -1221,7 +1223,7 @@ public class HomePage extends BaseClass {
 		public static WebElement myPersonalInfo(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText("My personal info"));
+				fotterElement = driver.findElement(By.linkText(prop.getProperty("myPersonalInfo_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My personal info");
 				throw e;
@@ -1235,7 +1237,7 @@ public class HomePage extends BaseClass {
 		public static WebElement skype(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath("//*[@id='block_contact_infos']/div/ul/li[2]/span"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("skype_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - skype");
 				throw e;
@@ -1249,7 +1251,7 @@ public class HomePage extends BaseClass {
 		public static WebElement email(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath("//*[@id='block_contact_infos']/div/ul/li[3]/span/a"));
+				fotterElement = driver.findElement(By.xpath(prop.getProperty("email_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - email");
 				throw e;

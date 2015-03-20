@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <parameter name="browserName" value="FF"/>
-  <test name="ValidateLinksFF(failed)">
+  <test name="ValidateLogIn(failed)">
     <parameter name="browserName" value="FF"/>
     <classes>
-      <class name="Tests.ValidateMainPageLinks">
+      <class name="Tests.ValidateLogIn">
         <methods>
           <include name="beforeTest"/>
-          <include name="afterMethod"/>
           <include name="beforeMethod"/>
-          <include name="test20M"/>
           <include name="afterTest"/>
+          <include name="testLogIn" invocation-numbers="9 10 11 12 13"/>
+          <include name="afterMethod"/>
         </methods>
-      </class> <!-- Tests.ValidateMainPageLinks -->
+      </class> <!-- Tests.ValidateLogIn -->
     </classes>
-  </test> <!-- ValidateLinksFF(failed) -->
+  </test> <!-- ValidateLogIn(failed) -->
 </suite> <!-- Failed suite [Suite] -->
