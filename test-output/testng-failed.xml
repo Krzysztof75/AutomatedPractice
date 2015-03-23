@@ -2,18 +2,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <parameter name="browserName" value="FF"/>
-  <test name="ValidateLogIn(failed)">
+  <test name="ValidateRegistration(failed)">
     <parameter name="browserName" value="FF"/>
     <classes>
-      <class name="Tests.ValidateLogIn">
+      <class name="Tests.ValidateRegistration">
         <methods>
-          <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="afterTest"/>
-          <include name="testLogIn" invocation-numbers="9 10 11 12 13"/>
+          <include name="testRegistration" invocation-numbers="11"/>
+          <include name="beforeTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- Tests.ValidateLogIn -->
+      </class> <!-- Tests.ValidateRegistration -->
     </classes>
-  </test> <!-- ValidateLogIn(failed) -->
+  </test> <!-- ValidateRegistration(failed) -->
 </suite> <!-- Failed suite [Suite] -->

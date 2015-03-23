@@ -7,6 +7,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 public class LogInPage extends BaseClass {
 	
@@ -27,6 +28,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -38,6 +40,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -49,10 +52,11 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
-	public static WebElement password(){
+	public static WebElement password_SignIn(){
 		try{
 			element = driver.findElement(By.id("passwd"));
 		}catch(NoSuchElementException e){
@@ -60,6 +64,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -71,6 +76,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 
@@ -81,19 +87,20 @@ public class LogInPage extends BaseClass {
 			if(title.equalsIgnoreCase("mr")){
 			element = driver.findElement(By.xpath("//*[@id='id_gender1']"));
 			} else if(title.equalsIgnoreCase("mrs")){
-			element = driver.findElement(By.id("id_gender2"));	
+			element = driver.findElement(By.xpath("//*[@id='id_gender2']"));	
 			}
 			
 		}catch(NoSuchElementException e){
 			log.error("Could not find element title");
 			throw e;
 		}
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='id_gender2']")));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 		
 	}
 	
-	public static WebElement firstNameCust(){
+	public static WebElement firstName1(){
 		try{
 			element = driver.findElement(By.id("customer_firstname"));
 		}catch(NoSuchElementException e){
@@ -101,11 +108,12 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 		
 	}
 	
-	public static WebElement lastNameCust(){
+	public static WebElement lastName1(){
 		try{
 			element = driver.findElement(By.id("customer_lastname"));
 		}catch(NoSuchElementException e){
@@ -113,43 +121,91 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
-	public static WebElement days(){
+	public static WebElement email(){
+		try{
+			element = driver.findElement(By.id("email"));
+		}catch(NoSuchElementException e){
+			log.error("Could not find element email");
+			throw e;
+		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
+		return element;
+	}
+	
+	public static WebElement password(){
+		try{
+			element = driver.findElement(By.id("passwd"));
+		}catch(NoSuchElementException e){
+			log.error("Could not find element email");
+			throw e;
+		}
+		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
+		return element;
+	}
+	
+	public static WebElement days(String day){
+		
 		try{
 			element = driver.findElement(By.id("uniform-days"));
+			Select days = new Select(driver.findElement(By.id("days")));
+			if(!day.equals("")){
+			if(Integer.parseInt(day) <= 31 && Integer.parseInt(day) > 0){
+				days.selectByValue(day);
+			} 
+			}
+			
 		}catch(NoSuchElementException e){
 			log.error("Could not find element days");
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
-	public static WebElement months(){
+	public static WebElement months(String month){
 		try{										
 			element = driver.findElement(By.id("uniform-months"));
+			Select months = new Select(driver.findElement(By.id("months")));
+			if(!month.equals("")){
+			if(Integer.parseInt(month) <= 12 && Integer.parseInt(month) > 0){
+				months.selectByValue(month);
+			} 
+			}
 		}catch(NoSuchElementException e){
 			log.error("Could not find element months");
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
-	public static WebElement years(){
+	public static WebElement years(String year){
 		try{
 			element = driver.findElement(By.id("uniform-years"));
+			Select years = new Select(driver.findElement(By.id("years")));
+			if(!year.equals("")){
+			if(Integer.parseInt(year) <= 2015 && Integer.parseInt(year) > 1900){
+				years.selectByValue(year);
+			}
+			}
 		}catch(NoSuchElementException e){
 			log.error("Could not find element years");
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
-	public static WebElement firstName(){
+	public static WebElement firstName2(){
 		try{
 			element = driver.findElement(By.id("firstname"));
 		}catch(NoSuchElementException e){
@@ -157,10 +213,11 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
-	public static WebElement lastName(){
+	public static WebElement lastName2(){
 		try{
 			element = driver.findElement(By.id("lastname"));
 		}catch(NoSuchElementException e){
@@ -168,6 +225,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -179,6 +237,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -190,6 +249,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -201,6 +261,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -215,14 +276,19 @@ public class LogInPage extends BaseClass {
 		return element;
 	}
 	
-	public static WebElement state(){
+	public static WebElement state(String index){
 		try{
 			element = driver.findElement(By.id("uniform-id_state"));
+			if(Integer.parseInt(index) > 0 && Integer.parseInt(index) <=50){
+			Select states = new Select(driver.findElement(By.id("id_state")));
+				states.selectByValue(index);
+			}
 		}catch(NoSuchElementException e){
 			log.error("Could not find element state");
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -234,17 +300,30 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
-	public static WebElement country(){
+	// drop box country has only one option at the moment so I'm making sure this option is selected
+	// in the future it may be changed
+	public static WebElement country(String country){
 		try{
-			element = driver.findElement(By.id("id_country"));
+			element = driver.findElement(By.id("uniform-id_country"));
+			element.click();
+			Select countries = new Select(driver.findElement(By.id("id_country")));
+			if(!country.equals("")){
+			if(Integer.parseInt(country) != 21){
+				countries.selectByValue("21");
+			}else{
+			countries.selectByValue(country);
+			}
+			}
 		}catch(NoSuchElementException e){
 			log.error("Could not find element country");
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -256,6 +335,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -267,6 +347,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -278,6 +359,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -289,6 +371,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.visibilityOf(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	
@@ -300,6 +383,7 @@ public class LogInPage extends BaseClass {
 			throw e;
 		}
 		wait.until(ExpectedConditions.elementToBeClickable(element));
+		log.info("Returned element " + element.getAttribute("id"));
 		return element;
 	}
 	}

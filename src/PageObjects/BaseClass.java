@@ -20,7 +20,7 @@ public abstract class BaseClass {
 
 	public BaseClass(WebDriver driver){
 		BaseClass.driver = driver;
-		wait = new WebDriverWait(driver,15);
+		wait = new WebDriverWait(driver,20);
 		log = Logger.getLogger(BaseClass.class.getName());
 		try {
 			prop.load(new FileInputStream(new File("prop.properties")));

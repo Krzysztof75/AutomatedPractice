@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-<!--  
+<!-- 
 <test name="ValidateLinksFF">
   <parameter name="browserName" value="FF"/>
     <classes>
       <class name="Tests.ValidateMainPageLinks"/>
     </classes>
   </test> 
---> 
-  <test name="ValidateLogIn">
+ 
+   <test name="ValidateLogIn">
   <parameter name="browserName" value="FF"/>
     <classes>
       <class name="Tests.ValidateLogIn"/>
     </classes>
   </test> 
-  
-<!-- 
+   -->  
+
+  <test name="ValidateRegistration">
+  <parameter name="browserName" value="FF"/>
+    <classes>
+      <class name="Tests.ValidateRegistration"/>
+    </classes>
+  </test> 
+
+ 
+ <!--   
+
   <test name="ValidateLinksCH">
   <parameter name="browserName" value="CH"/>
     <classes>

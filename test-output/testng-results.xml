@@ -1,55 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="14" passed="14">
+<testng-results skipped="0" failed="0" total="12" passed="12">
   <reporter-output>
-    <line>
-      <![CDATA[Test 1L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 2L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 3L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 4L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 5L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 6L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 7L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 8L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 9L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 10L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 11L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 12L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 13L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 14L passed]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="119767" started-at="2015-03-19T19:01:09Z" finished-at="2015-03-19T19:03:09Z">
+  <suite name="Suite" duration-ms="260180" started-at="2015-03-23T11:38:02Z" finished-at="2015-03-23T11:42:22Z">
     <groups>
     </groups>
-    <test name="ValidateLogIn" duration-ms="119767" started-at="2015-03-19T19:01:09Z" finished-at="2015-03-19T19:03:09Z">
-      <class name="Tests.ValidateLogIn">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeTest" is-config="true" duration-ms="16296" started-at="2015-03-19T19:01:09Z" finished-at="2015-03-19T19:01:26Z">
+    <test name="ValidateRegistration" duration-ms="260180" started-at="2015-03-23T11:38:02Z" finished-at="2015-03-23T11:42:22Z">
+      <class name="Tests.ValidateRegistration">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeTest" is-config="true" duration-ms="15592" started-at="2015-03-23T11:38:02Z" finished-at="2015-03-23T11:38:18Z">
           <params>
             <param index="0">
               <value>
@@ -60,319 +18,239 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="550" started-at="2015-03-19T19:01:27Z" finished-at="2015-03-19T19:01:27Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="4422" started-at="2015-03-23T11:38:19Z" finished-at="2015-03-23T11:38:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="6000" started-at="2015-03-19T19:01:27Z" data-provider="verification" finished-at="2015-03-19T19:01:33Z">
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="15470" started-at="2015-03-23T11:38:24Z" data-provider="regData" finished-at="2015-03-23T11:38:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, create-email=, expected=An email address required., test ID=1L, signIn-email=}]]>
+                <![CDATA[{country=, Expected=, firstName1=, DOByear=, firstName2=, city=, Test ID=1R, DOBday=, postcode=, adress2=, title=, adress1=, homePh=, password=, mobilePh=, add info=, lastName1=, DOBmonth=, lastName2=, alias=, company=, state=, email=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 1L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="190" started-at="2015-03-19T19:01:33Z" finished-at="2015-03-19T19:01:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1230" started-at="2015-03-19T19:01:33Z" finished-at="2015-03-19T19:01:35Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3350" started-at="2015-03-23T11:38:39Z" finished-at="2015-03-23T11:38:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="6410" started-at="2015-03-19T19:01:35Z" data-provider="verification" finished-at="2015-03-19T19:01:41Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:38:39Z" finished-at="2015-03-23T11:38:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="14843" started-at="2015-03-23T11:38:42Z" data-provider="regData" finished-at="2015-03-23T11:38:57Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=test1, create-email=, expected=An email address required., test ID=2L, signIn-email=}]]>
+                <![CDATA[{country=, Expected=, firstName1=kris, DOByear=, firstName2=kris, city=Balbriggan, Test ID=2R, DOBday=, postcode=, adress2=, title=mr, adress1=12 Rosepark, homePh=018415267, password=, mobilePh=087556644, add info=lalalala, lastName1=, DOBmonth=, lastName2=gil, alias=, company=company, state=, email=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 2L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="150" started-at="2015-03-19T19:01:41Z" finished-at="2015-03-19T19:01:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1320" started-at="2015-03-19T19:01:41Z" finished-at="2015-03-19T19:01:43Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3210" started-at="2015-03-23T11:38:57Z" finished-at="2015-03-23T11:39:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="6490" started-at="2015-03-19T19:01:43Z" data-provider="verification" finished-at="2015-03-19T19:01:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:38:57Z" finished-at="2015-03-23T11:38:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="15280" started-at="2015-03-23T11:39:00Z" data-provider="regData" finished-at="2015-03-23T11:39:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, create-email=, expected=Password is required., test ID=3L, signIn-email=kris@hotmail.com}]]>
+                <![CDATA[{country=, Expected=, firstName1=, DOByear=, firstName2=, city=, Test ID=3R, DOBday=, postcode=, adress2=, title=mrs, adress1=12 Rosepark, homePh=, password=, mobilePh=087556645, add info=, lastName1=gil, DOBmonth=, lastName2=gil, alias=me@hot.com, company=, state=, email=test@hot.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 3L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="210" started-at="2015-03-19T19:01:49Z" finished-at="2015-03-19T19:01:49Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:39:16Z" finished-at="2015-03-23T11:39:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1290" started-at="2015-03-19T19:01:49Z" finished-at="2015-03-19T19:01:51Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3400" started-at="2015-03-23T11:39:16Z" finished-at="2015-03-23T11:39:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="5630" started-at="2015-03-19T19:01:51Z" data-provider="verification" finished-at="2015-03-19T19:01:56Z">
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="15150" started-at="2015-03-23T11:39:19Z" data-provider="regData" finished-at="2015-03-23T11:39:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=test1, create-email=, expected=Invalid email address., test ID=4L, signIn-email=hotmail.com}]]>
+                <![CDATA[{country=, Expected=, firstName1=kris, DOByear=, firstName2=kris, city=Balbriggan, Test ID=4R, DOBday=, postcode=, adress2=12 Rosepark, title=, adress1=, homePh=018415267, password=, mobilePh=, add info=lalalala, lastName1=, DOBmonth=, lastName2=, alias=, company=company, state=, email=test@hot.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 4L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="150" started-at="2015-03-19T19:01:56Z" finished-at="2015-03-19T19:01:56Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:39:34Z" finished-at="2015-03-23T11:39:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1460" started-at="2015-03-19T19:01:56Z" finished-at="2015-03-19T19:01:58Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3520" started-at="2015-03-23T11:39:34Z" finished-at="2015-03-23T11:39:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="5640" started-at="2015-03-19T19:01:58Z" data-provider="verification" finished-at="2015-03-19T19:02:03Z">
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="16856" started-at="2015-03-23T11:39:38Z" data-provider="regData" finished-at="2015-03-23T11:39:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=test1, create-email=, expected=Invalid email address., test ID=5L, signIn-email=kris@hotmail}]]>
+                <![CDATA[{country=, Expected=, firstName1=, DOByear=, firstName2=, city=Balbriggan, Test ID=5R, DOBday=, postcode=, adress2=, title=mr, adress1=12 Rosepark, homePh=, password=, mobilePh=087556644, add info=, lastName1=gil, DOBmonth=, lastName2=gil, alias=me@hot.com, company=, state=, email=test@hot.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 5L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="150" started-at="2015-03-19T19:02:03Z" finished-at="2015-03-19T19:02:04Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:39:55Z" finished-at="2015-03-23T11:39:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1430" started-at="2015-03-19T19:02:04Z" finished-at="2015-03-19T19:02:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3672" started-at="2015-03-23T11:39:55Z" finished-at="2015-03-23T11:39:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="5670" started-at="2015-03-19T19:02:05Z" data-provider="verification" finished-at="2015-03-19T19:02:11Z">
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="16996" started-at="2015-03-23T11:39:58Z" data-provider="regData" finished-at="2015-03-23T11:40:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=test, create-email=, expected=Invalid password., test ID=6L, signIn-email=kris@hotmail.com}]]>
+                <![CDATA[{country=, Expected=, firstName1=kris, DOByear=, firstName2=kris, city=, Test ID=6R, DOBday=, postcode=, adress2=, title=mrs, adress1=12 Rosepark, homePh=018415267, password=, mobilePh=087556645, add info=, lastName1=gil, DOBmonth=, lastName2=gil, alias=, company=company, state=, email=test@hot.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 6L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="150" started-at="2015-03-19T19:02:11Z" finished-at="2015-03-19T19:02:11Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:40:15Z" finished-at="2015-03-23T11:40:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1460" started-at="2015-03-19T19:02:11Z" finished-at="2015-03-19T19:02:12Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3560" started-at="2015-03-23T11:40:15Z" finished-at="2015-03-23T11:40:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="5980" started-at="2015-03-19T19:02:12Z" data-provider="verification" finished-at="2015-03-19T19:02:18Z">
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="16670" started-at="2015-03-23T11:40:19Z" data-provider="regData" finished-at="2015-03-23T11:40:35Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=test1, create-email=, expected=Authentication failed., test ID=7L, signIn-email=john@hotmail.com}]]>
+                <![CDATA[{country=, Expected=, firstName1=, DOByear=, firstName2=kris, city=Balbriggan, Test ID=7R, DOBday=, postcode=, adress2=12 Rosepark, title=, adress1=, homePh=, password=, mobilePh=, add info=lalalala, lastName1=, DOBmonth=, lastName2=, alias=me@hot.com, company=, state=, email=test@hot.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 7L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="200" started-at="2015-03-19T19:02:18Z" finished-at="2015-03-19T19:02:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1600" started-at="2015-03-19T19:02:18Z" finished-at="2015-03-19T19:02:20Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3510" started-at="2015-03-23T11:40:36Z" finished-at="2015-03-23T11:40:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="5860" started-at="2015-03-19T19:02:20Z" data-provider="verification" finished-at="2015-03-19T19:02:26Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:40:36Z" finished-at="2015-03-23T11:40:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="16672" started-at="2015-03-23T11:40:39Z" data-provider="regData" finished-at="2015-03-23T11:40:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=test2, create-email=, expected=Authentication failed., test ID=8L, signIn-email=john@hotmail.com}]]>
+                <![CDATA[{country=, Expected=, firstName1=kris, DOByear=, firstName2=, city=Balbriggan, Test ID=8R, DOBday=, postcode=, adress2=, title=mr, adress1=12 Rosepark, homePh=018415267, password=, mobilePh=087556644, add info=, lastName1=gil, DOBmonth=, lastName2=gil, alias=, company=company, state=, email=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 8L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="160" started-at="2015-03-19T19:02:26Z" finished-at="2015-03-19T19:02:26Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:40:56Z" finished-at="2015-03-23T11:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1550" started-at="2015-03-19T19:02:26Z" finished-at="2015-03-19T19:02:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3610" started-at="2015-03-23T11:40:56Z" finished-at="2015-03-23T11:40:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="6920" started-at="2015-03-19T19:02:28Z" data-provider="verification" finished-at="2015-03-19T19:02:35Z">
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="15700" started-at="2015-03-23T11:40:59Z" data-provider="regData" finished-at="2015-03-23T11:41:15Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=test1, create-email=, expected=log-in succesfull, test ID=9L, signIn-email=kris@hotmail.com}]]>
+                <![CDATA[{country=, Expected=, firstName1=, DOByear=, firstName2=kris, city=, Test ID=9R, DOBday=, postcode=, adress2=, title=mrs, adress1=12 Rosepark, homePh=, password=, mobilePh=087556645, add info=, lastName1=gil, DOBmonth=, lastName2=, alias=, company=, state=, email=test@hot.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 9L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="3070" started-at="2015-03-19T19:02:35Z" finished-at="2015-03-19T19:02:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1540" started-at="2015-03-19T19:02:38Z" finished-at="2015-03-19T19:02:39Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3730" started-at="2015-03-23T11:41:15Z" finished-at="2015-03-23T11:41:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="3960" started-at="2015-03-19T19:02:39Z" data-provider="verification" finished-at="2015-03-19T19:02:43Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:41:15Z" finished-at="2015-03-23T11:41:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="15740" started-at="2015-03-23T11:41:19Z" data-provider="regData" finished-at="2015-03-23T11:41:34Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, create-email=kg@hot., expected=Invalid email address., test ID=10L, signIn-email=}]]>
+                <![CDATA[{country=, Expected=, firstName1=kris, DOByear=, firstName2=, city=Balbriggan, Test ID=10R, DOBday=, postcode=, adress2=12 Rosepark, title=, adress1=, homePh=018415267, password=, mobilePh=, add info=allala, lastName1=, DOBmonth=, lastName2=gil, alias=me@hot.com, company=company, state=, email=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 10L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="160" started-at="2015-03-19T19:02:43Z" finished-at="2015-03-19T19:02:43Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:41:34Z" finished-at="2015-03-23T11:41:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1560" started-at="2015-03-19T19:02:43Z" finished-at="2015-03-19T19:02:45Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3430" started-at="2015-03-23T11:41:34Z" finished-at="2015-03-23T11:41:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="3970" started-at="2015-03-19T19:02:45Z" data-provider="verification" finished-at="2015-03-19T19:02:49Z">
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="24800" started-at="2015-03-23T11:41:38Z" data-provider="regData" finished-at="2015-03-23T11:42:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, create-email=kg.hot.com, expected=Invalid email address., test ID=11L, signIn-email=}]]>
+                <![CDATA[{country=, Expected=, firstName1=, DOByear=, firstName2=, city=Balbriggan, Test ID=11R, DOBday=, postcode=, adress2=, title=mr, adress1=12 Rosepark, homePh=, password=, mobilePh=087556644, add info=, lastName1=gil, DOBmonth=, lastName2=, alias=, company=, state=, email=test@hot.com}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 11L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="160" started-at="2015-03-19T19:02:49Z" finished-at="2015-03-19T19:02:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1690" started-at="2015-03-19T19:02:49Z" finished-at="2015-03-19T19:02:51Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="3590" started-at="2015-03-23T11:42:03Z" finished-at="2015-03-23T11:42:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="4170" started-at="2015-03-19T19:02:51Z" data-provider="verification" finished-at="2015-03-19T19:02:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:42:03Z" finished-at="2015-03-23T11:42:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="testRegistration" duration-ms="15540" started-at="2015-03-23T11:42:06Z" data-provider="regData" finished-at="2015-03-23T11:42:22Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{password=, create-email=@hot.com, expected=Invalid email address., test ID=12L, signIn-email=}]]>
+                <![CDATA[{country=, Expected=, firstName1=kris, DOByear=, firstName2=, city=, Test ID=12R, DOBday=, postcode=, adress2=, title=mrs, adress1=12 Rosepark, homePh=018415267, password=, mobilePh=087556645, add info=, lastName1=gil, DOBmonth=, lastName2=gil, alias=, company=company, state=, email=}]]>
               </value>
             </param>
           </params>
           <reporter-output>
-            <line>
-              <![CDATA[Test 12L passed]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="160" started-at="2015-03-19T19:02:55Z" finished-at="2015-03-19T19:02:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1630" started-at="2015-03-19T19:02:55Z" finished-at="2015-03-19T19:02:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="4815" started-at="2015-03-19T19:02:57Z" data-provider="verification" finished-at="2015-03-19T19:03:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=kg@.com, expected=Invalid email address., test ID=13L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 13L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="140" started-at="2015-03-19T19:03:01Z" finished-at="2015-03-19T19:03:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="beforeMethod" is-config="true" duration-ms="1680" started-at="2015-03-19T19:03:02Z" finished-at="2015-03-19T19:03:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="testLogIn" duration-ms="4400" started-at="2015-03-19T19:03:03Z" data-provider="verification" finished-at="2015-03-19T19:03:08Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=hdfjhgjk, expected=Invalid email address., test ID=14L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 14L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="150" started-at="2015-03-19T19:03:08Z" finished-at="2015-03-19T19:03:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.ValidateLogIn@3f0ee7cb]" name="afterTest" is-config="true" duration-ms="1220" started-at="2015-03-19T19:03:08Z" finished-at="2015-03-19T19:03:09Z">
+        </test-method> <!-- testRegistration -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterTest" is-config="true" duration-ms="562" started-at="2015-03-23T11:42:22Z" finished-at="2015-03-23T11:42:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- Tests.ValidateLogIn -->
-    </test> <!-- ValidateLogIn -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@3f0ee7cb]" name="afterMethod" is-config="true" duration-ms="0" started-at="2015-03-23T11:42:22Z" finished-at="2015-03-23T11:42:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- Tests.ValidateRegistration -->
+    </test> <!-- ValidateRegistration -->
   </suite> <!-- Suite -->
 </testng-results>

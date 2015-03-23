@@ -1,146 +1,589 @@
-2015-03-20 17:52:24,740 INFO  [HomePage] Returned Blouse - title 
-2015-03-20 17:52:24,804 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:24,859 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:24,909 INFO  [HomePage] Returned Blouse - price 
-2015-03-20 17:52:24,989 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,019 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:25,069 INFO  [HomePage] Returned Blouse - image 
-2015-03-20 17:52:25,139 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,172 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:25,202 INFO  [HomePage] Returned Blouse - image 
-2015-03-20 17:52:25,289 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,321 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:25,351 INFO  [HomePage] Returned Blouse - addCart 
-2015-03-20 17:52:25,421 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,451 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:25,491 INFO  [HomePage] Returned Blouse - more 
-2015-03-20 17:52:25,541 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - title 
-2015-03-20 17:52:25,581 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,631 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:25,671 INFO  [HomePage] Returned Faded Short Sleeve T-shirts price 
-2015-03-20 17:52:25,731 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,751 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:25,791 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - image 
-2015-03-20 17:52:25,839 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,866 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:25,899 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - image 
-2015-03-20 17:52:25,954 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:25,981 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,011 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - addCart 
-2015-03-20 17:52:26,074 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:26,104 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,134 INFO  [HomePage] Returned Faded Short Sleeve T-shirts - more 
-2015-03-20 17:52:26,184 INFO  [HomePage] Returned Printed Chiffon Dress - title 
-2015-03-20 17:52:26,214 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:26,254 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,299 INFO  [HomePage] Returned Printed Chiffon Dress - price 
-2015-03-20 17:52:26,367 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:26,405 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,435 INFO  [HomePage] Returned Printed Chiffon Dress - Image 
-2015-03-20 17:52:26,497 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:26,550 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,590 INFO  [HomePage] Returned Printed Chiffon Dress - Image 
-2015-03-20 17:52:26,731 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:26,762 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,804 INFO  [HomePage] Returned Printed Chiffon Dress - addCart 
-2015-03-20 17:52:26,849 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:26,869 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,899 INFO  [HomePage] Returned Printed Chiffon Dress - more 
-2015-03-20 17:52:26,939 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:26,959 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:26,999 INFO  [HomePage] Returned Printed Dress-Short - title 
-2015-03-20 17:52:27,019 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,039 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,069 INFO  [HomePage] Returned Printed Dress-Short - price 
-2015-03-20 17:52:27,109 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,129 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,159 INFO  [HomePage] Returned Printed Dress-Short - Image 
-2015-03-20 17:52:27,202 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,227 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,252 INFO  [HomePage] Returned Printed Dress-Short - Image 
-2015-03-20 17:52:27,322 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,347 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,372 INFO  [HomePage] Returned Printed Dress-Short - addCart 
-2015-03-20 17:52:27,425 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,448 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,478 INFO  [HomePage] Returned Printed Dress-Short - more 
-2015-03-20 17:52:27,513 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,533 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,573 INFO  [HomePage] Returned Printed Dress-Long - title 
-2015-03-20 17:52:27,603 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,623 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,653 INFO  [HomePage] Returned Printed Dress-Long - price 
-2015-03-20 17:52:27,683 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,713 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,743 INFO  [HomePage] Returned Printed Dress-Long - Image 
-2015-03-20 17:52:27,773 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,803 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,843 INFO  [HomePage] Returned Printed Dress-Long - Image 
-2015-03-20 17:52:27,903 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:27,933 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:27,953 INFO  [HomePage] Returned Printed Dress-Long - addCart 
-2015-03-20 17:52:28,038 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,058 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,098 INFO  [HomePage] Returned Printed Dress-Long - more 
-2015-03-20 17:52:28,148 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,168 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,208 INFO  [HomePage] Returned Printed Summer Dress-short - title 
-2015-03-20 17:52:28,228 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,248 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,278 INFO  [HomePage] Returned Printed Summer Dress-short - price 
-2015-03-20 17:52:28,308 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,328 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,358 INFO  [HomePage] Returned Printed Summer Dress-short - Image 
-2015-03-20 17:52:28,398 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,418 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,438 INFO  [HomePage] Returned Printed Summer Dress-short - Image 
-2015-03-20 17:52:28,511 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,534 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,554 INFO  [HomePage] Returned Printed Summer Dress-short - addCart 
-2015-03-20 17:52:28,614 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,644 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,674 INFO  [HomePage] Returned Printed Summer Dress-short - more 
-2015-03-20 17:52:28,714 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,734 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,784 INFO  [HomePage] Returned Printed Summer Dress-Long - title 
-2015-03-20 17:52:28,814 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,834 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,864 INFO  [HomePage] Returned Printed Summer Dress-Long - price 
-2015-03-20 17:52:28,894 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:28,924 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:28,954 INFO  [HomePage] Returned Printed Summer Dress-Long - Image 
-2015-03-20 17:52:29,001 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:29,024 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:29,041 INFO  [HomePage] Returned Printed Summer Dress-Long - Image 
-2015-03-20 17:52:29,101 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:29,136 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:29,164 INFO  [HomePage] Returned Printed Summer Dress-Long - addCart 
-2015-03-20 17:52:29,219 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:29,241 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:29,269 INFO  [HomePage] Returned Printed Summer Dress-Long - more 
-2015-03-20 17:52:29,344 INFO  [HomePage] Returned cont1 
-2015-03-20 17:52:29,426 INFO  [HomePage] Returned cont2 
-2015-03-20 17:52:29,516 INFO  [HomePage] Returned cont3 
-2015-03-20 17:52:29,585 INFO  [HomePage] Returned cont4 
-2015-03-20 17:52:29,635 INFO  [HomePage] Returned cont5 
-2015-03-20 17:52:29,707 INFO  [HomePage] returned newsletter 
-2015-03-20 17:52:29,775 INFO  [HomePage] returned newsletter submit button 
-2015-03-20 17:52:29,830 INFO  [HomePage] returned footer - women 
-2015-03-20 17:52:29,980 INFO  [HomePage] returned footer - specials 
-2015-03-20 17:52:30,090 INFO  [HomePage] returned footer - new products 
-2015-03-20 17:52:30,170 INFO  [HomePage] returned footer - best sellers 
-2015-03-20 17:52:30,290 INFO  [HomePage] returned footer - new products 
-2015-03-20 17:52:30,340 INFO  [HomePage] returned footer - Contact us 
-2015-03-20 17:52:30,460 INFO  [HomePage] returned footer - Terms and conditions of use 
-2015-03-20 17:52:30,580 INFO  [HomePage] returned footer - About us 
-2015-03-20 17:52:30,701 INFO  [HomePage] returned footer - Sitemap 
-2015-03-20 17:52:30,811 INFO  [HomePage] returned footer - My account 
-2015-03-20 17:52:30,931 INFO  [HomePage] returned footer - My orders 
-2015-03-20 17:52:31,061 INFO  [HomePage] returned footer - My credit slips 
-2015-03-20 17:52:31,181 INFO  [HomePage] returned footer - My addresses 
-2015-03-20 17:52:31,321 INFO  [HomePage] returned footer - My personal info 
-2015-03-20 17:52:31,381 INFO  [HomePage] returned footer - skype 
-2015-03-20 17:52:31,431 INFO  [HomePage] returned footer - email 
-2015-03-20 17:52:31,471 INFO  [HomePage] Returned tabPopular element 
-2015-03-20 17:52:31,747 INFO  [HomePage] Returned tabBestSellers element 
-2015-03-20 17:52:31,952 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:38:18,312 INFO  [ValidateRegistration] Getting website 
+2015-03-23 11:38:19,518 INFO  [ValidateRegistration] 1R row 1 column 0 
+2015-03-23 11:38:19,519 INFO  [ValidateRegistration]  row 1 column 1 
+2015-03-23 11:38:19,520 INFO  [ValidateRegistration]  row 1 column 2 
+2015-03-23 11:38:19,520 INFO  [ValidateRegistration]  row 1 column 3 
+2015-03-23 11:38:19,520 INFO  [ValidateRegistration]  row 1 column 4 
+2015-03-23 11:38:19,520 INFO  [ValidateRegistration]  row 1 column 5 
+2015-03-23 11:38:19,520 INFO  [ValidateRegistration]  row 1 column 6 
+2015-03-23 11:38:19,521 INFO  [ValidateRegistration]  row 1 column 7 
+2015-03-23 11:38:19,522 INFO  [ValidateRegistration]  row 1 column 8 
+2015-03-23 11:38:19,522 INFO  [ValidateRegistration]  row 1 column 9 
+2015-03-23 11:38:19,522 INFO  [ValidateRegistration]  row 1 column 10 
+2015-03-23 11:38:19,523 INFO  [ValidateRegistration]  row 1 column 11 
+2015-03-23 11:38:19,523 INFO  [ValidateRegistration]  row 1 column 12 
+2015-03-23 11:38:19,525 INFO  [ValidateRegistration]  row 1 column 13 
+2015-03-23 11:38:19,526 INFO  [ValidateRegistration]  row 1 column 14 
+2015-03-23 11:38:19,526 INFO  [ValidateRegistration]  row 1 column 15 
+2015-03-23 11:38:19,527 INFO  [ValidateRegistration]  row 1 column 16 
+2015-03-23 11:38:19,527 INFO  [ValidateRegistration]  row 1 column 17 
+2015-03-23 11:38:19,527 INFO  [ValidateRegistration]  row 1 column 18 
+2015-03-23 11:38:19,527 INFO  [ValidateRegistration]  row 1 column 19 
+2015-03-23 11:38:19,527 INFO  [ValidateRegistration]  row 1 column 20 
+2015-03-23 11:38:19,528 INFO  [ValidateRegistration]  row 1 column 21 
+2015-03-23 11:38:19,529 INFO  [ValidateRegistration]  row 1 column 22 
+2015-03-23 11:38:19,529 INFO  [ValidateRegistration] 2R row 2 column 0 
+2015-03-23 11:38:19,529 INFO  [ValidateRegistration] mr row 2 column 1 
+2015-03-23 11:38:19,529 INFO  [ValidateRegistration] kris row 2 column 2 
+2015-03-23 11:38:19,530 INFO  [ValidateRegistration]  row 2 column 3 
+2015-03-23 11:38:19,530 INFO  [ValidateRegistration]  row 2 column 4 
+2015-03-23 11:38:19,530 INFO  [ValidateRegistration]  row 2 column 5 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 1.0 row 2 column 6 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 2.0 row 2 column 7 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 1899.0 row 2 column 8 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] kris row 2 column 9 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] gil row 2 column 10 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] company row 2 column 11 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 12 Rosepark row 2 column 12 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration]  row 2 column 13 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] Balbriggan row 2 column 14 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 1.0 row 2 column 15 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 4567.0 row 2 column 16 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration]  row 2 column 17 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] lalalala row 2 column 18 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 018415267 row 2 column 19 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 087556644 row 2 column 20 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration]  row 2 column 21 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration]  row 2 column 22 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] 3R row 3 column 0 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] mrs row 3 column 1 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration]  row 3 column 2 
+2015-03-23 11:38:19,536 INFO  [ValidateRegistration] gil row 3 column 3 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] test@hot.com row 3 column 4 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 5 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 2.0 row 3 column 6 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 3.0 row 3 column 7 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 1900.0 row 3 column 8 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 9 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] gil row 3 column 10 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 11 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 12 Rosepark row 3 column 12 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 13 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 14 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 2.0 row 3 column 15 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 45678.0 row 3 column 16 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 21.0 row 3 column 17 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 18 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 19 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 087556645 row 3 column 20 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] me@hot.com row 3 column 21 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 3 column 22 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 4R row 4 column 0 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 1 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] kris row 4 column 2 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 3 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] test@hot.com row 4 column 4 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 5 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 3.0 row 4 column 6 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 4.0 row 4 column 7 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 2000.0 row 4 column 8 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] kris row 4 column 9 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 10 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] company row 4 column 11 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 12 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 12 Rosepark row 4 column 13 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] Balbriggan row 4 column 14 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 3.0 row 4 column 15 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 16 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 17 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] lalalala row 4 column 18 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration] 018415267 row 4 column 19 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 20 
+2015-03-23 11:38:19,546 INFO  [ValidateRegistration]  row 4 column 21 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 4 column 22 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 5R row 5 column 0 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] mr row 5 column 1 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 2 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] gil row 5 column 3 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] test@hot.com row 5 column 4 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 12345.0 row 5 column 5 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 6 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 5.0 row 5 column 7 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 6.0 row 5 column 8 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 9 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] gil row 5 column 10 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 11 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 12 Rosepark row 5 column 12 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 13 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] Balbriggan row 5 column 14 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 4.0 row 5 column 15 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 45678.0 row 5 column 16 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 1.0 row 5 column 17 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 18 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 19 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 087556644 row 5 column 20 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] me@hot.com row 5 column 21 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 5 column 22 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 6R row 6 column 0 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] mrs row 6 column 1 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] kris row 6 column 2 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] gil row 6 column 3 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] test@hot.com row 6 column 4 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 6 column 5 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 5.0 row 6 column 6 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 6 column 7 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 2014.0 row 6 column 8 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] kris row 6 column 9 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] gil row 6 column 10 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] company row 6 column 11 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 12 Rosepark row 6 column 12 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 6 column 13 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 6 column 14 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 5.0 row 6 column 15 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 6 column 16 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 6 column 17 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration]  row 6 column 18 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 018415267 row 6 column 19 
+2015-03-23 11:38:19,556 INFO  [ValidateRegistration] 087556645 row 6 column 20 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 6 column 21 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 6 column 22 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 7R row 7 column 0 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 1 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 2 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 3 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] test@hot.com row 7 column 4 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 12345.0 row 7 column 5 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 6.0 row 7 column 6 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 7.0 row 7 column 7 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 8 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] kris row 7 column 9 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 10 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 11 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 12 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 12 Rosepark row 7 column 13 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] Balbriggan row 7 column 14 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 6.0 row 7 column 15 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 45678.0 row 7 column 16 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 21.0 row 7 column 17 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] lalalala row 7 column 18 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 19 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 20 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] me@hot.com row 7 column 21 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 7 column 22 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 8R row 8 column 0 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] mr row 8 column 1 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] kris row 8 column 2 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] gil row 8 column 3 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 4 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 5 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 7.0 row 8 column 6 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 8.0 row 8 column 7 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 2015.0 row 8 column 8 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 9 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] gil row 8 column 10 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] company row 8 column 11 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 12 Rosepark row 8 column 12 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 13 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] Balbriggan row 8 column 14 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 7.0 row 8 column 15 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 16 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 17 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 18 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 018415267 row 8 column 19 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 087556644 row 8 column 20 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 21 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 8 column 22 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 9R row 9 column 0 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] mrs row 9 column 1 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration]  row 9 column 2 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] gil row 9 column 3 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] test@hot.com row 9 column 4 
+2015-03-23 11:38:19,566 INFO  [ValidateRegistration] 12345.0 row 9 column 5 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 8.0 row 9 column 6 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 9.0 row 9 column 7 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 10.0 row 9 column 8 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] kris row 9 column 9 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 10 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 11 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 12 Rosepark row 9 column 12 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 13 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 14 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 8.0 row 9 column 15 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 45678.0 row 9 column 16 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 21.0 row 9 column 17 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 18 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 19 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 087556645 row 9 column 20 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 21 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 9 column 22 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 10R row 10 column 0 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 10 column 1 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] kris row 10 column 2 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 10 column 3 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 10 column 4 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration]  row 10 column 5 
+2015-03-23 11:38:19,576 INFO  [ValidateRegistration] 9.0 row 10 column 6 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 10.0 row 10 column 7 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 2016.0 row 10 column 8 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 10 column 9 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] gil row 10 column 10 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] company row 10 column 11 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 10 column 12 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12 Rosepark row 10 column 13 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] Balbriggan row 10 column 14 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 9.0 row 10 column 15 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 10 column 16 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 10 column 17 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] allala row 10 column 18 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 018415267 row 10 column 19 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 10 column 20 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] me@hot.com row 10 column 21 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 10 column 22 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 11R row 11 column 0 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] mr row 11 column 1 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 2 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] gil row 11 column 3 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] test@hot.com row 11 column 4 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12345.0 row 11 column 5 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 10.0 row 11 column 6 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 11.0 row 11 column 7 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12.0 row 11 column 8 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 9 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 10 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 11 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12 Rosepark row 11 column 12 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 13 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] Balbriggan row 11 column 14 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 15 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 45678.0 row 11 column 16 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 17 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 18 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 19 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 087556644 row 11 column 20 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 21 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 11 column 22 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12R row 12 column 0 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] mrs row 12 column 1 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] kris row 12 column 2 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] gil row 12 column 3 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 4 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12345.0 row 12 column 5 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 11.0 row 12 column 6 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12.0 row 12 column 7 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 8 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 9 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] gil row 12 column 10 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] company row 12 column 11 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 12 Rosepark row 12 column 12 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 13 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 14 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 15 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 16 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 21.0 row 12 column 17 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration]  row 12 column 18 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 018415267 row 12 column 19 
+2015-03-23 11:38:19,586 INFO  [ValidateRegistration] 087556645 row 12 column 20 
+2015-03-23 11:38:19,596 INFO  [ValidateRegistration]  row 12 column 21 
+2015-03-23 11:38:19,596 INFO  [ValidateRegistration]  row 12 column 22 
+2015-03-23 11:38:19,696 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:38:22,308 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:38:23,768 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:38:24,018 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:38:25,708 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:38:27,058 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:38:27,568 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:38:27,898 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:38:28,418 INFO  [LogInPage] Returned element email 
+2015-03-23 11:38:28,928 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:38:29,558 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:38:30,058 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:38:30,558 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:38:30,768 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:38:31,118 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:38:31,508 INFO  [LogInPage] Returned element company 
+2015-03-23 11:38:31,958 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:38:32,298 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:38:33,358 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:38:33,568 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:38:34,468 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:38:34,798 INFO  [LogInPage] Returned element other 
+2015-03-23 11:38:35,178 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:38:35,538 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:38:35,878 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:38:36,308 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:38:39,528 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:38:42,108 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:38:42,618 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:38:42,838 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:38:44,541 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:38:45,321 INFO  [LogInPage] Returned element id_gender1 
+2015-03-23 11:38:45,771 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:38:46,151 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:38:46,601 INFO  [LogInPage] Returned element email 
+2015-03-23 11:38:47,161 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:38:47,841 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:38:48,361 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:38:48,891 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:38:49,111 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:38:49,481 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:38:49,841 INFO  [LogInPage] Returned element company 
+2015-03-23 11:38:50,321 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:38:50,701 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:38:51,831 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:38:52,031 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:38:52,941 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:38:53,261 INFO  [LogInPage] Returned element other 
+2015-03-23 11:38:53,631 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:38:54,021 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:38:54,401 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:38:54,821 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:38:57,761 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:39:00,161 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:39:00,681 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:39:00,891 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:39:02,991 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:39:03,431 INFO  [LogInPage] Returned element id_gender2 
+2015-03-23 11:39:03,851 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:39:04,221 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:39:04,671 INFO  [LogInPage] Returned element email 
+2015-03-23 11:39:05,211 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:39:05,851 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:39:06,351 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:39:06,891 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:39:07,131 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:39:07,481 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:39:07,861 INFO  [LogInPage] Returned element company 
+2015-03-23 11:39:08,291 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:39:08,691 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:39:09,771 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:39:09,991 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:39:10,881 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:39:11,371 INFO  [LogInPage] Returned element other 
+2015-03-23 11:39:11,731 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:39:12,101 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:39:12,481 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:39:12,951 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:39:16,261 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:39:18,871 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:39:19,351 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:39:19,571 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:39:21,371 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:39:22,001 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:39:22,421 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:39:22,791 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:39:23,241 INFO  [LogInPage] Returned element email 
+2015-03-23 11:39:23,861 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:39:24,551 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:39:25,051 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:39:25,561 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:39:25,781 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:39:26,171 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:39:26,521 INFO  [LogInPage] Returned element company 
+2015-03-23 11:39:26,991 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:39:27,351 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:39:28,541 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:39:28,751 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:39:29,661 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:39:29,981 INFO  [LogInPage] Returned element other 
+2015-03-23 11:39:30,361 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:39:30,761 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:39:31,111 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:39:31,561 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:39:34,831 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:39:37,491 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:39:38,011 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:39:38,241 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:39:40,291 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:39:40,771 INFO  [LogInPage] Returned element id_gender1 
+2015-03-23 11:39:41,221 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:39:41,651 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:39:42,201 INFO  [LogInPage] Returned element email 
+2015-03-23 11:39:42,821 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:39:43,461 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:39:43,961 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:39:44,521 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:39:44,801 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:39:45,271 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:39:45,697 INFO  [LogInPage] Returned element company 
+2015-03-23 11:39:46,207 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:39:46,677 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:39:47,907 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:39:48,157 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:39:49,207 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:39:49,547 INFO  [LogInPage] Returned element other 
+2015-03-23 11:39:49,967 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:39:50,397 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:39:50,877 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:39:51,397 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:39:55,207 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:39:57,909 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:39:58,499 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:39:58,769 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:40:00,469 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:40:01,299 INFO  [LogInPage] Returned element id_gender2 
+2015-03-23 11:40:01,811 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:40:02,231 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:40:02,741 INFO  [LogInPage] Returned element email 
+2015-03-23 11:40:03,401 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:40:04,131 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:40:04,711 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:40:05,281 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:40:05,521 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:40:05,971 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:40:06,431 INFO  [LogInPage] Returned element company 
+2015-03-23 11:40:06,971 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:40:07,391 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:40:08,713 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:40:08,983 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:40:10,203 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:40:10,563 INFO  [LogInPage] Returned element other 
+2015-03-23 11:40:10,943 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:40:11,393 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:40:11,843 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:40:12,393 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:40:15,865 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:40:18,545 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:40:19,075 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:40:19,325 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:40:21,385 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:40:21,915 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:40:22,315 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:40:22,655 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:40:23,145 INFO  [LogInPage] Returned element email 
+2015-03-23 11:40:23,755 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:40:24,495 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:40:25,085 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:40:25,635 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:40:25,885 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:40:26,295 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:40:26,715 INFO  [LogInPage] Returned element company 
+2015-03-23 11:40:27,215 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:40:27,635 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:40:28,925 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:40:29,165 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:40:30,225 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:40:30,575 INFO  [LogInPage] Returned element other 
+2015-03-23 11:40:31,015 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:40:31,425 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:40:31,835 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:40:32,345 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:40:36,085 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:40:38,705 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:40:39,255 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:40:39,515 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:40:41,585 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:40:42,105 INFO  [LogInPage] Returned element id_gender1 
+2015-03-23 11:40:42,585 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:40:43,097 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:40:43,597 INFO  [LogInPage] Returned element email 
+2015-03-23 11:40:44,197 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:40:44,967 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:40:45,567 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:40:46,137 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:40:46,367 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:40:46,797 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:40:47,197 INFO  [LogInPage] Returned element company 
+2015-03-23 11:40:47,707 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:40:48,137 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:40:49,397 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:40:49,647 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:40:50,647 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:40:51,007 INFO  [LogInPage] Returned element other 
+2015-03-23 11:40:51,417 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:40:51,847 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:40:52,277 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:40:52,797 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:40:56,277 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:40:58,997 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:40:59,537 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:40:59,787 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:41:01,927 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:41:02,457 INFO  [LogInPage] Returned element id_gender2 
+2015-03-23 11:41:02,937 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:41:03,327 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:41:03,827 INFO  [LogInPage] Returned element email 
+2015-03-23 11:41:04,397 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:41:05,067 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:41:05,577 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:41:06,087 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:41:06,307 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:41:06,697 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:41:07,107 INFO  [LogInPage] Returned element company 
+2015-03-23 11:41:07,597 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:41:08,017 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:41:09,117 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:41:09,337 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:41:10,287 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:41:10,617 INFO  [LogInPage] Returned element other 
+2015-03-23 11:41:10,977 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:41:11,357 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:41:11,747 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:41:12,177 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:41:15,587 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:41:18,507 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:41:19,007 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:41:19,227 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:41:21,117 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:41:21,857 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:41:22,297 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:41:22,697 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:41:23,157 INFO  [LogInPage] Returned element email 
+2015-03-23 11:41:23,717 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:41:24,407 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:41:24,937 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:41:25,497 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:41:25,727 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:41:26,097 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:41:26,487 INFO  [LogInPage] Returned element company 
+2015-03-23 11:41:26,957 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:41:27,327 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:41:28,507 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:41:28,727 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:41:29,727 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:41:30,067 INFO  [LogInPage] Returned element other 
+2015-03-23 11:41:30,457 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:41:30,847 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:41:31,227 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:41:31,767 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:41:35,057 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:41:37,657 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:41:38,167 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:41:38,397 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:41:40,207 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:41:40,927 INFO  [LogInPage] Returned element id_gender1 
+2015-03-23 11:41:41,347 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:41:41,727 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:41:42,207 INFO  [LogInPage] Returned element email 
+2015-03-23 11:41:42,777 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:41:43,447 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:41:44,027 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:41:44,537 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:41:44,797 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:41:45,197 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:41:45,587 INFO  [LogInPage] Returned element company 
+2015-03-23 11:41:46,077 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:41:46,567 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:41:47,767 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:41:48,007 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:41:48,987 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:41:49,337 INFO  [LogInPage] Returned element other 
+2015-03-23 11:41:49,717 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:41:50,107 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:41:50,527 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:41:50,987 INFO  [LogInPage] Returned element submitAccount 
+2015-03-23 11:42:03,287 INFO  [HomePage] Returned LogIn 
+2015-03-23 11:42:06,017 INFO  [LogInPage] Returned element email_create 
+2015-03-23 11:42:06,557 INFO  [LogInPage] Returned element SubmitCreate 
+2015-03-23 11:42:06,787 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-03-23 11:42:08,607 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:42:09,427 INFO  [LogInPage] Returned element id_gender2 
+2015-03-23 11:42:09,877 INFO  [LogInPage] Returned element customer_firstname 
+2015-03-23 11:42:10,257 INFO  [LogInPage] Returned element customer_lastname 
+2015-03-23 11:42:10,747 INFO  [LogInPage] Returned element email 
+2015-03-23 11:42:11,267 INFO  [LogInPage] Returned element passwd 
+2015-03-23 11:42:11,937 INFO  [LogInPage] Returned element uniform-days 
+2015-03-23 11:42:12,517 INFO  [LogInPage] Returned element uniform-months 
+2015-03-23 11:42:13,037 INFO  [LogInPage] Returned element uniform-years 
+2015-03-23 11:42:13,267 INFO  [LogInPage] Returned element firstname 
+2015-03-23 11:42:13,647 INFO  [LogInPage] Returned element lastname 
+2015-03-23 11:42:14,027 INFO  [LogInPage] Returned element company 
+2015-03-23 11:42:14,507 INFO  [LogInPage] Returned element address1 
+2015-03-23 11:42:14,917 INFO  [LogInPage] Returned element address2 
+2015-03-23 11:42:16,037 INFO  [LogInPage] Returned element uniform-id_state 
+2015-03-23 11:42:16,257 INFO  [LogInPage] Returned element postcode 
+2015-03-23 11:42:17,187 INFO  [LogInPage] Returned element uniform-id_country 
+2015-03-23 11:42:17,527 INFO  [LogInPage] Returned element other 
+2015-03-23 11:42:17,937 INFO  [LogInPage] Returned element phone 
+2015-03-23 11:42:18,347 INFO  [LogInPage] Returned element phone_mobile 
+2015-03-23 11:42:18,737 INFO  [LogInPage] Returned element alias 
+2015-03-23 11:42:19,197 INFO  [LogInPage] Returned element submitAccount 
