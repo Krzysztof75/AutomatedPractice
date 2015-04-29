@@ -56,6 +56,7 @@ public class ValidateLogIn {
 		
 		if(map.get("create-email").isEmpty()){
 
+	
 			LogInPage.emailSignInBox().sendKeys((String)map.get("signIn-email"));
 			LogInPage.password().sendKeys((String)map.get("password"));
 			LogInPage.signIn_btn().click();

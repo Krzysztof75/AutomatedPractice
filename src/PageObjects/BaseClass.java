@@ -14,13 +14,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public abstract class BaseClass {
 	
 	static WebDriver driver;
-	public static WebDriverWait wait;
 	static Properties prop = new Properties();
 	static Logger log;
 
 	public BaseClass(WebDriver driver){
 		BaseClass.driver = driver;
-		wait = new WebDriverWait(driver,20);
 		log = Logger.getLogger(BaseClass.class.getName());
 		try {
 			prop.load(new FileInputStream(new File("prop.properties")));

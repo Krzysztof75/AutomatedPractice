@@ -18,17 +18,18 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.w3c.dom.Document;
 
+import Utility.MyLog;
+
 public class HomePage extends BaseClass {
-
-
+	
 	static Logger log = LogManager.getLogger(HomePage.class.getName());
 
-
+    private static WebElement element;
 
 	public HomePage(WebDriver driver){
 		super(driver);
 
-		DOMConfigurator.configure("log4j.xml");
+//		DOMConfigurator.configure("log4j.xml");
 	}
 
 	/*
@@ -36,86 +37,84 @@ public class HomePage extends BaseClass {
 	 */
 	public static class Header{
 
-		private static WebElement headerElement;
-
 		// return Contact us
 		public static WebElement contactUs(){
 			try{
-				headerElement = driver.findElement(By.linkText(prop.getProperty("ContactUs_linkText")));
+				 element = driver.findElement(By.linkText(prop.getProperty("ContactUs_linkText")));
 			} catch (NoSuchElementException e){
 				log.error("Could not find contactUs element");
 				throw e;
 			}
 			log.info("Returned ContactUs");
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		// return SignIn
 		public static WebElement LogIn(){
 
 			try{
-				headerElement = driver.findElement(By.linkText(prop.getProperty("LogIn_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("LogIn_linkText")));
 			} catch (NoSuchElementException e){
 				log.error("Could not find element Sign in");
 				throw e;
 			}
 			log.info("Returned LogIn");
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		public static WebElement searchBox(){
 
 			try{
-				headerElement = driver.findElement(By.id(prop.getProperty("searchBox_id")));
+				element = driver.findElement(By.id(prop.getProperty("searchBox_id")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element search box");
 				throw e;
 			}
 			log.info("Returned Search box");
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		// return search button
 		public static WebElement search(){
 
 			try{
-				headerElement = driver.findElement(By.name(prop.getProperty("search_btn_name")));
+				element = driver.findElement(By.name(prop.getProperty("search_btn_name")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element search");
 				throw e;
 			}
 			log.info("Returned Search");
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		public static WebElement cart(){
 			try{
-				headerElement = driver.findElement(By.xpath(prop.getProperty("cart_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("cart_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cart");
 				throw e;
 			}
 			log.info("Returned cart");
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		//return Women element from block_top_menu
 		public static WebElement women (){
 
 			try{
-				headerElement = driver.findElement(By.xpath(prop.getProperty("women_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("women_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Women in the main menu");
 				throw e;
 			}
 			log.info("Returned Women");
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		// return elements from Women drop down menu 
@@ -133,7 +132,7 @@ public class HomePage extends BaseClass {
 			case "tops":
 
 				try{
-					headerElement = driver.findElement(By.xpath(prop.getProperty("women_tops_xpath")));
+					element = driver.findElement(By.xpath(prop.getProperty("women_tops_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element top under Women menu");
 					throw e;
@@ -144,7 +143,8 @@ public class HomePage extends BaseClass {
 			case "t-shirts":
 
 				try{
-					headerElement = driver.findElement(By.linkText(prop.getProperty("women_t-shirts_linkText")));
+					Utility.ExplicitWait.setInSeconds(driver, 3);
+					element = driver.findElement(By.linkText(prop.getProperty("women_t-shirts_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element t-shirts under Women menu");
 					throw e;
@@ -155,7 +155,7 @@ public class HomePage extends BaseClass {
 			case "blouses":
 
 				try{
-					headerElement = driver.findElement(By.linkText(prop.getProperty("women_blouses_linkText")));
+					element = driver.findElement(By.xpath(prop.getProperty("women_blouses_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element blouses under Women menu");
 					throw e;
@@ -166,7 +166,7 @@ public class HomePage extends BaseClass {
 			case "dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(prop.getProperty("women_dresses_xpath")));
+					element = driver.findElement(By.xpath(prop.getProperty("women_dresses_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element dresses under Women menu");
 				}
@@ -176,9 +176,10 @@ public class HomePage extends BaseClass {
 			case "casual dresses":
 
 				try{
-					headerElement = driver.findElement(By.linkText(prop.getProperty("women_casual_dresses_linkText")));
+					element = driver.findElement(By.linkText(prop.getProperty("women_casual_dresses_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Casual dresses under Women menu");
+					Utility.Camera.takePicture(driver);
 					throw e;
 				}
 				log.info("Returned Women - Casual dresses");
@@ -187,7 +188,7 @@ public class HomePage extends BaseClass {
 			case "evening dresses":
 
 				try{
-					headerElement = driver.findElement(By.linkText(prop.getProperty("women_evening_dresses_linkText")));
+					element = driver.findElement(By.linkText(prop.getProperty("women_evening_dresses_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Evening dresses under Women menu");
 					throw e;
@@ -198,7 +199,7 @@ public class HomePage extends BaseClass {
 			case "summer dresses":
 
 				try{
-					headerElement = driver.findElement(By.linkText(prop.getProperty("women_summer_dresses_linkText")));
+					element = driver.findElement(By.linkText(prop.getProperty("women_summer_dresses_linkText")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Summer dresses under Women menu");
 					throw e;
@@ -208,23 +209,23 @@ public class HomePage extends BaseClass {
 
 			default:
 				log.warn("wrong argument passed to Women(String option");
-				headerElement = null;
+				element = null;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+			Utility.ExplicitWait.setInSeconds(driver, 3).until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		// return element Dresses from block_top_menu
 		public static WebElement dresses(){
 
 			try{
-				headerElement = driver.findElement(By.xpath(prop.getProperty("dresses-xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("dresses-xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Dresses in the main menu");
 			}
 			log.info("Returned Dresses");
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		// return element from Dresses drop down menu
@@ -241,7 +242,7 @@ public class HomePage extends BaseClass {
 			case "casual dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(prop.getProperty("dresses_casual_dresses-xpath")));
+					element = driver.findElement(By.xpath(prop.getProperty("dresses_casual_dresses-xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Casual Dresses under Dresses menu");
 					throw e;
@@ -252,7 +253,7 @@ public class HomePage extends BaseClass {
 			case "evening dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(prop.getProperty("dresses_evening_dresses_xpath")));
+					element = driver.findElement(By.xpath(prop.getProperty("dresses_evening_dresses_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Evening Dresses under Dresses menu");
 					throw e;
@@ -263,7 +264,7 @@ public class HomePage extends BaseClass {
 			case "summer dresses":
 
 				try{
-					headerElement = driver.findElement(By.xpath(prop.getProperty("dresses_summer_dresses_xpath")));
+					element = driver.findElement(By.xpath(prop.getProperty("dresses_summer_dresses_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element Summer Dresses under Dresses menu");
 					throw e;
@@ -272,28 +273,26 @@ public class HomePage extends BaseClass {
 				break;
 
 			default: 
-				log.warn("wrong argument passed to Dresses(String option");
-				headerElement = null; 
+				log.warn("wrong argument passed to Dresses(String option)");
+				element = null; 
 			}   
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 		public static WebElement tShirts(){
 			try{
-				headerElement = driver.findElement(By.xpath(prop.getProperty("tShirts-xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("tShirts-xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element T-shirts in the main menu");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(headerElement));
-			return headerElement;
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 	}
 
 	public static class ContainerTop{
-
-		private static WebElement containerElement;
 
 		public static boolean validatePopular(){
 			boolean result;
@@ -324,104 +323,100 @@ public class HomePage extends BaseClass {
 
 		public static WebElement slider(){
 			try{
-				containerElement = driver.findElement(By.xpath(prop.getProperty("slider_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("slider_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Slider");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
-			return containerElement;
+			Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.elementToBeClickable(element));
+			return element;
 		}
 
 		public static WebElement sliderNext(){
 			try{										
-				containerElement = driver.findElement(By.xpath(prop.getProperty("slider_next_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("slider_next_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Slider Next");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned element slider next");
-			return containerElement;
+			return element;
 		}
 
 		public static WebElement sliderPrev(){
 			try{
-				containerElement = driver.findElement(By.xpath(prop.getProperty("slider_prev_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("slider_prev_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Slider Next");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned element slider next");
-			return containerElement;
+			return element;
 		}
 		
 		public static WebElement shopNow(){
 			try{
-				containerElement = driver.findElement(By.xpath(prop.getProperty("shopNow_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("shopNow_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element shop-now");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned element shop-now");
-			return containerElement;
+			return element;
 		}
 
 		public static WebElement contentTop(){
 			try{
-				containerElement = driver.findElement(By.xpath(prop.getProperty("content_Top_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("content_Top_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Content top");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned content Top");
-			return containerElement;
+			return element;
 		}
 
 		public static WebElement contentButton(){
 			try{
-				containerElement = driver.findElement(By.xpath(prop.getProperty("content_Button_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("content_Button_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Content button");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned content Button");
-			return containerElement;
+			return element;
 		}
 
 		public static WebElement tabPopular(){
 			try{
-				containerElement = driver.findElement(By.xpath(prop.getProperty("tabPopular_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("tabPopular_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element tabPopular button");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
 			log.info("Returned tabPopular element");
-			return containerElement;
+			return element;
 
 		}
 
 		public static WebElement tabBestSellers(){
 			try{
-				containerElement = driver.findElement(By.xpath(prop.getProperty("tabBestSellers_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("tabBestSellers_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element tabBestSellers button");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(containerElement));
 			log.info("Returned tabBestSellers element");
-			return containerElement;
+			return element;
 		}
 	}
 
 	public static class Product{
-
-		private static WebElement product;
 
 		static Actions action = new Actions(driver);
 
@@ -466,47 +461,47 @@ public class HomePage extends BaseClass {
 			public static String price(){
 						
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_price_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse - price");
 					throw e;
 				}	
 				log.info("Returned Blouse - price");
-				return product.getAttribute("innerHTML").trim();		
+				return element.getAttribute("innerHTML").trim();		
 			}
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_image_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse Image");
 					throw e;
 				}	
 				log.info("Returned Blouse - image");
-				return product;		
+				return element;		
 			}
 
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_addToCart_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse - addCart");
 					throw e;
 				}	
 				log.info("Returned Blouse - addCart");
-				return product;		
+				return element;		
 			}
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_more_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Blouse - more");
 					throw e;
 				}	
 				log.info("Returned Blouse - more");
-				return product;		
+				return element;		
 			}
 		}
 		public static class FadedShortSleeveTshirts{
@@ -528,47 +523,47 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_price_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - price");
 					throw e;
 				}	
 				log.info("Returned Faded Short Sleeve T-shirts price");
-				return product.getAttribute("innerHTML").trim();		
+				return element.getAttribute("innerHTML").trim();		
 			}
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_image_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_image_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - image");
 					throw e;
 				}	
 				log.info("Returned Faded Short Sleeve T-shirts - image");
-				return product;		
+				return element;		
 			}
 
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_addToCart_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_addToCart_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - addCart");
 					throw e;
 				}	
 				log.info("Returned Faded Short Sleeve T-shirts - addCart");
-				return product;		
+				return element;		
 			}
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_more_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Faded Short Sleeve T-shirts - more");
 					throw e;
 				}	
 				log.info("Returned Faded Short Sleeve T-shirts - more");
-				return product;		
+				return element;		
 			}
 		}
 
@@ -592,47 +587,47 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_price_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress - Price");
 					throw e;
 				}	
 				log.info("Returned Printed Chiffon Dress - price");
-				return product.getAttribute("innerHTML").trim();		
+				return element.getAttribute("innerHTML").trim();		
 			}
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_image_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress Image");
 					throw e;
 				}	
 				log.info("Returned Printed Chiffon Dress - Image");
-				return product;		
+				return element;		
 			}
 
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_addToCart_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress addCart");
 					throw e;
 				}	
 				log.info("Returned Printed Chiffon Dress - addCart");
-				return product;		
+				return element;		
 			}
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_more_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Chiffon Dress - more");
 					throw e;
 				}	
 				log.info("Returned Printed Chiffon Dress - more");
-				return product;		
+				return element;		
 			}
 		}
 
@@ -655,47 +650,47 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_price_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short - Price");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Short - price");
-				return product.getAttribute("innerHTML").trim();		
+				return element.getAttribute("innerHTML").trim();		
 			}
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_image_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short Image");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Short - Image");
-				return product;		
+				return element;		
 			}
 
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_addToCart_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short addCart");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Short - addCart");
-				return product;		
+				return element;		
 			}
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_more_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Short - more");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Short - more");
-				return product;		
+				return element;		
 			}
 		}
 
@@ -718,47 +713,47 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_price_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long - Price");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Long - price");
-				return product.getAttribute("innerHTML").trim();		
+				return element.getAttribute("innerHTML").trim();		
 			}
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_image_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_image_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long Image");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Long - Image");
-				return product;		
+				return element;		
 			}
 
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_addToCart_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long addCart");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Long - addCart");
-				return product;		
+				return element;		
 			}
 			public static WebElement more(){
 				hover.perform();						
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_more_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Dress-Long - more");
 					throw e;
 				}	
 				log.info("Returned Printed Dress-Long - more");
-				return product;		
+				return element;		
 			}
 		}
 
@@ -781,47 +776,47 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_price_xpath").toString())));	
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short - Price");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-short - price");
-				return product.getAttribute("innerHTML").trim();		
+				return element.getAttribute("innerHTML").trim();		
 			}
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_image_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short Image");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-short - Image");
-				return product;		
+				return element;		
 			}
 
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_addToCart_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short addCart");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-short - addCart");
-				return product;		
+				return element;		
 			}
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_more_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-short - more");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-short - more");
-				return product;		
+				return element;		
 			}
 		}
 
@@ -844,421 +839,417 @@ public class HomePage extends BaseClass {
 
 			public static String price(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_price_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_price_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long - Price");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-Long - price");
-				return product.getAttribute("innerHTML").trim();		
+				return element.getAttribute("innerHTML").trim();		
 			}
 
 			public static WebElement image(){
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_image_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_image_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long Image");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-Long - Image");
-				return product;		
+				return element;		
 			}
 
 			public static WebElement addToCart(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_addToCart_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long addCart");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-Long - addCart");
-				return product;		
+				return element;		
 			}
 			public static WebElement more(){
 				hover.perform();
 				try{
-					product = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_more_xpath").toString())));
+					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_more_xpath").toString())));
 				}catch(NoSuchElementException e){
 					log.error("Could not find Printed Summer Dress-Long - more");
 					throw e;
 				}	
 				log.info("Returned Printed Summer Dress-Long - more");
-				return product;		
+				return element;		
 			}
 		}
 	}
 	public static class ContainerButton{
 
-		public static WebElement contButton;
-
 		public static WebElement Cont1(){
 			try{
-				contButton = driver.findElement(By.xpath(prop.getProperty("Cont1_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("Cont1_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont1");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(contButton));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned cont1");
-			return contButton;
+			return element;
 		}
 
 		public static WebElement Cont2(){
 			try{
 
-				contButton = driver.findElement(By.xpath(prop.getProperty("Cont2_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("Cont2_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element Cont2");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(contButton));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned cont2");
-			return contButton;
+			return element;
 		}
 
 		public static WebElement Cont3(){
 			try{
-				contButton = driver.findElement(By.xpath(prop.getProperty("Cont3_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("Cont3_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont3");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(contButton));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned cont3");
-			return contButton;
+			return element;
 		}
 
 		public static WebElement Cont4(){
 			try{
-				contButton = driver.findElement(By.xpath(prop.getProperty("Cont4_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("Cont4_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont4");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(contButton));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned cont4");
-			return contButton;
+			return element;
 		}
 
 		public static WebElement Cont5(){
 			try{
-				contButton = driver.findElement(By.xpath(prop.getProperty("Cont5_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("Cont5_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element cont5");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(contButton));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned cont5");
-			return contButton;
+			return element;
 		}
 
 	}
 
 	public static class Footer{
 
-		private static WebElement fotterElement;
-
 		public static class Newsletter{
 
 			public static WebElement inputBox(){
 				try{
-					fotterElement = driver.findElement(By.id(prop.getProperty("inputBox_id")));
+					element = driver.findElement(By.id(prop.getProperty("inputBox_id")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element newsletter");
 					throw e;
 				}
-				wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//				wait.until(ExpectedConditions.elementToBeClickable(element));
 				log.info("returned newsletter");
-				return fotterElement;
+				return element;
 			}
 
 			public static WebElement submit_btn(){
 				try{
-					fotterElement = driver.findElement(By.xpath(prop.getProperty("submit_btn_xpath")));
+					element = driver.findElement(By.xpath(prop.getProperty("submit_btn_xpath")));
 				} catch(NoSuchElementException e){
 					log.error("Could not find element newsletter submit button");
 					throw e;
 				}
-				wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//				wait.until(ExpectedConditions.elementToBeClickable(element));
 				log.info("returned newsletter submit button");
-				return fotterElement;
+				return element;
 
 			}
 		}
 
 		public static WebElement facebook(){
 			try{
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("facebook_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("facebook_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element facebook");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned facebook");
-			return fotterElement;
+			return element;
 
 		}
 
 		public static WebElement twitter(){
 			try{							
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("twitter_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("twitter_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element twitter");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned twitter");
-			return fotterElement;
+			return element;
 
 		}
 
 		public static WebElement youTube(){
 			try{					
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("youTube_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("youTube_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element youtube");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned youtube");
-			return fotterElement;
+			return element;
 		}
 
 		public static WebElement google(){
 			try{
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("google_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("google_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element google");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned google");
-			return fotterElement;
+			return element;
 
 		}
 
 		public static WebElement women(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("Footer_women_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("Footer_women_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - women");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - women");
-			return fotterElement;
+			return element;
 
 		}
 
 		public static WebElement specials(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("specials_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("specials_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - specials");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - specials");
-			return fotterElement;
+			return element;
 
 		}
 
 		public static WebElement newProducts(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("newProducts_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("newProducts_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - new products");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - new products");
-			return fotterElement;
+			return element;
 
 		}
 
 		public static WebElement bestSellers(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("bestSellers_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("bestSellers_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - best sellers");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - best sellers");
-			return fotterElement;
+			return element;
 
 		}
 		
 		public static WebElement ourStores(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("ourStores_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("ourStores_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - new products");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - new products");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement contactUs(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("contactUs-linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("contactUs-linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - Contact us");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - Contact us");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement termsCond(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("termsCond_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("termsCond_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - Terms and conditions of use");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - Terms and conditions of use");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement about(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("about_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("about_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - About us");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - About us");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement sitemap(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("sitemap_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("sitemap_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - Sitemap");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - Sitemap");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement myAccount(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("myAccount-linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("myAccount-linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My account");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My account");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement myOrders(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("myOrders_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("myOrders_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My orders");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My orders");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement myCreditSlips(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("myCreditSlips_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("myCreditSlips_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My credit slips");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My credit slips");
-			return fotterElement;
+			return element;
 
 	}
 
 		public static WebElement myAdresses(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("myAdresses_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("myAdresses_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My addresses");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My addresses");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement myPersonalInfo(){
 
 			try{
-				fotterElement = driver.findElement(By.linkText(prop.getProperty("myPersonalInfo_linkText")));
+				element = driver.findElement(By.linkText(prop.getProperty("myPersonalInfo_linkText")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - My personal info");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My personal info");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement skype(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("skype_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("skype_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - skype");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - skype");
-			return fotterElement;
+			return element;
 
 	}
 		
 		public static WebElement email(){
 
 			try{
-				fotterElement = driver.findElement(By.xpath(prop.getProperty("email_xpath")));
+				element = driver.findElement(By.xpath(prop.getProperty("email_xpath")));
 			} catch(NoSuchElementException e){
 				log.error("Could not find element footer - email");
 				throw e;
 			}
-			wait.until(ExpectedConditions.elementToBeClickable(fotterElement));
+//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - email");
-			return fotterElement;
+			return element;
 
 	}
 }

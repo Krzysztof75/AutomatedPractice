@@ -19,6 +19,11 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+
+import Utility.emailGenerator;
+import Utility.Camera;
 
 import com.google.common.base.Predicate;
 
@@ -30,12 +35,19 @@ public class test {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.automationpractice.com");
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+//		driver.manage().window().maximize();
+//		
 		HomePage page1 = new HomePage(driver);
 		LogInPage page2 = new LogInPage(driver);
 		
+		 System.out.println(HomePage.ContainerTop.validatePopular());
+		 
+		  HomePage.ContainerTop.tabBestSellers().click();
+//		  Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.elementToBeSelected(HomePage.ContainerTop.tabBestSellers()));
+//		  Utility.Camera.takePicture(driver);
+		  System.out.println(HomePage.ContainerTop.validateBestSeller());
+	  
 		
 // Fluent wait with custom predicate to conform the correct working of a slider
 		
@@ -159,7 +171,7 @@ public class test {
 //				    System.out.println("price " + HomePage.Product.Blouse.price());
 //				    System.out.println("image title " + HomePage.Product.Blouse.image().getAttribute("title")); 
 					// getting the alt attribute from the image element 
-					JavascriptExecutor js = (JavascriptExecutor)driver;
+//					JavascriptExecutor js = (JavascriptExecutor)driver;
 //				    final String scriptGetChecked = "return arguments[0].getAttribute('alt')";
 //				    WebElement image1 = HomePage.Product.Blouse.image();
 //				    String alt1 = (String) js.executeScript(scriptGetChecked, image1);
@@ -263,15 +275,15 @@ public class test {
 		
 		// confirm LogInPage elements work
 		
-		HomePage.Header.LogIn().click();
-		
-        System.out.println(LogInPage.emailCreateBox().getAttribute("name"));
-        System.out.println(LogInPage.emailSignInBox().getAttribute("name"));
-        System.out.println(LogInPage.password().getAttribute("name"));
-        System.out.println(LogInPage.create_btn().getText());
-        
-        LogInPage.emailCreateBox().sendKeys("22@hotmail.com");
-		LogInPage.create_btn().click();
+//		HomePage.Header.LogIn().click();
+//		
+//        System.out.println(LogInPage.emailCreateBox().getAttribute("name"));
+//        System.out.println(LogInPage.emailSignInBox().getAttribute("name"));
+//        System.out.println(LogInPage.password().getAttribute("name"));
+//        System.out.println(LogInPage.create_btn().getText());
+//        
+//        LogInPage.emailCreateBox().sendKeys("22@hotmail.com");
+//		LogInPage.create_btn().click();
         
 		// these elements will become visible only if email entered and create_btn clicked
 		
@@ -317,30 +329,49 @@ public class test {
 //        LogInPage.years("0");
 //        Thread.sleep(2000);
         
-        LogInPage.title("mr");
-        LogInPage.firstName1().sendKeys("kris");
-        LogInPage.lastName1().sendKeys("gil");
-        LogInPage.email().clear();
-        LogInPage.email().sendKeys("email@lala.com");
-        LogInPage.password().sendKeys("password");
-        LogInPage.days("15");
-        LogInPage.months("5");
-        LogInPage.years("2005");
-        LogInPage.firstName2().sendKeys("firstName2");
-        LogInPage.lastName2().sendKeys("lastName2");
-        LogInPage.company().sendKeys("company");
-        LogInPage.address1().sendKeys("adress");
-        LogInPage.address2().sendKeys("adress2");
-        LogInPage.city().sendKeys("city");
-        LogInPage.state("3");
-        LogInPage.postcode().sendKeys("pcode");
-        LogInPage.country("21");
-        LogInPage.addInfo().sendKeys("additional info");
-        LogInPage.phone().sendKeys("018416274");
-        LogInPage.phoneMobile().sendKeys("0871633678");
-        LogInPage.alias().clear();
-        LogInPage.alias().sendKeys("alias");
-        Thread.sleep(3000);
+//        LogInPage.title("mr").click();
+//        LogInPage.title("mrs").click();
+//        LogInPage.firstName1().sendKeys("kris");
+//        LogInPage.lastName1().sendKeys("gil");
+//        LogInPage.email().clear();
+//        LogInPage.email().sendKeys("email@lala.com");
+//        LogInPage.password().sendKeys("password");
+//        LogInPage.days("15");
+//        LogInPage.months("5");
+//        LogInPage.years("2005");
+//        LogInPage.firstName2().sendKeys("firstName2");
+//        LogInPage.lastName2().sendKeys("lastName2");
+//        LogInPage.company().sendKeys("company");
+//        LogInPage.address1().sendKeys("adress");
+//        LogInPage.address2().sendKeys("adress2");
+//        LogInPage.city().sendKeys("city");
+//        LogInPage.state("1.0");
+//        Thread.sleep(2000);
+//        LogInPage.state("5.0");
+//        Thread.sleep(2000);
+//        LogInPage.state("10.0");
+//        Thread.sleep(2000);
+//        LogInPage.state("3");
+//        Thread.sleep(2000);
+//        LogInPage.state("50");
+//        Thread.sleep(2000);
+//        LogInPage.state("0");
+//        LogInPage.postcode().sendKeys("00000");
+//        LogInPage.country("21");
+//        LogInPage.addInfo().sendKeys("additional info");
+//        LogInPage.phone().sendKeys("018416274");
+//        LogInPage.phoneMobile().sendKeys("0871633678");
+//        LogInPage.alias().clear();
+//        LogInPage.alias().sendKeys("alias");
+		
+//		System.out.println(emailGenerator.generateEmail());
+//		System.out.println(emailGenerator.generateEmail());
+//		System.out.println(emailGenerator.generateEmail());
+//		System.out.println(emailGenerator.generateEmail());
+//		System.out.println(emailGenerator.generateEmail());
+//        Thread.sleep(6000);
+       
+        
 
 			driver.quit();
 

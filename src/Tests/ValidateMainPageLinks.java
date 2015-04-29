@@ -18,6 +18,7 @@ import org.openqa.selenium.firefox.internal.ProfilesIni;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
@@ -31,12 +32,14 @@ import com.google.common.base.Predicate;
 
 import PageObjects.BaseClass;
 import PageObjects.HomePage;
+import Utility.MyLog;
 
 public class ValidateMainPageLinks {
 	
 	static WebDriver driver;
 	static Logger log;
-	HomePage page; 
+	HomePage page;
+	WebDriverWait wait;
 	
   @Test
   // check the right title of the page this test may be redundant can combine with other test  
@@ -106,6 +109,7 @@ public class ValidateMainPageLinks {
   public void test8M(){
 	  HomePage.Header.women("tops").click();
 	  String expectedTitle ="Tops - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-tops link ok |");
@@ -115,6 +119,7 @@ public class ValidateMainPageLinks {
   public void test9M(){
 	  HomePage.Header.women("T-shirts").click();
 	  String expectedTitle ="T-shirts - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-t-shirts link ok |");
@@ -122,8 +127,11 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test10M(){
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women("Blouses")));
+	  Utility.Camera.takePicture(driver);
 	  HomePage.Header.women("Blouses").click();
 	  String expectedTitle ="Blouses - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-Blouses link ok |");
@@ -131,17 +139,22 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test11M(){
+	  Utility.ImplicitWait.switchOff();
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women("Dresses")));
 	  HomePage.Header.women("Dresses").click();
 	  String expectedTitle ="Dresses - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-Dresses link ok |");
+	  Utility.ImplicitWait.switchON();
   }
   
   @Test
   public void test12M(){
 	  HomePage.Header.women("Casual Dresses").click();
 	  String expectedTitle ="Casual Dresses - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-Casual Dresses link ok |");
@@ -149,8 +162,10 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test13M(){
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women("Evening Dresses")));
 	  HomePage.Header.women("Evening Dresses").click();
 	  String expectedTitle ="Evening Dresses - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-Evening Dresses link ok |");
@@ -158,8 +173,10 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test14M(){
+	  
 	  HomePage.Header.women("Summer Dresses").click();
 	  String expectedTitle ="Summer Dresses - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-Summer Dresses link ok |");
@@ -169,6 +186,7 @@ public class ValidateMainPageLinks {
   public void test15M(){
 	  HomePage.Header.dresses().click();
 	  String expectedTitle ="Dresses - My Store";
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-Dresses link ok |");
@@ -176,6 +194,7 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test16M(){
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.dresses("casual dresses")));
 	  HomePage.Header.dresses("casual dresses").click();
 	  String expectedTitle ="Casual Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
@@ -185,6 +204,7 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test17M(){
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.dresses("evening dresses")));
 	  HomePage.Header.dresses("evening dresses").click();
 	  String expectedTitle ="Evening Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
@@ -194,6 +214,7 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test18M(){
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.dresses("summer dresses")));
 	  HomePage.Header.dresses("summer dresses").click();
 	  String expectedTitle ="Summer Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
@@ -214,7 +235,6 @@ public class ValidateMainPageLinks {
   public void test20M(){
 	  HomePage.ContainerTop.slider().click();
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
-	  BaseClass.wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("Slider link ok |");
@@ -224,7 +244,7 @@ public class ValidateMainPageLinks {
   public void test21M(){
 	  HomePage.ContainerTop.contentTop().click();
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
-	  BaseClass.wait.until(ExpectedConditions.titleIs(expectedTitle));
+//    wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("ContainerTop-contentTop link ok |");
@@ -234,7 +254,7 @@ public class ValidateMainPageLinks {
   public void test22M(){
 	  HomePage.ContainerTop.contentButton().click();
 	  String expectedTitle ="PrestaShop - Free ecommerce software";
-	  BaseClass.wait.until(ExpectedConditions.titleIs(expectedTitle));
+//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("ContainerTop-contentButton link ok |");
@@ -424,7 +444,7 @@ public class ValidateMainPageLinks {
 	  String expectedTitle ="Stores - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
-	  Reporter.log("Footer-our stores link ok |");
+	  Reporter.log("Footer - our stores link ok |");
   }
   @Test
   public void test39M(){
@@ -548,11 +568,11 @@ public class ValidateMainPageLinks {
   @Test
   public void test2S(){
 	  
-	  FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-		wait.withTimeout(8, TimeUnit.SECONDS);
-		wait.pollingEvery(300, TimeUnit.MILLISECONDS);
-		wait.ignoring(NoSuchElementException.class);
-		wait.ignoring(StaleElementReferenceException.class);
+//	  FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
+//		wait.withTimeout(8, TimeUnit.SECONDS);
+//		wait.pollingEvery(300, TimeUnit.MILLISECONDS);
+//		wait.ignoring(NoSuchElementException.class);
+//		wait.ignoring(StaleElementReferenceException.class);
 
 //		Predicate<WebDriver> s = new Predicate<WebDriver>(){
 //
@@ -571,47 +591,32 @@ public class ValidateMainPageLinks {
 //	
 //	wait.until(s);
 	
-	WebElement element = driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a"));
-//	wait.until(ExpectedConditions.visibilityOf(element));
+	Utility.ImplicitWait.switchOff();
+	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a")).isDisplayed());
 	log.info("First image on the slider displayed");
 	HomePage.ContainerTop.sliderNext().click();
-	try {
-		Thread.sleep(500);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
+	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[3]/a")).isDisplayed());
 	log.info("Slider-next: Second image on the slider displayed");
 	HomePage.ContainerTop.sliderNext().click();
-	try {
-		Thread.sleep(500);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
+	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[4]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[4]/a")).isDisplayed());
 	log.info("Slider-next: Third image on the slider displayed");
 	HomePage.ContainerTop.sliderPrev().click();
-	try {
-		Thread.sleep(500);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
+	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[3]/a")).isDisplayed());
 	log.info("Slider-prev: Second image on the slider displayed");
 	HomePage.ContainerTop.sliderPrev().click();
-	try {
-		Thread.sleep(500);
-	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
+	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a")).isDisplayed());
 	log.info("Slider-prev: First image on the slider displayed");
 	Reporter.log("Slider manual function correct | ");
+	Utility.ImplicitWait.switchON();
 }
 	  
   
@@ -624,6 +629,7 @@ public class ValidateMainPageLinks {
   public void afterMethod() {
 	  if(!driver.getTitle().equalsIgnoreCase("My Store"));
 	  driver.navigate().back();
+//	  Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.titleIs("My Store"));
   }
 
   @BeforeTest
@@ -651,9 +657,9 @@ public class ValidateMainPageLinks {
 			break;
 		}
 	  driver.manage().window().maximize();
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+	  new Utility.ImplicitWait(driver, 15);
+	  wait = Utility.ExplicitWait.setInSeconds(driver, 10);
 	  driver.get("http://www.automationpractice.com/");	
-	  
 	  
 	  page = new HomePage(driver);
   }
