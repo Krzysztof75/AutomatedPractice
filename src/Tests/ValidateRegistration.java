@@ -8,13 +8,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -37,6 +34,7 @@ import org.testng.annotations.AfterTest;
 
 import PageObjects.HomePage;
 import PageObjects.LogInPage;
+import Utility.Excel;
 import Utility.emailGenerator;
 
 public class ValidateRegistration {
@@ -118,12 +116,12 @@ public class ValidateRegistration {
 	
 	LogInPage.submitAccount().click();
 	
-	try {
-		fos = new FileOutputStream("src//Data//Registration.xlsx");
-	} catch (FileNotFoundException e) {
-		log.info("Registration.xlsx not found");
-		e.printStackTrace();
-	}
+//	try {
+//		fos = new FileOutputStream("src//Data//Registration.xlsx");
+//	} catch (FileNotFoundException e) {
+//		log.info("Registration.xlsx not found");
+//		e.printStackTrace();
+//	}
 	
 	if(driver.getTitle().equalsIgnoreCase("Login - My Store")){
 	WebElement error = driver.findElement(By.cssSelector("#center_column > div"));
@@ -134,10 +132,11 @@ public class ValidateRegistration {
 	for(WebElement e : err){
 		error2 += e.getText() + " ";
 	}
-	sheet.getRow(k).getCell(22).setCellValue(error1 + " " + error2);
+	Utility.Excel.setCellValue(error1 + " " + error2, k, 22);
+	
+//	sheet.getRow(k).getCell(22).setCellValue(error1 + " " + error2);
 	}
 	k++;
-
 	}
 	@BeforeMethod
 	public void beforeMethod() {
@@ -159,41 +158,59 @@ public class ValidateRegistration {
 	@DataProvider
 	public Object[][] regData() throws IOException {
 
-		fis = new FileInputStream("src//Data//Registration.xlsx");
-		workbook = new XSSFWorkbook(fis);
-		sheet = workbook.getSheet("Register");
+//		fis = new FileInputStream(Utility.Constants.RegDataPath);
+//		workbook = new XSSFWorkbook(fis);
+//		sheet = workbook.getSheet("Register");
+//
+//		Object[][]data = new Object[sheet.getPhysicalNumberOfRows()-1][1];
+//		Row headerRow = sheet.getRow(0);
+//
+//		for(int i = 1; i < sheet.getPhysicalNumberOfRows(); i++){
+//			
+//			System.out.println("current number of Rows " + sheet.getPhysicalNumberOfRows());
+//			
+//			Row currentRow = sheet.getRow(i);
+//			HashMap<String, String> map = new HashMap<String, String>();
+//			
+//			for(int j = 0; j < currentRow.getPhysicalNumberOfCells(); j++){
+//				
+//				System.out.println("current Row number of Cells " + currentRow.getPhysicalNumberOfCells());
+//				
+//				Cell currentCell = currentRow.getCell(j);
+////				log.info(currentCell + " row " + currentCell.getRowIndex() + " column " + currentCell.getColumnIndex());
+//				String cellContent ="";
+//				
+//				switch(currentCell.getCellType()){
+//				
+//				case Cell.CELL_TYPE_STRING:
+//					cellContent = currentCell.getStringCellValue();  
+//					break;
+//				case Cell.CELL_TYPE_NUMERIC:
+//					cellContent = String.valueOf(currentCell.getNumericCellValue());
+//				}
+//				map.put(headerRow.getCell(j).getStringCellValue(), cellContent);
+//			}
+//			data[i-1][0] = map;
+//		}
+//		fis.close();
+//		return data;
+		
+		Excel.setExcellFile(Utility.Constants.RegDataPath, "Register");
+		
+		Object[][]data = new Object[Excel.getNumberOfRows()-1][1];
 
-		Object[][]data = new Object[sheet.getPhysicalNumberOfRows()-1][1];
-		Row headerRow = sheet.getRow(0);
+		for(int i = 1; i < Excel.getNumberOfRows(); i++){
 
-		for(int i = 1; i < sheet.getPhysicalNumberOfRows(); i++){
-			
-			System.out.println("current number of Rows " + sheet.getPhysicalNumberOfRows());
-			
-			Row currentRow = sheet.getRow(i);
 			HashMap<String, String> map = new HashMap<String, String>();
 			
-			for(int j = 0; j < currentRow.getPhysicalNumberOfCells(); j++){
+			for(int j = 0; j < Excel.getNumberOfCellsInTheRow(i); j++){
 				
-				System.out.println("current Row number of Cells " + currentRow.getPhysicalNumberOfCells());
-				
-				Cell currentCell = currentRow.getCell(j);
-//				log.info(currentCell + " row " + currentCell.getRowIndex() + " column " + currentCell.getColumnIndex());
-				String cellContent ="";
-				
-				switch(currentCell.getCellType()){
-				
-				case Cell.CELL_TYPE_STRING:
-					cellContent = currentCell.getStringCellValue();  
-					break;
-				case Cell.CELL_TYPE_NUMERIC:
-					cellContent = String.valueOf(currentCell.getNumericCellValue());
-				}
-				map.put(headerRow.getCell(j).getStringCellValue(), cellContent);
+			String currentCellValue = Excel.getCellValue(i, j);
+
+				map.put(Excel.getHeaderRow().getCell(j).getStringCellValue(), currentCellValue);
 			}
 			data[i-1][0] = map;
 		}
-		fis.close();
 		return data;
 	}
 	@BeforeTest
@@ -221,18 +238,15 @@ public class ValidateRegistration {
 		driver.manage().window().maximize();
 		hpage = new HomePage(driver);
 		lpage = new LogInPage(driver);
-		HomePage.getWebsite("http://www.automationpractice.com/");
+		HomePage.getWebsite(Utility.Constants.URL);
 		log.info("Getting website");
 		
-
 	}
 
 	@AfterTest
 	public void afterTest() throws IOException {
 		driver.quit();
-		workbook.write(fos);
-		fos.flush();
-		fos.close();
+		Utility.Excel.close();
 	}
 
 }

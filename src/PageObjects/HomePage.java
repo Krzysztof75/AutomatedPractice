@@ -42,11 +42,11 @@ public class HomePage extends BaseClass {
 			try{
 				 element = driver.findElement(By.linkText(prop.getProperty("ContactUs_linkText")));
 			} catch (NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find contactUs element");
 				throw e;
 			}
 			log.info("Returned ContactUs");
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 
@@ -56,6 +56,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("LogIn_linkText")));
 			} catch (NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Sign in");
 				throw e;
 			}
@@ -69,6 +70,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.id(prop.getProperty("searchBox_id")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element search box");
 				throw e;
 			}
@@ -83,6 +85,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.name(prop.getProperty("search_btn_name")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element search");
 				throw e;
 			}
@@ -95,11 +98,11 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("cart_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element cart");
 				throw e;
 			}
 			log.info("Returned cart");
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 
@@ -109,11 +112,11 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("women_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Women in the main menu");
 				throw e;
 			}
 			log.info("Returned Women");
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 
@@ -134,6 +137,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(prop.getProperty("women_tops_xpath")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element top under Women menu");
 					throw e;
 				}
@@ -143,9 +147,9 @@ public class HomePage extends BaseClass {
 			case "t-shirts":
 
 				try{
-					Utility.ExplicitWait.setInSeconds(driver, 3);
 					element = driver.findElement(By.linkText(prop.getProperty("women_t-shirts_linkText")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element t-shirts under Women menu");
 					throw e;
 				}
@@ -157,6 +161,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(prop.getProperty("women_blouses_xpath")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element blouses under Women menu");
 					throw e;
 				}
@@ -168,6 +173,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(prop.getProperty("women_dresses_xpath")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element dresses under Women menu");
 				}
 				log.info("Returned Women - Dresses");
@@ -176,10 +182,10 @@ public class HomePage extends BaseClass {
 			case "casual dresses":
 
 				try{
-					element = driver.findElement(By.linkText(prop.getProperty("women_casual_dresses_linkText")));
+					element = driver.findElement(By.cssSelector(prop.getProperty("women_casual_dresses_css")));
 				} catch(NoSuchElementException e){
-					log.error("Could not find element Casual dresses under Women menu");
 					Utility.Camera.takePicture(driver);
+					log.error("Could not find element Casual dresses under Women menu");
 					throw e;
 				}
 				log.info("Returned Women - Casual dresses");
@@ -188,8 +194,9 @@ public class HomePage extends BaseClass {
 			case "evening dresses":
 
 				try{
-					element = driver.findElement(By.linkText(prop.getProperty("women_evening_dresses_linkText")));
+					element = driver.findElement(By.cssSelector(prop.getProperty("women_evening_dresses_css")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element Evening dresses under Women menu");
 					throw e;
 				}
@@ -199,8 +206,9 @@ public class HomePage extends BaseClass {
 			case "summer dresses":
 
 				try{
-					element = driver.findElement(By.linkText(prop.getProperty("women_summer_dresses_linkText")));
+					element = driver.findElement(By.cssSelector(prop.getProperty("women_summer_dresses_css")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element Summer dresses under Women menu");
 					throw e;
 				}
@@ -211,7 +219,6 @@ public class HomePage extends BaseClass {
 				log.warn("wrong argument passed to Women(String option");
 				element = null;
 			}
-			Utility.ExplicitWait.setInSeconds(driver, 3).until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 
@@ -221,10 +228,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("dresses-xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Dresses in the main menu");
 			}
 			log.info("Returned Dresses");
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 
@@ -244,6 +251,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(prop.getProperty("dresses_casual_dresses-xpath")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element Casual Dresses under Dresses menu");
 					throw e;
 				}
@@ -255,6 +263,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(prop.getProperty("dresses_evening_dresses_xpath")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element Evening Dresses under Dresses menu");
 					throw e;
 				}
@@ -266,6 +275,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(prop.getProperty("dresses_summer_dresses_xpath")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element Summer Dresses under Dresses menu");
 					throw e;
 				}
@@ -276,17 +286,16 @@ public class HomePage extends BaseClass {
 				log.warn("wrong argument passed to Dresses(String option)");
 				element = null; 
 			}   
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 		public static WebElement tShirts(){
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("tShirts-xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element T-shirts in the main menu");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 
@@ -325,10 +334,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("slider_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Slider");
 				throw e;
 			}
-			Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.elementToBeClickable(element));
 			return element;
 		}
 
@@ -336,10 +345,10 @@ public class HomePage extends BaseClass {
 			try{										
 				element = driver.findElement(By.xpath(prop.getProperty("slider_next_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Slider Next");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned element slider next");
 			return element;
 		}
@@ -348,10 +357,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("slider_prev_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Slider Next");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned element slider next");
 			return element;
 		}
@@ -360,10 +369,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("shopNow_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element shop-now");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned element shop-now");
 			return element;
 		}
@@ -372,10 +381,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("content_Top_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Content top");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned content Top");
 			return element;
 		}
@@ -384,10 +393,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("content_Button_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Content button");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("Returned content Button");
 			return element;
 		}
@@ -396,6 +405,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("tabPopular_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element tabPopular button");
 				throw e;
 			}
@@ -408,6 +418,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("tabBestSellers_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element tabBestSellers button");
 				throw e;
 			}
@@ -451,6 +462,7 @@ public class HomePage extends BaseClass {
 				try{
 					title = blouse.getAttribute("title");	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Blouse - title");
 					throw e;
 				}
@@ -463,6 +475,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Blouse - price");
 					throw e;
 				}	
@@ -474,6 +487,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_image_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Blouse Image");
 					throw e;
 				}	
@@ -486,6 +500,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Blouse - addCart");
 					throw e;
 				}	
@@ -497,6 +512,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("Blouse_more_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Blouse - more");
 					throw e;
 				}	
@@ -514,6 +530,7 @@ public class HomePage extends BaseClass {
 				try{
 					title = FadedShortSleeve.getAttribute("title");	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Faded Short Sleeve T-shirts - title");
 					throw e;
 				}
@@ -525,6 +542,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Faded Short Sleeve T-shirts - price");
 					throw e;
 				}	
@@ -536,6 +554,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_image_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Faded Short Sleeve T-shirts - image");
 					throw e;
 				}	
@@ -548,6 +567,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_addToCart_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Faded Short Sleeve T-shirts - addCart");
 					throw e;
 				}	
@@ -559,6 +579,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("FadedShortSleeve_more_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Faded Short Sleeve T-shirts - more");
 					throw e;
 				}	
@@ -578,6 +599,7 @@ public class HomePage extends BaseClass {
 				try{
 					title = PrintedChiffonDress.getAttribute("title");	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Chiffon Dress - title");
 					throw e;
 				}
@@ -589,6 +611,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Chiffon Dress - Price");
 					throw e;
 				}	
@@ -600,6 +623,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_image_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Chiffon Dress Image");
 					throw e;
 				}	
@@ -612,6 +636,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Chiffon Dress addCart");
 					throw e;
 				}	
@@ -623,6 +648,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedChiffonDress_more_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Chiffon Dress - more");
 					throw e;
 				}	
@@ -641,6 +667,7 @@ public class HomePage extends BaseClass {
 				try{
 					title = PrintedDressShort.getAttribute("title");	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Short - title");
 					throw e;
 				}
@@ -652,6 +679,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Short - Price");
 					throw e;
 				}	
@@ -663,6 +691,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_image_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Short Image");
 					throw e;
 				}	
@@ -675,6 +704,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Short addCart");
 					throw e;
 				}	
@@ -686,6 +716,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressShort_more_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Short - more");
 					throw e;
 				}	
@@ -704,6 +735,7 @@ public class HomePage extends BaseClass {
 				try{
 					title = PrintedDressLong.getAttribute("title");	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Long - title");
 					throw e;
 				}
@@ -715,6 +747,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Long - Price");
 					throw e;
 				}	
@@ -726,6 +759,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_image_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Long Image");
 					throw e;
 				}	
@@ -738,6 +772,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Long addCart");
 					throw e;
 				}	
@@ -749,6 +784,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedDressLong_more_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Dress-Long - more");
 					throw e;
 				}	
@@ -767,6 +803,7 @@ public class HomePage extends BaseClass {
 				try{
 					title = PrintedSummerDressShort.getAttribute("title");	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-short - title");
 					throw e;
 				}
@@ -778,6 +815,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_price_xpath").toString())));	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-short - Price");
 					throw e;
 				}	
@@ -789,6 +827,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_image_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-short Image");
 					throw e;
 				}	
@@ -801,6 +840,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-short addCart");
 					throw e;
 				}	
@@ -812,6 +852,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressShort_more_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-short - more");
 					throw e;
 				}	
@@ -830,6 +871,7 @@ public class HomePage extends BaseClass {
 				try{
 					title = PrintedSummerDressLong.getAttribute("title");	
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-Long - title");
 					throw e;
 				}
@@ -841,6 +883,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_price_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-Long - Price");
 					throw e;
 				}	
@@ -852,6 +895,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_image_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-Long Image");
 					throw e;
 				}	
@@ -864,6 +908,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_addToCart_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-Long addCart");
 					throw e;
 				}	
@@ -875,6 +920,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(generateXpath(prop.get("PrintedSummerDressLong_more_xpath").toString())));
 				}catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find Printed Summer Dress-Long - more");
 					throw e;
 				}	
@@ -889,6 +935,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("Cont1_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element cont1");
 				throw e;
 			}
@@ -902,6 +949,7 @@ public class HomePage extends BaseClass {
 
 				element = driver.findElement(By.xpath(prop.getProperty("Cont2_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element Cont2");
 				throw e;
 			}
@@ -914,6 +962,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("Cont3_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element cont3");
 				throw e;
 			}
@@ -926,6 +975,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("Cont4_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element cont4");
 				throw e;
 			}
@@ -938,6 +988,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("Cont5_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element cont5");
 				throw e;
 			}
@@ -956,6 +1007,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.id(prop.getProperty("inputBox_id")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element newsletter");
 					throw e;
 				}
@@ -968,6 +1020,7 @@ public class HomePage extends BaseClass {
 				try{
 					element = driver.findElement(By.xpath(prop.getProperty("submit_btn_xpath")));
 				} catch(NoSuchElementException e){
+					Utility.Camera.takePicture(driver);
 					log.error("Could not find element newsletter submit button");
 					throw e;
 				}
@@ -982,6 +1035,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("facebook_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element facebook");
 				throw e;
 			}
@@ -995,6 +1049,7 @@ public class HomePage extends BaseClass {
 			try{							
 				element = driver.findElement(By.xpath(prop.getProperty("twitter_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element twitter");
 				throw e;
 			}
@@ -1008,6 +1063,7 @@ public class HomePage extends BaseClass {
 			try{					
 				element = driver.findElement(By.xpath(prop.getProperty("youTube_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element youtube");
 				throw e;
 			}
@@ -1020,6 +1076,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("google_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element google");
 				throw e;
 			}
@@ -1034,6 +1091,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("Footer_women_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - women");
 				throw e;
 			}
@@ -1048,6 +1106,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("specials_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - specials");
 				throw e;
 			}
@@ -1062,6 +1121,7 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("newProducts_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - new products");
 				throw e;
 			}
@@ -1076,10 +1136,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("bestSellers_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - best sellers");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - best sellers");
 			return element;
 
@@ -1090,10 +1150,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("ourStores_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - new products");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - new products");
 			return element;
 
@@ -1104,10 +1164,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("contactUs-linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - Contact us");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - Contact us");
 			return element;
 
@@ -1118,10 +1178,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("termsCond_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - Terms and conditions of use");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - Terms and conditions of use");
 			return element;
 
@@ -1132,10 +1192,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("about_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - About us");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - About us");
 			return element;
 
@@ -1146,10 +1206,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("sitemap_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - Sitemap");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - Sitemap");
 			return element;
 
@@ -1160,10 +1220,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("myAccount-linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - My account");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My account");
 			return element;
 
@@ -1174,10 +1234,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("myOrders_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - My orders");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My orders");
 			return element;
 
@@ -1188,10 +1248,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("myCreditSlips_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - My credit slips");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My credit slips");
 			return element;
 
@@ -1202,10 +1262,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("myAdresses_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - My addresses");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My addresses");
 			return element;
 
@@ -1216,10 +1276,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.linkText(prop.getProperty("myPersonalInfo_linkText")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - My personal info");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - My personal info");
 			return element;
 
@@ -1230,10 +1290,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("skype_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - skype");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - skype");
 			return element;
 
@@ -1244,10 +1304,10 @@ public class HomePage extends BaseClass {
 			try{
 				element = driver.findElement(By.xpath(prop.getProperty("email_xpath")));
 			} catch(NoSuchElementException e){
+				Utility.Camera.takePicture(driver);
 				log.error("Could not find element footer - email");
 				throw e;
 			}
-//			wait.until(ExpectedConditions.elementToBeClickable(element));
 			log.info("returned footer - email");
 			return element;
 

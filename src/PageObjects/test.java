@@ -1,5 +1,7 @@
 package PageObjects;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -40,13 +42,29 @@ public class test {
 //		
 		HomePage page1 = new HomePage(driver);
 		LogInPage page2 = new LogInPage(driver);
+
 		
-		 System.out.println(HomePage.ContainerTop.validatePopular());
+// Find broken links
+		
+//		List <WebElement> links = Utility.Links.findAllLinks(driver);
+//		for(WebElement e : links){
+//			try {
+//				System.out.println(e.getAttribute("href") + " verification result: " + Utility.Links.isLinkBroken(new URL(e.getAttribute("href"))));
+//			} catch (MalformedURLException e1) {
+//				System.out.println("MalformedURLException");
+//				e1.printStackTrace();
+//			} catch (Exception e1) {
+//				System.out.println("Some other exception");
+//				e1.printStackTrace();
+//			}
+//		}
+		
+//		 System.out.println(HomePage.ContainerTop.validatePopular());
 		 
-		  HomePage.ContainerTop.tabBestSellers().click();
+//		  HomePage.ContainerTop.tabBestSellers().click();
 //		  Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.elementToBeSelected(HomePage.ContainerTop.tabBestSellers()));
 //		  Utility.Camera.takePicture(driver);
-		  System.out.println(HomePage.ContainerTop.validateBestSeller());
+//		  System.out.println(HomePage.ContainerTop.validateBestSeller());
 	  
 		
 // Fluent wait with custom predicate to conform the correct working of a slider
@@ -142,9 +160,9 @@ public class test {
 //					System.out.println(HomePage.Header.women("T-SHIRTS").getText());
 //					System.out.println(HomePage.Header.women("Blouses").getText());
 //					System.out.println(HomePage.Header.women("Dresses").getText());
-//					System.out.println(HomePage.Header.women("Casual dresses").getText());
-//					System.out.println(HomePage.Header.women("Evening dresses").getText());
-//					System.out.println(HomePage.Header.women("Summer dresses").getText());
+					System.out.println(HomePage.Header.women("Casual dresses").getText());
+					System.out.println(HomePage.Header.women("Evening dresses").getText());
+					System.out.println(HomePage.Header.women("Summer dresses").getText());
 //					System.out.println(HomePage.Header.dresses().getAttribute("title"));
 //					System.out.println(HomePage.Header.dresses("casual dresses").getText());
 //					System.out.println(HomePage.Header.dresses("evening dresses").getText());

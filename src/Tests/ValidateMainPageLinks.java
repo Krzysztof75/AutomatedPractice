@@ -30,9 +30,7 @@ import org.testng.Reporter;
 
 import com.google.common.base.Predicate;
 
-import PageObjects.BaseClass;
 import PageObjects.HomePage;
-import Utility.MyLog;
 
 public class ValidateMainPageLinks {
 	
@@ -109,7 +107,6 @@ public class ValidateMainPageLinks {
   public void test8M(){
 	  HomePage.Header.women("tops").click();
 	  String expectedTitle ="Tops - My Store";
-//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-tops link ok |");
@@ -139,19 +136,17 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test11M(){
-	  Utility.ImplicitWait.switchOff();
 	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women("Dresses")));
 	  HomePage.Header.women("Dresses").click();
 	  String expectedTitle ="Dresses - My Store";
-//	  wait.until(ExpectedConditions.titleIs(expectedTitle));
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
 	  log.info("correct page title: " + driver.getTitle());
 	  Reporter.log("header-Dresses link ok |");
-	  Utility.ImplicitWait.switchON();
   }
   
   @Test
   public void test12M(){
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women("Casual Dresses")));
 	  HomePage.Header.women("Casual Dresses").click();
 	  String expectedTitle ="Casual Dresses - My Store";
 //	  wait.until(ExpectedConditions.titleIs(expectedTitle));
@@ -173,7 +168,7 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test14M(){
-	  
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women("Summer Dresses")));
 	  HomePage.Header.women("Summer Dresses").click();
 	  String expectedTitle ="Summer Dresses - My Store";
 //	  wait.until(ExpectedConditions.titleIs(expectedTitle));
@@ -524,7 +519,7 @@ public class ValidateMainPageLinks {
 	  
 	    FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
 		wait.withTimeout(10, TimeUnit.SECONDS);
-		wait.pollingEvery(1500, TimeUnit.MILLISECONDS);
+		wait.pollingEvery(1000, TimeUnit.MILLISECONDS);
 		wait.ignoring(NoSuchElementException.class);
 		wait.ignoring(StaleElementReferenceException.class);
 
@@ -591,32 +586,30 @@ public class ValidateMainPageLinks {
 //	
 //	wait.until(s);
 	
-	Utility.ImplicitWait.switchOff();
-	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a")).isDisplayed());
 	log.info("First image on the slider displayed");
 	HomePage.ContainerTop.sliderNext().click();
 	
-	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[3]/a")).isDisplayed());
 	log.info("Slider-next: Second image on the slider displayed");
 	HomePage.ContainerTop.sliderNext().click();
 	
-	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[4]/a")));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[4]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[4]/a")).isDisplayed());
 	log.info("Slider-next: Third image on the slider displayed");
 	HomePage.ContainerTop.sliderPrev().click();
 	
-	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[3]/a")).isDisplayed());
 	log.info("Slider-prev: Second image on the slider displayed");
 	HomePage.ContainerTop.sliderPrev().click();
 	
-	Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
+	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a")).isDisplayed());
 	log.info("Slider-prev: First image on the slider displayed");
 	Reporter.log("Slider manual function correct | ");
-	Utility.ImplicitWait.switchON();
 }
 	  
   
@@ -628,7 +621,7 @@ public class ValidateMainPageLinks {
   @AfterMethod
   public void afterMethod() {
 	  if(!driver.getTitle().equalsIgnoreCase("My Store"));
-	  driver.navigate().back();
+	  driver.navigate().to(Utility.Constants.URL);
 //	  Utility.ExplicitWait.setInSeconds(driver, 5).until(ExpectedConditions.titleIs("My Store"));
   }
 
@@ -657,8 +650,8 @@ public class ValidateMainPageLinks {
 			break;
 		}
 	  driver.manage().window().maximize();
-	  new Utility.ImplicitWait(driver, 15);
-	  wait = Utility.ExplicitWait.setInSeconds(driver, 10);
+//	  new Utility.ImpWait(driver, 15);
+	  wait = new WebDriverWait(driver, 10);
 	  driver.get("http://www.automationpractice.com/");	
 	  
 	  page = new HomePage(driver);

@@ -3,18 +3,11 @@ package Tests;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
-
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,9 +35,9 @@ public class ValidateLogIn {
 	static Logger log;
 	HomePage hpage;
 	LogInPage lpage;
-	FileInputStream fis;
-	XSSFWorkbook workbook;
-	XSSFSheet sheet;
+//	FileInputStream fis;
+//	XSSFWorkbook workbook;
+//	XSSFSheet sheet;
 
 	@Test(dataProvider = "verification")
 	public void testLogIn(HashMap<String, String> map) throws IOException {
@@ -110,36 +103,59 @@ public class ValidateLogIn {
 
 	@DataProvider(name = "verification")
 	public Object[][] data () throws IOException {
-		fis = new FileInputStream("src//Data//LogIn.xlsx");
-		workbook = new XSSFWorkbook(fis);
-		sheet = workbook.getSheet("LogIn");
-		Row headerRow = sheet.getRow(0);
+		
+//		fis = new FileInputStream(Utility.Constants.DataPath + Utility.Constants.LogInData);
+//		workbook = new XSSFWorkbook(fis);
+//		sheet = workbook.getSheet("LogIn");
+//		Row headerRow = sheet.getRow(0);
+//
+//		Object[][]data = new Object [sheet.getPhysicalNumberOfRows()-1][1];
+//
+//
+//		for(int i = 1; i < sheet.getPhysicalNumberOfRows(); i++){
+//
+//			Row currentRow = sheet.getRow(i);
+//			HashMap<String, String> currentHashMap = new HashMap<String, String>();
+//
+//			for(int j=0 ; j < currentRow.getPhysicalNumberOfCells(); j++){
+//				Cell currentCell = currentRow.getCell(j);
+//
+//				switch(currentCell.getCellType()){
+//
+//				case Cell.CELL_TYPE_STRING:
+//					currentCell.getStringCellValue();
+//					break;
+//				}
+//				currentHashMap.put(headerRow.getCell(j).getStringCellValue(), currentCell.getStringCellValue());
+//			}
+//			data[i-1][0] = currentHashMap;
+//		}
+//		fis.close();
+//		return data;
+//	}
+	
+		// good method if only String values present in the spreadsheet otherwise needs work
+		
+	Utility.Excel.setExcellFile(Utility.Constants.LogInDataPath, "LogIn");
+	
+	Object[][]data = new Object [Utility.Excel.getNumberOfRows()-1][1];
+	
+	for(int i = 1; i < Utility.Excel.getNumberOfRows(); i++){
+		
+		HashMap<String, String> currentHashMap = new HashMap<String, String>();
 
-		Object[][]data = new Object [sheet.getPhysicalNumberOfRows()-1][1];
+		for(int j=0 ; j < Utility.Excel.getNumberOfCellsInTheRow(i); j++){
+			
+			String currentCellValue = Utility.Excel.getCellValue(i, j);
 
-
-		for(int i = 1; i < sheet.getPhysicalNumberOfRows(); i++){
-
-			Row currentRow = sheet.getRow(i);
-			HashMap<String, String> currentHashMap = new HashMap<String, String>();
-
-			for(int j=0 ; j < currentRow.getPhysicalNumberOfCells(); j++){
-				Cell currentCell = currentRow.getCell(j);
-
-				switch(currentCell.getCellType()){
-
-				case Cell.CELL_TYPE_STRING:
-					currentCell.getStringCellValue();
-					break;
-				}
-				currentHashMap.put(headerRow.getCell(j).getStringCellValue(), currentCell.getStringCellValue());
-			}
-			data[i-1][0] = currentHashMap;
-
+			currentHashMap.put(Utility.Excel.getHeaderRow().getCell(j).getStringCellValue(), currentCellValue);
 		}
-		fis.close();
-		return data;
+		data[i-1][0] = currentHashMap;
 	}
+	Utility.Excel.close();
+	return data;
+}
+	
 	@BeforeTest
 	@Parameters ({"browserName"})
 	public void beforeTest(String browserName) throws IOException {
@@ -161,7 +177,7 @@ public class ValidateLogIn {
 			break;
 		}
 
-		driver.get("http://www.automationpractice.com/");
+		driver.get(Utility.Constants.URL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		log.info("Getting website");

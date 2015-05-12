@@ -4,14 +4,14 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 
-public class ImplicitWait {
+public class ImpWait {
 	
 	private static int time;
 	private static WebDriver driver;
 	
-	public ImplicitWait(WebDriver driver, int time){
-		ImplicitWait.driver = driver;
-		ImplicitWait.time = time;
+	public ImpWait(WebDriver driver, int time){
+		ImpWait.driver = driver;
+		ImpWait.time = time;
 	}
 	
 	public static void setInSeconds(int time){
