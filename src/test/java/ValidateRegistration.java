@@ -1,4 +1,4 @@
-package Tests;
+package test.java;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -195,7 +195,7 @@ public class ValidateRegistration {
 //		fis.close();
 //		return data;
 		
-		Excel.setExcellFile(Utility.Constants.RegDataPath, "Register");
+		Excel.setExcellFile(System.getProperty("user.dir") + Utility.Constants.RegDataPath, "Register");
 		
 		Object[][]data = new Object[Excel.getNumberOfRows()-1][1];
 
@@ -218,24 +218,26 @@ public class ValidateRegistration {
 	public void beforeTest(String browserName) {
 
 		log = Logger.getLogger(ValidateRegistration.class.getName());
-		ProfilesIni profile = new ProfilesIni();
+//		ProfilesIni profile = new ProfilesIni();
 		DOMConfigurator.configure("log4j.xml");
+		
+		driver = Utility.LaunchBrowser.getBrowser(browserName);
 
-		switch(browserName){
-		case "FF":
-			FirefoxProfile ffprofile = profile.getProfile("tester");
-			driver = new FirefoxDriver(ffprofile);
-			break;
-		case "CH":
-			driver = new ChromeDriver();
-			break;
-		case "IE":
-			driver = new InternetExplorerDriver();
-			break;
-		}
+//		switch(browserName){
+//		case "FF":
+//			FirefoxProfile ffprofile = profile.getProfile("tester");
+//			driver = new FirefoxDriver(ffprofile);
+//			break;
+//		case "CH":
+//			driver = new ChromeDriver();
+//			break;
+//		case "IE":
+//			driver = new InternetExplorerDriver();
+//			break;
+//		}
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		hpage = new HomePage(driver);
 		lpage = new LogInPage(driver);
 		HomePage.getWebsite(Utility.Constants.URL);

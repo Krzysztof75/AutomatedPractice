@@ -1,4 +1,4 @@
-package Tests;
+package test.java;
 
 import org.testng.Assert;
 import org.testng.Reporter;
@@ -136,7 +136,7 @@ public class ValidateLogIn {
 	
 		// good method if only String values present in the spreadsheet otherwise needs work
 		
-	Utility.Excel.setExcellFile(Utility.Constants.LogInDataPath, "LogIn");
+	Utility.Excel.setExcellFile(System.getProperty("user.dir") + Utility.Constants.LogInDataPath, "LogIn");
 	
 	Object[][]data = new Object [Utility.Excel.getNumberOfRows()-1][1];
 	
@@ -161,25 +161,27 @@ public class ValidateLogIn {
 	public void beforeTest(String browserName) throws IOException {
 
 		log = Logger.getLogger(ValidateLogIn.class.getName());
-		ProfilesIni profile = new ProfilesIni();
+//		ProfilesIni profile = new ProfilesIni();
 		DOMConfigurator.configure("log4j.xml");
+		
+		driver = Utility.LaunchBrowser.getBrowser(browserName);
 
-		switch(browserName){
-		case "FF":
-			FirefoxProfile ffprofile = profile.getProfile("tester");
-			driver = new FirefoxDriver(ffprofile);
-			break;
-		case "CH":
-			driver = new ChromeDriver();
-			break;
-		case "IE":
-			driver = new InternetExplorerDriver();
-			break;
-		}
+//		switch(browserName){
+//		case "FF":
+//			FirefoxProfile ffprofile = profile.getProfile("tester");
+//			driver = new FirefoxDriver(ffprofile);
+//			break;
+//		case "CH":
+//			driver = new ChromeDriver();
+//			break;
+//		case "IE":
+//			driver = new InternetExplorerDriver();
+//			break;
+//		}
 
 		driver.get(Utility.Constants.URL);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		log.info("Getting website");
 		hpage = new HomePage(driver);
 		lpage = new LogInPage(driver);

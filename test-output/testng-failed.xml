@@ -1,99 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
-  <parameter name="browserName" value="CH"/>
-  <test name="ValidateLinksCH(failed)">
-    <parameter name="browserName" value="CH"/>
+  <parameter name="browserName" value="HUD"/>
+  <test name="ValidateLinksFF(failed)">
+    <parameter name="browserName" value="HUD"/>
     <classes>
-      <class name="Tests.ValidateRegistration">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- Tests.ValidateRegistration -->
-      <class name="Tests.ValidateLogIn">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- Tests.ValidateLogIn -->
       <class name="Tests.ValidateMainPageLinks">
         <methods>
-          <include name="test28M"/>
           <include name="test2S"/>
-          <include name="test38M"/>
-          <include name="test24M"/>
-          <include name="test46M"/>
-          <include name="test26M"/>
-          <include name="test34M"/>
-          <include name="test20M"/>
-          <include name="test42M"/>
-          <include name="test36M"/>
-          <include name="test22M"/>
-          <include name="test30M"/>
-          <include name="test32M"/>
-          <include name="test40M"/>
-          <include name="test6M"/>
-          <include name="afterMethod"/>
-          <include name="test8M"/>
-          <include name="test2M"/>
-          <include name="test4M"/>
-          <include name="test39M"/>
           <include name="beforeTest"/>
-          <include name="test27M"/>
-          <include name="test35M"/>
-          <include name="test29M"/>
+          <include name="afterMethod"/>
+          <include name="test13M"/>
+          <include name="beforeMethod"/>
           <include name="test1S"/>
-          <include name="test37M"/>
-          <include name="test23M"/>
-          <include name="test45M"/>
-          <include name="test31M"/>
-          <include name="test25M"/>
-          <include name="test47M"/>
-          <include name="test33M"/>
-          <include name="test41M"/>
-          <include name="test21M"/>
-          <include name="test43M"/>
-          <include name="test9M"/>
-          <include name="beforeMethod"/>
-          <include name="test5M"/>
-          <include name="test7M"/>
-          <include name="test3M"/>
+          <include name="test12M"/>
+          <include name="test14M"/>
+          <include name="afterTest"/>
+          <include name="test10M"/>
         </methods>
       </class> <!-- Tests.ValidateMainPageLinks -->
     </classes>
-  </test> <!-- ValidateLinksCH(failed) -->
-  <test name="ValidateRegistration(failed)">
-    <parameter name="browserName" value="CH"/>
-    <classes>
-      <class name="Tests.ValidateRegistration">
-        <methods>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="testRegistration" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- Tests.ValidateRegistration -->
-      <class name="Tests.ValidateLogIn">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="afterTest"/>
-          <include name="afterMethod"/>
-        </methods>
-      </class> <!-- Tests.ValidateLogIn -->
-      <class name="Tests.ValidateMainPageLinks">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="afterMethod"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- Tests.ValidateMainPageLinks -->
-    </classes>
-  </test> <!-- ValidateRegistration(failed) -->
+  </test> <!-- ValidateLinksFF(failed) -->
 </suite> <!-- Failed suite [Suite] -->

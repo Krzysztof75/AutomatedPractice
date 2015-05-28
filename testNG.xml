@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite" parallel="false">
-  
-<test name="ValidateLinksFF">
-  <parameter name="browserName" value="FF"/>
-    <classes>
-      <class name="Tests.ValidateMainPageLinks"/>
-    </classes>
-  </test> 
 
-   <test name="ValidateLogIn">
-  <parameter name="browserName" value="FF"/>
+
+<test name="ValidateLinksFF">
+  <parameter name="browserName" value="CH"/>
     <classes>
-      <class name="Tests.ValidateLogIn"/>
+      <class name="test.java.ValidateMainPageLinks"/>
     </classes>
   </test> 
   
-  <test name="ValidateRegistration">
-  <parameter name="browserName" value="FF"/>
+   <test name="ValidateLogIn">
+  <parameter name="browserName" value="CH"/>
     <classes>
-      <class name="Tests.ValidateRegistration"/>
+      <class name="test.java.ValidateLogIn"/>
     </classes>
   </test> 
-    
- <!--  
+   
+  <test name="ValidateRegistration">
+  <parameter name="browserName" value="CH"/>
+    <classes>
+      <class name="test.java.ValidateRegistration"/>
+    </classes>
+  </test> 
+  <!--  
+ 
   <test name="ValidateLinksCH">
   <parameter name="browserName" value="CH"/>
     <classes>

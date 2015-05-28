@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>ValidateLinksFF</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>48/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>42/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 27 22:39:27 BST 2015</td>
+<td>Started on:</td><td>Sat May 16 20:13:10 BST 2015</td>
 </tr>
-<tr><td>Total time:</td><td>289 seconds (289167 ms)</td>
+<tr><td>Total time:</td><td>150 seconds (150476 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,284 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test10M()'><b>test10M</b><br>Test class: Tests.ValidateMainPageLinks</td>
+<td><div><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at Tests.ValidateMainPageLinks.test10M(ValidateMainPageLinks.java:128)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace628064884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace628064884'><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at Tests.ValidateMainPageLinks.test10M(ValidateMainPageLinks.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test12M()'><b>test12M</b><br>Test class: Tests.ValidateMainPageLinks</td>
+<td><div><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:187)
+	at Tests.ValidateMainPageLinks.test12M(ValidateMainPageLinks.java:149)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1167088639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1167088639'><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:187)
+	at Tests.ValidateMainPageLinks.test12M(ValidateMainPageLinks.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test13M()'><b>test13M</b><br>Test class: Tests.ValidateMainPageLinks</td>
+<td><div><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:199)
+	at Tests.ValidateMainPageLinks.test13M(ValidateMainPageLinks.java:160)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1198197478", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1198197478'><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:199)
+	at Tests.ValidateMainPageLinks.test13M(ValidateMainPageLinks.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test14M()'><b>test14M</b><br>Test class: Tests.ValidateMainPageLinks</td>
+<td><div><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:211)
+	at Tests.ValidateMainPageLinks.test14M(ValidateMainPageLinks.java:171)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace977160959", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace977160959'><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:211)
+	at Tests.ValidateMainPageLinks.test14M(ValidateMainPageLinks.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test1S()'><b>test1S</b><br>Test class: Tests.ValidateMainPageLinks</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for Tests.ValidateMainPageLinks$1@73db4768
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;Kris-PC&apos;, ip: &apos;192.168.37.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:175)
+	at Tests.ValidateMainPageLinks.test1S(ValidateMainPageLinks.java:558)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate a node using //*[@id=&apos;homeslider&apos;]/li[4]/a/img
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;Kris-PC&apos;, ip: &apos;192.168.37.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByXPath(HtmlUnitDriver.java:1103)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1648)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1302)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:1644)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:550)
+	at Tests.ValidateMainPageLinks$1.apply(ValidateMainPageLinks.java:542)
+	at Tests.ValidateMainPageLinks$1.apply(ValidateMainPageLinks.java:1)
+	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:177)
+	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 26 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398260359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398260359'><pre>org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for Tests.ValidateMainPageLinks$1@73db4768
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;Kris-PC&apos;, ip: &apos;192.168.37.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:175)
+	at Tests.ValidateMainPageLinks.test1S(ValidateMainPageLinks.java:558)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate a node using //*[@id=&apos;homeslider&apos;]/li[4]/a/img
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.45.0&apos;, revision: &apos;5017cb8&apos;, time: &apos;2015-02-27 00:00:10&apos;
+System info: host: &apos;Kris-PC&apos;, ip: &apos;192.168.37.1&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByXPath(HtmlUnitDriver.java:1103)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1648)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1302)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:1644)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:550)
+	at Tests.ValidateMainPageLinks$1.apply(ValidateMainPageLinks.java:542)
+	at Tests.ValidateMainPageLinks$1.apply(ValidateMainPageLinks.java:1)
+	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:177)
+	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 26 more
+</pre></div></td>
+<td>11</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test2S()'><b>test2S</b><br>Test class: Tests.ValidateMainPageLinks</td>
+<td><div><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$ContainerTop.sliderNext(HomePage.java:348)
+	at Tests.ValidateMainPageLinks.test2S(ValidateMainPageLinks.java:592)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1263391254", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1263391254'><pre>java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$ContainerTop.sliderNext(HomePage.java:348)
+	at Tests.ValidateMainPageLinks.test2S(ValidateMainPageLinks.java:592)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,581 +353,509 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.ValidateMainPageLinks.test10M()'><b>test10M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-749282235" onClick='toggleBox("Output-749282235", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-749282235" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-749282235">
-header-Blouses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
 <td title='Tests.ValidateMainPageLinks.test11M()'><b>test11M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-795242171" onClick='toggleBox("Output-795242171", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-352776719" onClick='toggleBox("Output-352776719", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-795242171" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-795242171">
+<a href="#Output-352776719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-352776719">
 header-Dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test12M()'><b>test12M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-2031951755" onClick='toggleBox("Output-2031951755", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2031951755" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2031951755">
-header-Casual Dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test13M()'><b>test13M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-570794077" onClick='toggleBox("Output-570794077", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-570794077" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-570794077">
-header-Evening Dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>7</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test14M()'><b>test14M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1319483139" onClick='toggleBox("Output-1319483139", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1319483139" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1319483139">
-header-Summer Dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test15M()'><b>test15M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-775081157" onClick='toggleBox("Output-775081157", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-775081157" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-775081157">
-header-Dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test16M()'><b>test16M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1275143523" onClick='toggleBox("Output-1275143523", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1275143523" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1275143523">
-header-Dresses-casual dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test17M()'><b>test17M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1570358965" onClick='toggleBox("Output-1570358965", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1570358965" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1570358965">
-header-Dresses-evening dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test18M()'><b>test18M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-2038105753" onClick='toggleBox("Output-2038105753", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2038105753" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2038105753">
-header-Dresses-summer dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test19M()'><b>test19M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1263634860" onClick='toggleBox("Output-1263634860", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1263634860" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1263634860">
-header-T-shirts dresses link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test1M()'><b>test1M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-69329761" onClick='toggleBox("Output-69329761", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-69329761" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-69329761">
-Opened page My Store|<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test1S()'><b>test1S</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1176968662" onClick='toggleBox("Output-1176968662", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1176968662" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1176968662">
-Slider displays all the expected pictures |<br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test20M()'><b>test20M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1439632660" onClick='toggleBox("Output-1439632660", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1439632660" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1439632660">
-Slider link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test21M()'><b>test21M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-2024415090" onClick='toggleBox("Output-2024415090", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2024415090" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2024415090">
-ContainerTop-contentTop link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test22M()'><b>test22M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1987360300" onClick='toggleBox("Output-1987360300", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1987360300" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1987360300">
-ContainerTop-contentButton link ok |<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test23M()'><b>test23M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1920907467" onClick='toggleBox("Output-1920907467", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1920907467" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1920907467">
-tab popular ok |<br/>
-</div>
-</td>
-<td></td>
-<td>2</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test24M()'><b>test24M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1860491691" onClick='toggleBox("Output-1860491691", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1860491691" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1860491691">
-tab bestsellers ok |<br/>
 </div>
 </td>
 <td></td>
 <td>1</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test15M()'><b>test15M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-1585571244" onClick='toggleBox("Output-1585571244", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1585571244" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1585571244">
+header-Dresses link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test16M()'><b>test16M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-998242313" onClick='toggleBox("Output-998242313", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-998242313" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-998242313">
+header-Dresses-casual dresses link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test17M()'><b>test17M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-864221358" onClick='toggleBox("Output-864221358", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-864221358" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-864221358">
+header-Dresses-evening dresses link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test18M()'><b>test18M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-1489193907" onClick='toggleBox("Output-1489193907", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1489193907" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1489193907">
+header-Dresses-summer dresses link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test19M()'><b>test19M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-1978504976" onClick='toggleBox("Output-1978504976", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1978504976" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1978504976">
+header-T-shirts dresses link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test1M()'><b>test1M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-1724814719" onClick='toggleBox("Output-1724814719", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1724814719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1724814719">
+Opened page My Store|<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test20M()'><b>test20M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-1195542839" onClick='toggleBox("Output-1195542839", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1195542839" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1195542839">
+Slider link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test21M()'><b>test21M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-2016038911" onClick='toggleBox("Output-2016038911", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2016038911" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2016038911">
+ContainerTop-contentTop link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test22M()'><b>test22M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-1410367298" onClick='toggleBox("Output-1410367298", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1410367298" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1410367298">
+ContainerTop-contentButton link ok |<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test23M()'><b>test23M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-2048102341" onClick='toggleBox("Output-2048102341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2048102341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2048102341">
+tab popular ok |<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
+<tr>
+<td title='Tests.ValidateMainPageLinks.test24M()'><b>test24M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
+<a href="#Output-1641672672" onClick='toggleBox("Output-1641672672", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1641672672" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1641672672">
+tab bestsellers ok |<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test25M()'><b>test25M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-892083096" onClick='toggleBox("Output-892083096", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1572442646" onClick='toggleBox("Output-1572442646", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-892083096" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-892083096">
+<a href="#Output-1572442646" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1572442646">
 Cont1 link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>2</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test26M()'><b>test26M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1910936570" onClick='toggleBox("Output-1910936570", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1468343491" onClick='toggleBox("Output-1468343491", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1910936570" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1910936570">
+<a href="#Output-1468343491" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1468343491">
 Cont2 link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test27M()'><b>test27M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1201466784" onClick='toggleBox("Output-1201466784", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1777745301" onClick='toggleBox("Output-1777745301", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1201466784" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1201466784">
+<a href="#Output-1777745301" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1777745301">
 Cont3 link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test28M()'><b>test28M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-895599632" onClick='toggleBox("Output-895599632", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-449338124" onClick='toggleBox("Output-449338124", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-895599632" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-895599632">
+<a href="#Output-449338124" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-449338124">
 Cont4 link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test29M()'><b>test29M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1989132530" onClick='toggleBox("Output-1989132530", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1693997031" onClick='toggleBox("Output-1693997031", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1989132530" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1989132530">
+<a href="#Output-1693997031" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1693997031">
 Cont5 link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test2M()'><b>test2M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-937744315" onClick='toggleBox("Output-937744315", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-795273218" onClick='toggleBox("Output-795273218", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-937744315" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-937744315">
+<a href="#Output-795273218" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-795273218">
 Contact us link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>4</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
-<tr>
-<td title='Tests.ValidateMainPageLinks.test2S()'><b>test2S</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-404648734" onClick='toggleBox("Output-404648734", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-404648734" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-404648734">
-Slider manual function correct | <br/>
-</div>
-</td>
-<td></td>
 <td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test30M()'><b>test30M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-460702435" onClick='toggleBox("Output-460702435", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-679449777" onClick='toggleBox("Output-679449777", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-460702435" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-460702435">
+<a href="#Output-679449777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-679449777">
 Facebook link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>2</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test31M()'><b>test31M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-305502850" onClick='toggleBox("Output-305502850", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-216746962" onClick='toggleBox("Output-216746962", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-305502850" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-305502850">
+<a href="#Output-216746962" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-216746962">
 Twitter link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test32M()'><b>test32M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1894788146" onClick='toggleBox("Output-1894788146", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1481594007" onClick='toggleBox("Output-1481594007", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1894788146" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1894788146">
+<a href="#Output-1481594007" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1481594007">
 Youtube link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test33M()'><b>test33M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1545827753" onClick='toggleBox("Output-1545827753", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-422134367" onClick='toggleBox("Output-422134367", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1545827753" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1545827753">
+<a href="#Output-422134367" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-422134367">
 Google link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>13</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test34M()'><b>test34M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-21422054" onClick='toggleBox("Output-21422054", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-346377974" onClick='toggleBox("Output-346377974", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-21422054" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-21422054">
+<a href="#Output-346377974" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-346377974">
 Footer-women link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>2</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test35M()'><b>test35M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-45822040" onClick='toggleBox("Output-45822040", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1982876486" onClick='toggleBox("Output-1982876486", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-45822040" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-45822040">
+<a href="#Output-1982876486" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1982876486">
 Footer-specials link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test36M()'><b>test36M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1619356001" onClick='toggleBox("Output-1619356001", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1623287112" onClick='toggleBox("Output-1623287112", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1619356001" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1619356001">
+<a href="#Output-1623287112" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1623287112">
 Footer-New Products link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test37M()'><b>test37M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1632914150" onClick='toggleBox("Output-1632914150", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-223975178" onClick='toggleBox("Output-223975178", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1632914150" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1632914150">
+<a href="#Output-223975178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-223975178">
 Footer-Best sales link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test38M()'><b>test38M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1021258849" onClick='toggleBox("Output-1021258849", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1805412777" onClick='toggleBox("Output-1805412777", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1021258849" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1021258849">
+<a href="#Output-1805412777" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1805412777">
 Footer - our stores link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test39M()'><b>test39M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1277108979" onClick='toggleBox("Output-1277108979", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-892231982" onClick='toggleBox("Output-892231982", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1277108979" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1277108979">
+<a href="#Output-892231982" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-892231982">
 Footer-contact us link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test3M()'><b>test3M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-909282611" onClick='toggleBox("Output-909282611", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1164394344" onClick='toggleBox("Output-1164394344", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-909282611" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-909282611">
+<a href="#Output-1164394344" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1164394344">
 Login link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test40M()'><b>test40M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-179779934" onClick='toggleBox("Output-179779934", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1184694332" onClick='toggleBox("Output-1184694332", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-179779934" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-179779934">
+<a href="#Output-1184694332" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1184694332">
 Footer-terms and conditions link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test41M()'><b>test41M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-729218894" onClick='toggleBox("Output-729218894", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1775120226" onClick='toggleBox("Output-1775120226", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-729218894" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-729218894">
+<a href="#Output-1775120226" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1775120226">
 Footer-about link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>2</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test42M()'><b>test42M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-89448984" onClick='toggleBox("Output-89448984", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1149388444" onClick='toggleBox("Output-1149388444", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-89448984" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-89448984">
+<a href="#Output-1149388444" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1149388444">
 Footer-site map link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test43M()'><b>test43M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1266265220" onClick='toggleBox("Output-1266265220", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-700348233" onClick='toggleBox("Output-700348233", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1266265220" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1266265220">
+<a href="#Output-700348233" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-700348233">
 Footer-myAccount map link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>3</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test45M()'><b>test45M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-462773420" onClick='toggleBox("Output-462773420", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1120072844" onClick='toggleBox("Output-1120072844", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-462773420" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-462773420">
+<a href="#Output-1120072844" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1120072844">
 Footer-my credit slips link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test46M()'><b>test46M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1088104996" onClick='toggleBox("Output-1088104996", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1939869193" onClick='toggleBox("Output-1939869193", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1088104996" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1088104996">
+<a href="#Output-1939869193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1939869193">
 Footer-my adresses link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>6</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test47M()'><b>test47M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-858818438" onClick='toggleBox("Output-858818438", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-389247924" onClick='toggleBox("Output-389247924", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-858818438" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-858818438">
+<a href="#Output-389247924" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-389247924">
 Footer-my personal info link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test4M()'><b>test4M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-877612522" onClick='toggleBox("Output-877612522", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2008907751" onClick='toggleBox("Output-2008907751", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-877612522" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-877612522">
+<a href="#Output-2008907751" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2008907751">
 logo link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>0</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test5M()'><b>test5M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-2073299099" onClick='toggleBox("Output-2073299099", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1386677799" onClick='toggleBox("Output-1386677799", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2073299099" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2073299099">
+<a href="#Output-1386677799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1386677799">
 cart link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test6M()'><b>test6M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1175371136" onClick='toggleBox("Output-1175371136", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1596997325" onClick='toggleBox("Output-1596997325", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1175371136" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1175371136">
+<a href="#Output-1596997325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1596997325">
 search link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>5</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test7M()'><b>test7M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-2059461664" onClick='toggleBox("Output-2059461664", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1480170882" onClick='toggleBox("Output-1480170882", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2059461664" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2059461664">
+<a href="#Output-1480170882" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1480170882">
 header-Women link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>2</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test8M()'><b>test8M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1855261647" onClick='toggleBox("Output-1855261647", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-498820363" onClick='toggleBox("Output-498820363", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1855261647" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1855261647">
+<a href="#Output-498820363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-498820363">
 header-tops link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 <tr>
 <td title='Tests.ValidateMainPageLinks.test9M()'><b>test9M</b><br>Test class: Tests.ValidateMainPageLinks<br/>
-<a href="#Output-1109113497" onClick='toggleBox("Output-1109113497", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-337545117" onClick='toggleBox("Output-337545117", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1109113497" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1109113497">
+<a href="#Output-337545117" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-337545117">
 header-t-shirts link ok |<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>Tests.ValidateMainPageLinks@75bd9247</td></tr>
+<td>1</td>
+<td>Tests.ValidateMainPageLinks@4cdbe50f</td></tr>
 </table><p>
 </body>
 </html>

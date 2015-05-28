@@ -1,20 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="72" passed="72">
+<testng-results skipped="0" failed="6" total="48" passed="42">
   <reporter-output>
     <line>
-      <![CDATA[header-Blouses link ok |]]>
-    </line>
-    <line>
       <![CDATA[header-Dresses link ok |]]>
-    </line>
-    <line>
-      <![CDATA[header-Casual Dresses link ok |]]>
-    </line>
-    <line>
-      <![CDATA[header-Evening Dresses link ok |]]>
-    </line>
-    <line>
-      <![CDATA[header-Summer Dresses link ok |]]>
     </line>
     <line>
       <![CDATA[header-Dresses link ok |]]>
@@ -33,9 +21,6 @@
     </line>
     <line>
       <![CDATA[Opened page My Store|]]>
-    </line>
-    <line>
-      <![CDATA[Slider displays all the expected pictures |]]>
     </line>
     <line>
       <![CDATA[Slider link ok |]]>
@@ -69,9 +54,6 @@
     </line>
     <line>
       <![CDATA[Contact us link ok |]]>
-    </line>
-    <line>
-      <![CDATA[Slider manual function correct | ]]>
     </line>
     <line>
       <![CDATA[Facebook link ok |]]>
@@ -145,1326 +127,970 @@
     <line>
       <![CDATA[header-t-shirts link ok |]]>
     </line>
-    <line>
-      <![CDATA[Test 1L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 2L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 3L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 4L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 5L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 6L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 7L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 8L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 9L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 10L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 11L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 12L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 13L passed]]>
-    </line>
-    <line>
-      <![CDATA[Test 14L passed]]>
-    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="577685" started-at="2015-04-27T21:39:27Z" finished-at="2015-04-27T21:49:05Z">
+  <suite name="Suite" duration-ms="150476" started-at="2015-05-16T19:13:10Z" finished-at="2015-05-16T19:15:41Z">
     <groups>
     </groups>
-    <test name="ValidateLinksFF" duration-ms="289167" started-at="2015-04-27T21:39:27Z" finished-at="2015-04-27T21:44:16Z">
+    <test name="ValidateLinksFF" duration-ms="150476" started-at="2015-05-16T19:13:10Z" finished-at="2015-05-16T19:15:41Z">
       <class name="Tests.ValidateMainPageLinks">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeTest" is-config="true" duration-ms="14049" started-at="2015-04-27T22:39:27Z" finished-at="2015-04-27T22:39:41Z">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeTest" is-config="true" duration-ms="3737" started-at="2015-05-16T20:13:10Z" finished-at="2015-05-16T20:13:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[FF]]>
+                <![CDATA[HUD]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="test10M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test10M" duration-ms="8395" started-at="2015-04-27T22:39:41Z" finished-at="2015-04-27T22:39:49Z">
+        <test-method status="FAIL" signature="test10M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test10M" duration-ms="382" started-at="2015-05-16T20:13:14Z" finished-at="2015-05-16T20:13:15Z">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at Tests.ValidateMainPageLinks.test10M(ValidateMainPageLinks.java:128)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
-            <line>
-              <![CDATA[header-Blouses link ok |]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test10M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:39:41Z" finished-at="2015-04-27T22:39:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:14Z" finished-at="2015-05-16T20:13:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:39:49Z" finished-at="2015-04-27T22:39:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1290" started-at="2015-05-16T20:13:15Z" finished-at="2015-05-16T20:13:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:39:49Z" finished-at="2015-04-27T22:39:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test11M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test11M" duration-ms="6068" started-at="2015-04-27T22:39:49Z" finished-at="2015-04-27T22:39:56Z">
+        <test-method status="PASS" signature="test11M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test11M" duration-ms="1344" started-at="2015-05-16T20:13:16Z" finished-at="2015-05-16T20:13:17Z">
           <reporter-output>
             <line>
               <![CDATA[header-Dresses link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test11M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:39:56Z" finished-at="2015-04-27T22:39:56Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:16Z" finished-at="2015-05-16T20:13:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1268" started-at="2015-05-16T20:13:17Z" finished-at="2015-05-16T20:13:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test12M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test12M" duration-ms="4992" started-at="2015-04-27T22:39:56Z" finished-at="2015-04-27T22:40:01Z">
+        <test-method status="FAIL" signature="test12M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test12M" duration-ms="260" started-at="2015-05-16T20:13:19Z" finished-at="2015-05-16T20:13:19Z">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:187)
+	at Tests.ValidateMainPageLinks.test12M(ValidateMainPageLinks.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
-            <line>
-              <![CDATA[header-Casual Dresses link ok |]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test12M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:39:56Z" finished-at="2015-04-27T22:39:56Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:19Z" finished-at="2015-05-16T20:13:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:40:01Z" finished-at="2015-04-27T22:40:01Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1167" started-at="2015-05-16T20:13:19Z" finished-at="2015-05-16T20:13:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test13M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test13M" duration-ms="7145" started-at="2015-04-27T22:40:01Z" finished-at="2015-04-27T22:40:08Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:20Z" finished-at="2015-05-16T20:13:20Z">
           <reporter-output>
-            <line>
-              <![CDATA[header-Evening Dresses link ok |]]>
-            </line>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="test13M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test13M" duration-ms="200" started-at="2015-05-16T20:13:20Z" finished-at="2015-05-16T20:13:20Z">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:199)
+	at Tests.ValidateMainPageLinks.test13M(ValidateMainPageLinks.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
+          <reporter-output>
           </reporter-output>
         </test-method> <!-- test13M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:01Z" finished-at="2015-04-27T22:40:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="172" started-at="2015-04-27T22:40:08Z" finished-at="2015-04-27T22:40:08Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1180" started-at="2015-05-16T20:13:20Z" finished-at="2015-05-16T20:13:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:08Z" finished-at="2015-04-27T22:40:08Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:21Z" finished-at="2015-05-16T20:13:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test14M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test14M" duration-ms="5320" started-at="2015-04-27T22:40:08Z" finished-at="2015-04-27T22:40:13Z">
+        <test-method status="FAIL" signature="test14M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test14M" duration-ms="208" started-at="2015-05-16T20:13:21Z" finished-at="2015-05-16T20:13:22Z">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$Header.women(HomePage.java:211)
+	at Tests.ValidateMainPageLinks.test14M(ValidateMainPageLinks.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
-            <line>
-              <![CDATA[header-Summer Dresses link ok |]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test14M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="172" started-at="2015-04-27T22:40:13Z" finished-at="2015-04-27T22:40:14Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1160" started-at="2015-05-16T20:13:22Z" finished-at="2015-05-16T20:13:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:14Z" finished-at="2015-04-27T22:40:14Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:23Z" finished-at="2015-05-16T20:13:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test15M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test15M" duration-ms="4446" started-at="2015-04-27T22:40:14Z" finished-at="2015-04-27T22:40:18Z">
+        <test-method status="PASS" signature="test15M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test15M" duration-ms="1177" started-at="2015-05-16T20:13:23Z" finished-at="2015-05-16T20:13:24Z">
           <reporter-output>
             <line>
               <![CDATA[header-Dresses link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test15M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="203" started-at="2015-04-27T22:40:18Z" finished-at="2015-04-27T22:40:18Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1133" started-at="2015-05-16T20:13:24Z" finished-at="2015-05-16T20:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test16M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test16M" duration-ms="5694" started-at="2015-04-27T22:40:18Z" finished-at="2015-04-27T22:40:24Z">
+        <test-method status="PASS" signature="test16M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test16M" duration-ms="1327" started-at="2015-05-16T20:13:25Z" finished-at="2015-05-16T20:13:26Z">
           <reporter-output>
             <line>
               <![CDATA[header-Dresses-casual dresses link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test16M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:18Z" finished-at="2015-04-27T22:40:18Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:25Z" finished-at="2015-05-16T20:13:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="171" started-at="2015-04-27T22:40:24Z" finished-at="2015-04-27T22:40:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1578" started-at="2015-05-16T20:13:26Z" finished-at="2015-05-16T20:13:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test17M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test17M" duration-ms="5228" started-at="2015-04-27T22:40:24Z" finished-at="2015-04-27T22:40:29Z">
+        <test-method status="PASS" signature="test17M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test17M" duration-ms="1270" started-at="2015-05-16T20:13:28Z" finished-at="2015-05-16T20:13:29Z">
           <reporter-output>
             <line>
               <![CDATA[header-Dresses-evening dresses link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test17M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:24Z" finished-at="2015-04-27T22:40:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:28Z" finished-at="2015-05-16T20:13:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="172" started-at="2015-04-27T22:40:29Z" finished-at="2015-04-27T22:40:30Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1545" started-at="2015-05-16T20:13:29Z" finished-at="2015-05-16T20:13:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:30Z" finished-at="2015-04-27T22:40:30Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:31Z" finished-at="2015-05-16T20:13:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test18M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test18M" duration-ms="5553" started-at="2015-04-27T22:40:30Z" finished-at="2015-04-27T22:40:35Z">
+        <test-method status="PASS" signature="test18M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test18M" duration-ms="2835" started-at="2015-05-16T20:13:31Z" finished-at="2015-05-16T20:13:34Z">
           <reporter-output>
             <line>
               <![CDATA[header-Dresses-summer dresses link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test18M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="203" started-at="2015-04-27T22:40:35Z" finished-at="2015-04-27T22:40:35Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2002" started-at="2015-05-16T20:13:34Z" finished-at="2015-05-16T20:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:35Z" finished-at="2015-04-27T22:40:35Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:36Z" finished-at="2015-05-16T20:13:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test19M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test19M" duration-ms="4651" started-at="2015-04-27T22:40:35Z" finished-at="2015-04-27T22:40:40Z">
+        <test-method status="PASS" signature="test19M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test19M" duration-ms="1173" started-at="2015-05-16T20:13:36Z" finished-at="2015-05-16T20:13:37Z">
           <reporter-output>
             <line>
               <![CDATA[header-T-shirts dresses link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test19M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:40:40Z" finished-at="2015-04-27T22:40:40Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1357" started-at="2015-05-16T20:13:37Z" finished-at="2015-05-16T20:13:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test1M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test1M" duration-ms="2028" started-at="2015-04-27T22:40:40Z" finished-at="2015-04-27T22:40:42Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2008" started-at="2015-05-16T20:13:38Z" finished-at="2015-05-16T20:13:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test1M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test1M" duration-ms="0" started-at="2015-05-16T20:13:38Z" finished-at="2015-05-16T20:13:38Z">
           <reporter-output>
             <line>
               <![CDATA[Opened page My Store|]]>
             </line>
           </reporter-output>
         </test-method> <!-- test1M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:40Z" finished-at="2015-04-27T22:40:40Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:38Z" finished-at="2015-05-16T20:13:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="390" started-at="2015-04-27T22:40:42Z" finished-at="2015-04-27T22:40:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:43Z" finished-at="2015-04-27T22:40:43Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:40Z" finished-at="2015-05-16T20:13:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test1S()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test1S" duration-ms="6601" started-at="2015-04-27T22:40:43Z" finished-at="2015-04-27T22:40:49Z">
+        <test-method status="FAIL" signature="test1S()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test1S" duration-ms="11172" started-at="2015-05-16T20:13:40Z" finished-at="2015-05-16T20:13:51Z">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Timed out after 10 seconds waiting for Tests.ValidateMainPageLinks$1@73db4768
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Kris-PC', ip: '192.168.37.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for Tests.ValidateMainPageLinks$1@73db4768
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Kris-PC', ip: '192.168.37.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:175)
+	at Tests.ValidateMainPageLinks.test1S(ValidateMainPageLinks.java:558)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate a node using //*[@id='homeslider']/li[4]/a/img
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.45.0', revision: '5017cb8', time: '2015-02-27 00:00:10'
+System info: host: 'Kris-PC', ip: '192.168.37.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_31'
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByXPath(HtmlUnitDriver.java:1103)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1648)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$5.call(HtmlUnitDriver.java:1)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1302)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:1644)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:550)
+	at Tests.ValidateMainPageLinks$1.apply(ValidateMainPageLinks.java:542)
+	at Tests.ValidateMainPageLinks$1.apply(ValidateMainPageLinks.java:1)
+	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:177)
+	at org.openqa.selenium.support.ui.FluentWait$1.apply(FluentWait.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
-            <line>
-              <![CDATA[Slider displays all the expected pictures |]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test1S -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:40:49Z" finished-at="2015-04-27T22:40:49Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1338" started-at="2015-05-16T20:13:51Z" finished-at="2015-05-16T20:13:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test20M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test20M" duration-ms="5772" started-at="2015-04-27T22:40:49Z" finished-at="2015-04-27T22:40:55Z">
+        <test-method status="PASS" signature="test20M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test20M" duration-ms="1137" started-at="2015-05-16T20:13:53Z" finished-at="2015-05-16T20:13:54Z">
           <reporter-output>
             <line>
               <![CDATA[Slider link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test20M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:49Z" finished-at="2015-04-27T22:40:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:53Z" finished-at="2015-05-16T20:13:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="187" started-at="2015-04-27T22:40:55Z" finished-at="2015-04-27T22:40:55Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1108" started-at="2015-05-16T20:13:54Z" finished-at="2015-05-16T20:13:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:40:55Z" finished-at="2015-04-27T22:40:55Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:55Z" finished-at="2015-05-16T20:13:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test21M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test21M" duration-ms="4198" started-at="2015-04-27T22:40:55Z" finished-at="2015-04-27T22:40:59Z">
+        <test-method status="PASS" signature="test21M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test21M" duration-ms="270" started-at="2015-05-16T20:13:55Z" finished-at="2015-05-16T20:13:55Z">
           <reporter-output>
             <line>
               <![CDATA[ContainerTop-contentTop link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test21M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="188" started-at="2015-04-27T22:40:59Z" finished-at="2015-04-27T22:41:00Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1190" started-at="2015-05-16T20:13:55Z" finished-at="2015-05-16T20:13:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test22M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test22M" duration-ms="4180" started-at="2015-04-27T22:41:00Z" finished-at="2015-04-27T22:41:04Z">
+        <test-method status="PASS" signature="test22M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test22M" duration-ms="195" started-at="2015-05-16T20:13:56Z" finished-at="2015-05-16T20:13:57Z">
           <reporter-output>
             <line>
               <![CDATA[ContainerTop-contentButton link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test22M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:00Z" finished-at="2015-04-27T22:41:00Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:56Z" finished-at="2015-05-16T20:13:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="234" started-at="2015-04-27T22:41:04Z" finished-at="2015-04-27T22:41:04Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1180" started-at="2015-05-16T20:13:57Z" finished-at="2015-05-16T20:13:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:04Z" finished-at="2015-04-27T22:41:04Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="2" started-at="2015-05-16T20:13:58Z" finished-at="2015-05-16T20:13:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test23M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test23M" duration-ms="2933" started-at="2015-04-27T22:41:04Z" finished-at="2015-04-27T22:41:07Z">
+        <test-method status="PASS" signature="test23M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test23M" duration-ms="13" started-at="2015-05-16T20:13:58Z" finished-at="2015-05-16T20:13:58Z">
           <reporter-output>
             <line>
               <![CDATA[tab popular ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test23M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="219" started-at="2015-04-27T22:41:07Z" finished-at="2015-04-27T22:41:07Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1100" started-at="2015-05-16T20:13:58Z" finished-at="2015-05-16T20:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test24M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test24M" duration-ms="1279" started-at="2015-04-27T22:41:07Z" finished-at="2015-04-27T22:41:08Z">
+        <test-method status="PASS" signature="test24M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test24M" duration-ms="10" started-at="2015-05-16T20:13:59Z" finished-at="2015-05-16T20:13:59Z">
           <reporter-output>
             <line>
               <![CDATA[tab bestsellers ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test24M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:07Z" finished-at="2015-04-27T22:41:07Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:13:59Z" finished-at="2015-05-16T20:13:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="171" started-at="2015-04-27T22:41:08Z" finished-at="2015-04-27T22:41:09Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1117" started-at="2015-05-16T20:13:59Z" finished-at="2015-05-16T20:14:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:09Z" finished-at="2015-04-27T22:41:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test25M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test25M" duration-ms="2125" started-at="2015-04-27T22:41:09Z" finished-at="2015-04-27T22:41:11Z">
+        <test-method status="PASS" signature="test25M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test25M" duration-ms="280" started-at="2015-05-16T20:14:00Z" finished-at="2015-05-16T20:14:00Z">
           <reporter-output>
             <line>
               <![CDATA[Cont1 link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test25M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="187" started-at="2015-04-27T22:41:11Z" finished-at="2015-04-27T22:41:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:00Z" finished-at="2015-05-16T20:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="3353" started-at="2015-05-16T20:14:00Z" finished-at="2015-05-16T20:14:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test26M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test26M" duration-ms="4259" started-at="2015-04-27T22:41:11Z" finished-at="2015-04-27T22:41:15Z">
+        <test-method status="PASS" signature="test26M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test26M" duration-ms="242" started-at="2015-05-16T20:14:04Z" finished-at="2015-05-16T20:14:04Z">
           <reporter-output>
             <line>
               <![CDATA[Cont2 link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test26M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:11Z" finished-at="2015-04-27T22:41:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:04Z" finished-at="2015-05-16T20:14:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="202" started-at="2015-04-27T22:41:15Z" finished-at="2015-04-27T22:41:15Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2720" started-at="2015-05-16T20:14:04Z" finished-at="2015-05-16T20:14:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:15Z" finished-at="2015-04-27T22:41:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test27M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test27M" duration-ms="4546" started-at="2015-04-27T22:41:15Z" finished-at="2015-04-27T22:41:20Z">
+        <test-method status="PASS" signature="test27M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test27M" duration-ms="290" started-at="2015-05-16T20:14:07Z" finished-at="2015-05-16T20:14:07Z">
           <reporter-output>
             <line>
               <![CDATA[Cont3 link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test27M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="203" started-at="2015-04-27T22:41:20Z" finished-at="2015-04-27T22:41:20Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:07Z" finished-at="2015-05-16T20:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1693" started-at="2015-05-16T20:14:07Z" finished-at="2015-05-16T20:14:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test28M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test28M" duration-ms="4165" started-at="2015-04-27T22:41:20Z" finished-at="2015-04-27T22:41:24Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:09Z" finished-at="2015-05-16T20:14:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test28M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test28M" duration-ms="260" started-at="2015-05-16T20:14:09Z" finished-at="2015-05-16T20:14:09Z">
           <reporter-output>
             <line>
               <![CDATA[Cont4 link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test28M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:20Z" finished-at="2015-04-27T22:41:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="218" started-at="2015-04-27T22:41:24Z" finished-at="2015-04-27T22:41:25Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1867" started-at="2015-05-16T20:14:09Z" finished-at="2015-05-16T20:14:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test29M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test29M" duration-ms="4261" started-at="2015-04-27T22:41:25Z" finished-at="2015-04-27T22:41:29Z">
+        <test-method status="PASS" signature="test29M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test29M" duration-ms="250" started-at="2015-05-16T20:14:11Z" finished-at="2015-05-16T20:14:11Z">
           <reporter-output>
             <line>
               <![CDATA[Cont5 link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test29M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:25Z" finished-at="2015-04-27T22:41:25Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:11Z" finished-at="2015-05-16T20:14:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="219" started-at="2015-04-27T22:41:29Z" finished-at="2015-04-27T22:41:29Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1253" started-at="2015-05-16T20:14:11Z" finished-at="2015-05-16T20:14:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:29Z" finished-at="2015-04-27T22:41:29Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="10" started-at="2015-05-16T20:14:12Z" finished-at="2015-05-16T20:14:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test2M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test2M" duration-ms="4492" started-at="2015-04-27T22:41:29Z" finished-at="2015-04-27T22:41:34Z">
+        <test-method status="PASS" signature="test2M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test2M" duration-ms="6244" started-at="2015-05-16T20:14:12Z" finished-at="2015-05-16T20:14:18Z">
           <reporter-output>
             <line>
               <![CDATA[Contact us link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test2M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="219" started-at="2015-04-27T22:41:34Z" finished-at="2015-04-27T22:41:34Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1250" started-at="2015-05-16T20:14:18Z" finished-at="2015-05-16T20:14:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test2S()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test2S" duration-ms="6224" started-at="2015-04-27T22:41:34Z" finished-at="2015-04-27T22:41:40Z">
+        <test-method status="FAIL" signature="test2S()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test2S" duration-ms="218" started-at="2015-05-16T20:14:20Z" finished-at="2015-05-16T20:14:20Z">
+          <exception class="java.lang.ClassCastException">
+            <message>
+              <![CDATA[org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ClassCastException: org.openqa.selenium.htmlunit.HtmlUnitDriver cannot be cast to org.openqa.selenium.TakesScreenshot
+	at Utility.Camera.takePicture(Camera.java:18)
+	at PageObjects.HomePage$ContainerTop.sliderNext(HomePage.java:348)
+	at Tests.ValidateMainPageLinks.test2S(ValidateMainPageLinks.java:592)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ClassCastException -->
           <reporter-output>
-            <line>
-              <![CDATA[Slider manual function correct | ]]>
-            </line>
           </reporter-output>
         </test-method> <!-- test2S -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:34Z" finished-at="2015-04-27T22:41:34Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:20Z" finished-at="2015-05-16T20:14:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="172" started-at="2015-04-27T22:41:40Z" finished-at="2015-04-27T22:41:40Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1100" started-at="2015-05-16T20:14:20Z" finished-at="2015-05-16T20:14:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test30M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test30M" duration-ms="2313" started-at="2015-04-27T22:41:40Z" finished-at="2015-04-27T22:41:42Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:21Z" finished-at="2015-05-16T20:14:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test30M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test30M" duration-ms="710" started-at="2015-05-16T20:14:21Z" finished-at="2015-05-16T20:14:22Z">
           <reporter-output>
             <line>
               <![CDATA[Facebook link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test30M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:40Z" finished-at="2015-04-27T22:41:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="184" started-at="2015-04-27T22:41:42Z" finished-at="2015-04-27T22:41:43Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1860" started-at="2015-05-16T20:14:22Z" finished-at="2015-05-16T20:14:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:43Z" finished-at="2015-04-27T22:41:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test31M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test31M" duration-ms="5815" started-at="2015-04-27T22:41:43Z" finished-at="2015-04-27T22:41:48Z">
+        <test-method status="PASS" signature="test31M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test31M" duration-ms="687" started-at="2015-05-16T20:14:24Z" finished-at="2015-05-16T20:14:24Z">
           <reporter-output>
             <line>
               <![CDATA[Twitter link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test31M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="211" started-at="2015-04-27T22:41:48Z" finished-at="2015-04-27T22:41:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-04-27T22:41:49Z" finished-at="2015-04-27T22:41:49Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:24Z" finished-at="2015-05-16T20:14:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test32M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test32M" duration-ms="7771" started-at="2015-04-27T22:41:49Z" finished-at="2015-04-27T22:41:56Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2438" started-at="2015-05-16T20:14:24Z" finished-at="2015-05-16T20:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:27Z" finished-at="2015-05-16T20:14:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test32M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test32M" duration-ms="430" started-at="2015-05-16T20:14:27Z" finished-at="2015-05-16T20:14:27Z">
           <reporter-output>
             <line>
               <![CDATA[Youtube link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test32M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="233" started-at="2015-04-27T22:41:56Z" finished-at="2015-04-27T22:41:57Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2615" started-at="2015-05-16T20:14:27Z" finished-at="2015-05-16T20:14:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:41:57Z" finished-at="2015-04-27T22:41:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:30Z" finished-at="2015-05-16T20:14:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test33M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test33M" duration-ms="13950" started-at="2015-04-27T22:41:57Z" finished-at="2015-04-27T22:42:11Z">
+        <test-method status="PASS" signature="test33M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test33M" duration-ms="987" started-at="2015-05-16T20:14:30Z" finished-at="2015-05-16T20:14:31Z">
           <reporter-output>
             <line>
               <![CDATA[Google link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test33M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="296" started-at="2015-04-27T22:42:11Z" finished-at="2015-04-27T22:42:11Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1928" started-at="2015-05-16T20:14:31Z" finished-at="2015-05-16T20:14:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:11Z" finished-at="2015-04-27T22:42:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:33Z" finished-at="2015-05-16T20:14:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test34M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test34M" duration-ms="3922" started-at="2015-04-27T22:42:11Z" finished-at="2015-04-27T22:42:15Z">
+        <test-method status="PASS" signature="test34M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test34M" duration-ms="2785" started-at="2015-05-16T20:14:33Z" finished-at="2015-05-16T20:14:35Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-women link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test34M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="254" started-at="2015-04-27T22:42:15Z" finished-at="2015-04-27T22:42:15Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1500" started-at="2015-05-16T20:14:35Z" finished-at="2015-05-16T20:14:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:15Z" finished-at="2015-04-27T22:42:15Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:37Z" finished-at="2015-05-16T20:14:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test35M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test35M" duration-ms="6090" started-at="2015-04-27T22:42:15Z" finished-at="2015-04-27T22:42:21Z">
+        <test-method status="PASS" signature="test35M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test35M" duration-ms="1430" started-at="2015-05-16T20:14:37Z" finished-at="2015-05-16T20:14:38Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-specials link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test35M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="336" started-at="2015-04-27T22:42:21Z" finished-at="2015-04-27T22:42:22Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1637" started-at="2015-05-16T20:14:38Z" finished-at="2015-05-16T20:14:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:22Z" finished-at="2015-04-27T22:42:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test36M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test36M" duration-ms="5973" started-at="2015-04-27T22:42:22Z" finished-at="2015-04-27T22:42:28Z">
+        <test-method status="PASS" signature="test36M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test36M" duration-ms="988" started-at="2015-05-16T20:14:40Z" finished-at="2015-05-16T20:14:41Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-New Products link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test36M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="263" started-at="2015-04-27T22:42:28Z" finished-at="2015-04-27T22:42:28Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:28Z" finished-at="2015-04-27T22:42:28Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:40Z" finished-at="2015-05-16T20:14:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test37M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test37M" duration-ms="5543" started-at="2015-04-27T22:42:28Z" finished-at="2015-04-27T22:42:33Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1345" started-at="2015-05-16T20:14:41Z" finished-at="2015-05-16T20:14:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test37M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test37M" duration-ms="1407" started-at="2015-05-16T20:14:42Z" finished-at="2015-05-16T20:14:44Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-Best sales link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test37M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="206" started-at="2015-04-27T22:42:33Z" finished-at="2015-04-27T22:42:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:34Z" finished-at="2015-04-27T22:42:34Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:42Z" finished-at="2015-05-16T20:14:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test38M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test38M" duration-ms="7415" started-at="2015-04-27T22:42:34Z" finished-at="2015-04-27T22:42:41Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1898" started-at="2015-05-16T20:14:44Z" finished-at="2015-05-16T20:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test38M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test38M" duration-ms="1357" started-at="2015-05-16T20:14:46Z" finished-at="2015-05-16T20:14:47Z">
           <reporter-output>
             <line>
               <![CDATA[Footer - our stores link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test38M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="238" started-at="2015-04-27T22:42:41Z" finished-at="2015-04-27T22:42:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:41Z" finished-at="2015-04-27T22:42:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:46Z" finished-at="2015-05-16T20:14:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test39M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test39M" duration-ms="5333" started-at="2015-04-27T22:42:41Z" finished-at="2015-04-27T22:42:47Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1808" started-at="2015-05-16T20:14:47Z" finished-at="2015-05-16T20:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test39M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test39M" duration-ms="910" started-at="2015-05-16T20:14:49Z" finished-at="2015-05-16T20:14:50Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-contact us link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test39M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="279" started-at="2015-04-27T22:42:47Z" finished-at="2015-04-27T22:42:47Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:49Z" finished-at="2015-05-16T20:14:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1535" started-at="2015-05-16T20:14:50Z" finished-at="2015-05-16T20:14:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test3M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test3M" duration-ms="5520" started-at="2015-04-27T22:42:47Z" finished-at="2015-04-27T22:42:52Z">
+        <test-method status="PASS" signature="test3M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test3M" duration-ms="1557" started-at="2015-05-16T20:14:51Z" finished-at="2015-05-16T20:14:53Z">
           <reporter-output>
             <line>
               <![CDATA[Login link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test3M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:47Z" finished-at="2015-04-27T22:42:47Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:51Z" finished-at="2015-05-16T20:14:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="201" started-at="2015-04-27T22:42:52Z" finished-at="2015-04-27T22:42:53Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1820" started-at="2015-05-16T20:14:53Z" finished-at="2015-05-16T20:14:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:53Z" finished-at="2015-04-27T22:42:53Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test40M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test40M" duration-ms="5846" started-at="2015-04-27T22:42:53Z" finished-at="2015-04-27T22:42:58Z">
+        <test-method status="PASS" signature="test40M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test40M" duration-ms="1250" started-at="2015-05-16T20:14:55Z" finished-at="2015-05-16T20:14:56Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-terms and conditions link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test40M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="217" started-at="2015-04-27T22:42:58Z" finished-at="2015-04-27T22:42:59Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:55Z" finished-at="2015-05-16T20:14:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2068" started-at="2015-05-16T20:14:56Z" finished-at="2015-05-16T20:14:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test41M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test41M" duration-ms="5774" started-at="2015-04-27T22:42:59Z" finished-at="2015-04-27T22:43:04Z">
+        <test-method status="PASS" signature="test41M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test41M" duration-ms="2160" started-at="2015-05-16T20:14:58Z" finished-at="2015-05-16T20:15:00Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-about link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test41M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:42:59Z" finished-at="2015-04-27T22:42:59Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:14:58Z" finished-at="2015-05-16T20:14:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="217" started-at="2015-04-27T22:43:04Z" finished-at="2015-04-27T22:43:05Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1677" started-at="2015-05-16T20:15:00Z" finished-at="2015-05-16T20:15:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="1" started-at="2015-04-27T22:43:05Z" finished-at="2015-04-27T22:43:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test42M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test42M" duration-ms="6113" started-at="2015-04-27T22:43:05Z" finished-at="2015-04-27T22:43:11Z">
+        <test-method status="PASS" signature="test42M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test42M" duration-ms="1613" started-at="2015-05-16T20:15:02Z" finished-at="2015-05-16T20:15:03Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-site map link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test42M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="206" started-at="2015-04-27T22:43:11Z" finished-at="2015-04-27T22:43:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:11Z" finished-at="2015-04-27T22:43:11Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:02Z" finished-at="2015-05-16T20:15:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test43M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test43M" duration-ms="6100" started-at="2015-04-27T22:43:11Z" finished-at="2015-04-27T22:43:17Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2952" started-at="2015-05-16T20:15:03Z" finished-at="2015-05-16T20:15:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="test43M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test43M" duration-ms="3895" started-at="2015-05-16T20:15:06Z" finished-at="2015-05-16T20:15:10Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-myAccount map link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test43M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="210" started-at="2015-04-27T22:43:17Z" finished-at="2015-04-27T22:43:17Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:06Z" finished-at="2015-05-16T20:15:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2095" started-at="2015-05-16T20:15:10Z" finished-at="2015-05-16T20:15:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test45M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test45M" duration-ms="6119" started-at="2015-04-27T22:43:17Z" finished-at="2015-04-27T22:43:23Z">
+        <test-method status="PASS" signature="test45M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test45M" duration-ms="1895" started-at="2015-05-16T20:15:12Z" finished-at="2015-05-16T20:15:14Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-my credit slips link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test45M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:17Z" finished-at="2015-04-27T22:43:17Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:12Z" finished-at="2015-05-16T20:15:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="213" started-at="2015-04-27T22:43:23Z" finished-at="2015-04-27T22:43:24Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1458" started-at="2015-05-16T20:15:14Z" finished-at="2015-05-16T20:15:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:24Z" finished-at="2015-04-27T22:43:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test46M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test46M" duration-ms="6183" started-at="2015-04-27T22:43:24Z" finished-at="2015-04-27T22:43:30Z">
+        <test-method status="PASS" signature="test46M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test46M" duration-ms="1738" started-at="2015-05-16T20:15:16Z" finished-at="2015-05-16T20:15:17Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-my adresses link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test46M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="278" started-at="2015-04-27T22:43:30Z" finished-at="2015-04-27T22:43:30Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:16Z" finished-at="2015-05-16T20:15:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1463" started-at="2015-05-16T20:15:17Z" finished-at="2015-05-16T20:15:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test47M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test47M" duration-ms="7604" started-at="2015-04-27T22:43:30Z" finished-at="2015-04-27T22:43:38Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:19Z" finished-at="2015-05-16T20:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test47M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test47M" duration-ms="1437" started-at="2015-05-16T20:15:19Z" finished-at="2015-05-16T20:15:20Z">
           <reporter-output>
             <line>
               <![CDATA[Footer-my personal info link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test47M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:30Z" finished-at="2015-04-27T22:43:30Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="207" started-at="2015-04-27T22:43:38Z" finished-at="2015-04-27T22:43:38Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1315" started-at="2015-05-16T20:15:20Z" finished-at="2015-05-16T20:15:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:38Z" finished-at="2015-04-27T22:43:38Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1438" started-at="2015-05-16T20:15:22Z" finished-at="2015-05-16T20:15:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:22Z" finished-at="2015-05-16T20:15:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test4M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test4M" duration-ms="3281" started-at="2015-04-27T22:43:38Z" finished-at="2015-04-27T22:43:41Z">
+        <test-method status="PASS" signature="test4M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test4M" duration-ms="0" started-at="2015-05-16T20:15:22Z" finished-at="2015-05-16T20:15:22Z">
           <reporter-output>
             <line>
               <![CDATA[logo link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test4M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="218" started-at="2015-04-27T22:43:41Z" finished-at="2015-04-27T22:43:41Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:23Z" finished-at="2015-05-16T20:15:23Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test5M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test5M" duration-ms="3089" started-at="2015-04-27T22:43:41Z" finished-at="2015-04-27T22:43:44Z">
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test5M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test5M" duration-ms="1887" started-at="2015-05-16T20:15:23Z" finished-at="2015-05-16T20:15:25Z">
           <reporter-output>
             <line>
               <![CDATA[cart link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test5M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:41Z" finished-at="2015-04-27T22:43:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="218" started-at="2015-04-27T22:43:44Z" finished-at="2015-04-27T22:43:45Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1608" started-at="2015-05-16T20:15:25Z" finished-at="2015-05-16T20:15:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test6M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test6M" duration-ms="5897" started-at="2015-04-27T22:43:45Z" finished-at="2015-04-27T22:43:51Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:27Z" finished-at="2015-05-16T20:15:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test6M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test6M" duration-ms="1007" started-at="2015-05-16T20:15:27Z" finished-at="2015-05-16T20:15:28Z">
           <reporter-output>
             <line>
               <![CDATA[search link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test6M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:45Z" finished-at="2015-04-27T22:43:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="203" started-at="2015-04-27T22:43:51Z" finished-at="2015-04-27T22:43:51Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="2575" started-at="2015-05-16T20:15:28Z" finished-at="2015-05-16T20:15:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:51Z" finished-at="2015-04-27T22:43:51Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:30Z" finished-at="2015-05-16T20:15:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test7M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test7M" duration-ms="7035" started-at="2015-04-27T22:43:51Z" finished-at="2015-04-27T22:43:58Z">
+        <test-method status="PASS" signature="test7M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test7M" duration-ms="2313" started-at="2015-05-16T20:15:30Z" finished-at="2015-05-16T20:15:33Z">
           <reporter-output>
             <line>
               <![CDATA[header-Women link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test7M -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="203" started-at="2015-04-27T22:43:58Z" finished-at="2015-04-27T22:43:58Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1905" started-at="2015-05-16T20:15:33Z" finished-at="2015-05-16T20:15:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test8M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test8M" duration-ms="7370" started-at="2015-04-27T22:43:58Z" finished-at="2015-04-27T22:44:05Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:34Z" finished-at="2015-05-16T20:15:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test8M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test8M" duration-ms="1772" started-at="2015-05-16T20:15:34Z" finished-at="2015-05-16T20:15:36Z">
           <reporter-output>
             <line>
               <![CDATA[header-tops link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test8M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:43:58Z" finished-at="2015-04-27T22:43:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="203" started-at="2015-04-27T22:44:05Z" finished-at="2015-04-27T22:44:06Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1820" started-at="2015-05-16T20:15:36Z" finished-at="2015-05-16T20:15:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="test9M()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="test9M" duration-ms="7475" started-at="2015-04-27T22:44:06Z" finished-at="2015-04-27T22:44:13Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-05-16T20:15:38Z" finished-at="2015-05-16T20:15:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="test9M()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="test9M" duration-ms="1543" started-at="2015-05-16T20:15:38Z" finished-at="2015-05-16T20:15:40Z">
           <reporter-output>
             <line>
               <![CDATA[header-t-shirts link ok |]]>
             </line>
           </reporter-output>
         </test-method> <!-- test9M -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2015-04-27T22:44:06Z" finished-at="2015-04-27T22:44:06Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterMethod" is-config="true" duration-ms="280" started-at="2015-04-27T22:44:13Z" finished-at="2015-04-27T22:44:13Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterMethod" is-config="true" duration-ms="1370" started-at="2015-05-16T20:15:40Z" finished-at="2015-05-16T20:15:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.ValidateMainPageLinks@75bd9247]" name="afterTest" is-config="true" duration-ms="2699" started-at="2015-04-27T22:44:13Z" finished-at="2015-04-27T22:44:16Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.ValidateMainPageLinks@4cdbe50f]" name="afterTest" is-config="true" duration-ms="10" started-at="2015-05-16T20:15:41Z" finished-at="2015-05-16T20:15:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- Tests.ValidateMainPageLinks -->
     </test> <!-- ValidateLinksFF -->
-    <test name="ValidateLogIn" duration-ms="105926" started-at="2015-04-27T21:44:16Z" finished-at="2015-04-27T21:46:02Z">
-      <class name="Tests.ValidateLogIn">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeTest" is-config="true" duration-ms="14918" started-at="2015-04-27T22:44:16Z" finished-at="2015-04-27T22:44:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FF]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="375" started-at="2015-04-27T22:44:32Z" finished-at="2015-04-27T22:44:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="5210" started-at="2015-04-27T22:44:32Z" data-provider="verification" finished-at="2015-04-27T22:44:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=, expected=An email address required., test ID=1L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 1L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="141" started-at="2015-04-27T22:44:38Z" finished-at="2015-04-27T22:44:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1076" started-at="2015-04-27T22:44:38Z" finished-at="2015-04-27T22:44:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="4774" started-at="2015-04-27T22:44:39Z" data-provider="verification" finished-at="2015-04-27T22:44:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=test1, create-email=, expected=An email address required., test ID=2L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 2L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:44:44Z" finished-at="2015-04-27T22:44:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1092" started-at="2015-04-27T22:44:44Z" finished-at="2015-04-27T22:44:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="6068" started-at="2015-04-27T22:44:45Z" data-provider="verification" finished-at="2015-04-27T22:44:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=, expected=Password is required., test ID=3L, signIn-email=kris@hotmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 3L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="203" started-at="2015-04-27T22:44:51Z" finished-at="2015-04-27T22:44:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1092" started-at="2015-04-27T22:44:51Z" finished-at="2015-04-27T22:44:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="5163" started-at="2015-04-27T22:44:52Z" data-provider="verification" finished-at="2015-04-27T22:44:57Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=test1, create-email=, expected=Invalid email address., test ID=4L, signIn-email=hotmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 4L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:44:57Z" finished-at="2015-04-27T22:44:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1373" started-at="2015-04-27T22:44:58Z" finished-at="2015-04-27T22:44:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="5025" started-at="2015-04-27T22:44:59Z" data-provider="verification" finished-at="2015-04-27T22:45:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=test1, create-email=, expected=Invalid email address., test ID=5L, signIn-email=kris@hotmail}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 5L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="234" started-at="2015-04-27T22:45:04Z" finished-at="2015-04-27T22:45:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1186" started-at="2015-04-27T22:45:04Z" finished-at="2015-04-27T22:45:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="6256" started-at="2015-04-27T22:45:05Z" data-provider="verification" finished-at="2015-04-27T22:45:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=test, create-email=, expected=Invalid password., test ID=6L, signIn-email=kris@hotmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 6L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="171" started-at="2015-04-27T22:45:12Z" finished-at="2015-04-27T22:45:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1326" started-at="2015-04-27T22:45:12Z" finished-at="2015-04-27T22:45:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="5289" started-at="2015-04-27T22:45:13Z" data-provider="verification" finished-at="2015-04-27T22:45:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=test1, create-email=, expected=Authentication failed., test ID=7L, signIn-email=john@hotmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 7L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:45:18Z" finished-at="2015-04-27T22:45:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1326" started-at="2015-04-27T22:45:19Z" finished-at="2015-04-27T22:45:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="3400" started-at="2015-04-27T22:45:20Z" data-provider="verification" finished-at="2015-04-27T22:45:23Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=fdklh@kkdsg.com, expected=An account using this email address has already been registered. Please enter a valid password or request a new one., test ID=8L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 8L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="172" started-at="2015-04-27T22:45:23Z" finished-at="2015-04-27T22:45:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="2153" started-at="2015-04-27T22:45:24Z" finished-at="2015-04-27T22:45:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="5711" started-at="2015-04-27T22:45:26Z" data-provider="verification" finished-at="2015-04-27T22:45:31Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=test1, create-email=, expected=log-in succesfull, test ID=9L, signIn-email=kris@hotmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 9L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="2762" started-at="2015-04-27T22:45:31Z" finished-at="2015-04-27T22:45:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1341" started-at="2015-04-27T22:45:34Z" finished-at="2015-04-27T22:45:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="3541" started-at="2015-04-27T22:45:35Z" data-provider="verification" finished-at="2015-04-27T22:45:39Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=kg@hot., expected=Invalid email address., test ID=10L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 10L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:45:39Z" finished-at="2015-04-27T22:45:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1451" started-at="2015-04-27T22:45:39Z" finished-at="2015-04-27T22:45:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="4165" started-at="2015-04-27T22:45:41Z" data-provider="verification" finished-at="2015-04-27T22:45:45Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=kg.hot.com, expected=Invalid email address., test ID=11L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 11L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:45:45Z" finished-at="2015-04-27T22:45:45Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1389" started-at="2015-04-27T22:45:45Z" finished-at="2015-04-27T22:45:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="3775" started-at="2015-04-27T22:45:46Z" data-provider="verification" finished-at="2015-04-27T22:45:50Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=@hot.com, expected=Invalid email address., test ID=12L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 12L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="140" started-at="2015-04-27T22:45:50Z" finished-at="2015-04-27T22:45:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1436" started-at="2015-04-27T22:45:50Z" finished-at="2015-04-27T22:45:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="3666" started-at="2015-04-27T22:45:52Z" data-provider="verification" finished-at="2015-04-27T22:45:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=kg@.com, expected=Invalid email address., test ID=13L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 13L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="156" started-at="2015-04-27T22:45:55Z" finished-at="2015-04-27T22:45:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="beforeMethod" is-config="true" duration-ms="1544" started-at="2015-04-27T22:45:56Z" finished-at="2015-04-27T22:45:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testLogIn(java.util.HashMap)[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="testLogIn" duration-ms="3572" started-at="2015-04-27T22:45:57Z" data-provider="verification" finished-at="2015-04-27T22:46:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=, create-email=hdfjhgjk, expected=Invalid email address., test ID=14L, signIn-email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Test 14L passed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- testLogIn -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterMethod" is-config="true" duration-ms="157" started-at="2015-04-27T22:46:01Z" finished-at="2015-04-27T22:46:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.ValidateLogIn@17f6480]" name="afterTest" is-config="true" duration-ms="1170" started-at="2015-04-27T22:46:01Z" finished-at="2015-04-27T22:46:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- Tests.ValidateLogIn -->
-    </test> <!-- ValidateLogIn -->
-    <test name="ValidateRegistration" duration-ms="182529" started-at="2015-04-27T21:46:02Z" finished-at="2015-04-27T21:49:05Z">
-      <class name="Tests.ValidateRegistration">
-        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeTest" is-config="true" duration-ms="14104" started-at="2015-04-27T22:46:02Z" finished-at="2015-04-27T22:46:16Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[FF]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="3667" started-at="2015-04-27T22:46:16Z" finished-at="2015-04-27T22:46:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="12375" started-at="2015-04-27T22:46:20Z" data-provider="regData" finished-at="2015-04-27T22:46:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There is 1 error firstname is required. , firstName1=, DOByear=, firstName2=, city=Balbriggan, Test ID=1R, DOBday=, postcode=45678, adress2=, title=, adress1=5 luth st, homePh=, password=12345, mobilePh=0871234567, add info=, lastName1=gil, DOBmonth=, lastName2=, alias=, company=, state=1, email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="15" started-at="2015-04-27T22:46:32Z" finished-at="2015-04-27T22:46:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="2715" started-at="2015-04-27T22:46:32Z" finished-at="2015-04-27T22:46:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="13090" started-at="2015-04-27T22:46:35Z" data-provider="regData" finished-at="2015-04-27T22:46:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There are 3 errors lastname is required. The Zip/Postal code you've entered is invalid. It must follow this format: 00000 Invalid date of birth , firstName1=kris, DOByear=1900, firstName2=, city=Balbriggan, Test ID=2R, DOBday=1, postcode=456787, adress2=, title=, adress1=6 luth st, homePh=015556677, password=34567, mobilePh=, add info=, lastName1=, DOBmonth=1, lastName2=, alias=, company=, state=2, email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="78" started-at="2015-04-27T22:46:48Z" finished-at="2015-04-27T22:46:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="3105" started-at="2015-04-27T22:46:48Z" finished-at="2015-04-27T22:46:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="13420" started-at="2015-04-27T22:46:51Z" data-provider="regData" finished-at="2015-04-27T22:47:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There is 1 error passwd is required. , firstName1=kris, DOByear=2000, firstName2=, city=Balbriggan, Test ID=3R, DOBday=2, postcode=45678, adress2=, title=, adress1=7 luth st, homePh=, password=, mobilePh=0871234568, add info=, lastName1=gil, DOBmonth=2, lastName2=, alias=, company=, state=3, email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="78" started-at="2015-04-27T22:47:05Z" finished-at="2015-04-27T22:47:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="3136" started-at="2015-04-27T22:47:05Z" finished-at="2015-04-27T22:47:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="13400" started-at="2015-04-27T22:47:08Z" data-provider="regData" finished-at="2015-04-27T22:47:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There is 1 error address1 is required. , firstName1=kris, DOByear=2015, firstName2=, city=Balbriggan, Test ID=4R, DOBday=3, postcode=98765, adress2=, title=, adress1=, homePh=, password=34567, mobilePh=0871234569, add info=, lastName1=gil, DOBmonth=3, lastName2=, alias=, company=, state=4, email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="62" started-at="2015-04-27T22:47:21Z" finished-at="2015-04-27T22:47:21Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="2964" started-at="2015-04-27T22:47:21Z" finished-at="2015-04-27T22:47:24Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="13439" started-at="2015-04-27T22:47:24Z" data-provider="regData" finished-at="2015-04-27T22:47:38Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There are 3 errors address1 is required. phone_mobile is invalid. Invalid date of birth , firstName1=kris, DOByear=1900, firstName2=, city=Balbriggan, Test ID=5R, DOBday=4, postcode=45678, adress2=9 luth st, title=, adress1=, homePh=, password=34567, mobilePh=abcdestaga, add info=, lastName1=gil, DOBmonth=4, lastName2=, alias=, company=, state=5, email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="78" started-at="2015-04-27T22:47:38Z" finished-at="2015-04-27T22:47:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="2777" started-at="2015-04-27T22:47:38Z" finished-at="2015-04-27T22:47:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="14557" started-at="2015-04-27T22:47:41Z" data-provider="regData" finished-at="2015-04-27T22:47:55Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There are 2 errors city is required. phone_mobile is invalid. , firstName1=kris, DOByear=2000, firstName2=, city=, Test ID=6R, DOBday=5, postcode=12345, adress2=, title=, adress1=10 luth st, homePh=, password=34567, mobilePh=08762345b, add info=, lastName1=gil, DOBmonth=5, lastName2=, alias=, company=, state=6, email=m@lala.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="78" started-at="2015-04-27T22:47:55Z" finished-at="2015-04-27T22:47:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="2948" started-at="2015-04-27T22:47:55Z" finished-at="2015-04-27T22:47:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="13752" started-at="2015-04-27T22:47:58Z" data-provider="regData" finished-at="2015-04-27T22:48:12Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There are 2 errors phone_mobile is invalid. This country requires you to choose a State. , firstName1=kris, DOByear=2015, firstName2=, city=Balbriggan, Test ID=7R, DOBday=6, postcode=01234, adress2=, title=, adress1=11 luth st, homePh=, password=34567, mobilePh=c71234567, add info=, lastName1=gil, DOBmonth=6, lastName2=, alias=, company=, state=, email=m@lala.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="78" started-at="2015-04-27T22:48:12Z" finished-at="2015-04-27T22:48:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="3167" started-at="2015-04-27T22:48:12Z" finished-at="2015-04-27T22:48:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="13964" started-at="2015-04-27T22:48:15Z" data-provider="regData" finished-at="2015-04-27T22:48:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There are 3 errors phone_mobile is invalid. The Zip/Postal code you've entered is invalid. It must follow this format: 00000 Invalid date of birth , firstName1=kris, DOByear=1900, firstName2=, city=Balbriggan, Test ID=8R, DOBday=7, postcode=, adress2=, title=, adress1=12 luth st, homePh=, password=34567, mobilePh=871cd4567, add info=, lastName1=gil, DOBmonth=7, lastName2=, alias=, company=, state=8, email=m@lala.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="78" started-at="2015-04-27T22:48:29Z" finished-at="2015-04-27T22:48:29Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="3154" started-at="2015-04-27T22:48:29Z" finished-at="2015-04-27T22:48:32Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="14167" started-at="2015-04-27T22:48:32Z" data-provider="regData" finished-at="2015-04-27T22:48:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There are 2 errors You must register at least one phone number. lastname is required. , firstName1=kris, DOByear=2000, firstName2=, city=Balbriggan, Test ID=9R, DOBday=8, postcode=45678, adress2=, title=, adress1=13 luth st, homePh=, password=34567, mobilePh=, add info=, lastName1=, DOBmonth=8, lastName2=, alias=, company=, state=9, email=m@lala.com}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="78" started-at="2015-04-27T22:48:47Z" finished-at="2015-04-27T22:48:47Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="beforeMethod" is-config="true" duration-ms="3182" started-at="2015-04-27T22:48:47Z" finished-at="2015-04-27T22:48:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testRegistration(java.util.Map)[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="testRegistration" duration-ms="13871" started-at="2015-04-27T22:48:50Z" data-provider="regData" finished-at="2015-04-27T22:49:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{country=, Expected=There are 4 errors lastname is required. firstname is required. address1 is required. city is required. , firstName1=, DOByear=2015, firstName2=, city=, Test ID=10R, DOBday=9, postcode=87654, adress2=, title=, adress1=, homePh=, password=34567, mobilePh=0871234567, add info=, lastName1=, DOBmonth=9, lastName2=, alias=, company=, state=10, email=}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testRegistration -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterMethod" is-config="true" duration-ms="93" started-at="2015-04-27T22:49:04Z" finished-at="2015-04-27T22:49:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:Tests.ValidateRegistration@6442b0a6]" name="afterTest" is-config="true" duration-ms="687" started-at="2015-04-27T22:49:04Z" finished-at="2015-04-27T22:49:05Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- Tests.ValidateRegistration -->
-    </test> <!-- ValidateRegistration -->
   </suite> <!-- Suite -->
 </testng-results>

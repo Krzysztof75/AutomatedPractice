@@ -1,0 +1,443 @@
+2015-05-28 10:01:15,332 INFO  [ValidateRegistration] Getting website 
+2015-05-28 10:01:15,573 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:01:17,925 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:01:19,735 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:01:20,087 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:01:21,690 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:01:23,209 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:01:23,349 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:01:23,565 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:01:23,715 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:01:24,035 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:01:24,165 INFO  [ValidateRegistration] entered new password 12345 
+2015-05-28 10:01:24,565 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:01:24,565 INFO  [ValidateRegistration] entered day  
+2015-05-28 10:01:24,955 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:01:24,955 INFO  [ValidateRegistration] entered month  
+2015-05-28 10:01:25,335 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:01:25,335 INFO  [ValidateRegistration] entered year  
+2015-05-28 10:01:25,514 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:01:25,662 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:01:25,887 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:01:26,038 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:01:26,239 INFO  [LogInPage] Returned element company 
+2015-05-28 10:01:26,365 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:01:26,660 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:01:26,800 INFO  [ValidateRegistration] entered adress1 5 luth st 
+2015-05-28 10:01:26,960 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:01:27,070 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:01:27,310 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:01:28,170 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:01:28,170 INFO  [ValidateRegistration] entered state 1 
+2015-05-28 10:01:28,320 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:01:28,460 INFO  [ValidateRegistration] entered postcode 45678 
+2015-05-28 10:01:29,259 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:01:29,376 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:01:29,563 INFO  [LogInPage] Returned element other 
+2015-05-28 10:01:29,751 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:01:29,929 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:01:30,049 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:01:30,219 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:01:30,359 INFO  [ValidateRegistration] entered mobile 0871234567 
+2015-05-28 10:01:30,519 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:01:30,629 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:01:30,809 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:01:39,073 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:01:41,206 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:01:41,600 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:01:41,890 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:01:43,393 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:01:44,043 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:01:44,183 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:01:44,373 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:01:44,503 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:01:44,854 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:01:45,008 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:01:46,024 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:01:46,024 INFO  [ValidateRegistration] entered day 1 
+2015-05-28 10:01:46,844 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:01:46,844 INFO  [ValidateRegistration] entered month 1 
+2015-05-28 10:01:47,224 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:01:47,224 INFO  [ValidateRegistration] entered year 1900 
+2015-05-28 10:01:47,374 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:01:47,494 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:01:47,664 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:01:47,778 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:01:47,966 INFO  [LogInPage] Returned element company 
+2015-05-28 10:01:48,105 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:01:48,425 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:01:48,593 INFO  [ValidateRegistration] entered adress1 6 luth st 
+2015-05-28 10:01:48,818 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:01:48,960 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:01:49,237 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:01:50,067 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:01:50,077 INFO  [ValidateRegistration] entered state 2 
+2015-05-28 10:01:50,227 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:01:50,367 INFO  [ValidateRegistration] entered postcode 456787 
+2015-05-28 10:01:51,027 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:01:51,141 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:01:51,326 INFO  [LogInPage] Returned element other 
+2015-05-28 10:01:51,458 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:01:51,665 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:01:51,857 INFO  [ValidateRegistration] entered phone 015556677 
+2015-05-28 10:01:52,060 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:01:52,204 INFO  [ValidateRegistration] entered mobile  
+2015-05-28 10:01:52,376 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:01:52,486 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:01:52,656 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:01:56,439 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:01:58,668 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:01:59,025 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:01:59,258 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:02:01,123 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:02:01,918 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:02:02,065 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:02:02,255 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:02:02,385 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:02:02,665 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:02:02,775 INFO  [ValidateRegistration] entered new password  
+2015-05-28 10:02:03,625 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:02:03,625 INFO  [ValidateRegistration] entered day 2 
+2015-05-28 10:02:04,621 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:02:04,621 INFO  [ValidateRegistration] entered month 2 
+2015-05-28 10:02:05,548 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:02:05,548 INFO  [ValidateRegistration] entered year 2000 
+2015-05-28 10:02:05,718 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:02:05,848 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:02:06,051 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:02:06,171 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:02:06,351 INFO  [LogInPage] Returned element company 
+2015-05-28 10:02:06,501 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:02:06,761 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:02:06,901 INFO  [ValidateRegistration] entered adress1 7 luth st 
+2015-05-28 10:02:07,071 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:02:07,208 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:02:07,571 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:02:08,638 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:02:08,638 INFO  [ValidateRegistration] entered state 3 
+2015-05-28 10:02:08,818 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:02:09,008 INFO  [ValidateRegistration] entered postcode 45678 
+2015-05-28 10:02:10,168 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:02:10,268 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:02:10,550 INFO  [LogInPage] Returned element other 
+2015-05-28 10:02:10,689 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:02:10,924 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:02:11,056 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:02:11,271 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:02:11,456 INFO  [ValidateRegistration] entered mobile 0871234568 
+2015-05-28 10:02:11,626 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:02:11,736 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:02:11,916 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:02:20,240 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:02:22,904 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:02:23,283 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:02:23,578 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:02:25,177 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:02:25,914 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:02:26,054 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:02:26,254 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:02:26,418 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:02:26,774 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:02:26,940 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:02:27,951 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:02:27,951 INFO  [ValidateRegistration] entered day 3 
+2015-05-28 10:02:28,921 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:02:28,921 INFO  [ValidateRegistration] entered month 3 
+2015-05-28 10:02:29,856 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:02:29,857 INFO  [ValidateRegistration] entered year 2015 
+2015-05-28 10:02:30,057 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:02:30,216 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:02:30,447 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:02:30,587 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:02:30,799 INFO  [LogInPage] Returned element company 
+2015-05-28 10:02:30,919 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:02:31,179 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:02:31,299 INFO  [ValidateRegistration] entered adress1  
+2015-05-28 10:02:31,469 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:02:31,589 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:02:31,839 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:02:32,768 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:02:32,768 INFO  [ValidateRegistration] entered state 4 
+2015-05-28 10:02:32,968 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:02:33,139 INFO  [ValidateRegistration] entered postcode 98765 
+2015-05-28 10:02:33,982 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:02:34,082 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:02:34,232 INFO  [LogInPage] Returned element other 
+2015-05-28 10:02:34,352 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:02:34,522 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:02:34,632 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:02:34,822 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:02:34,982 INFO  [ValidateRegistration] entered mobile 0871234569 
+2015-05-28 10:02:35,152 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:02:35,262 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:02:35,432 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:02:38,564 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:02:40,839 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:02:41,199 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:02:41,419 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:02:43,136 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:02:43,848 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:02:43,978 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:02:44,158 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:02:44,290 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:02:44,587 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:02:44,707 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:02:45,550 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:02:45,550 INFO  [ValidateRegistration] entered day 4 
+2015-05-28 10:02:46,706 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:02:46,706 INFO  [ValidateRegistration] entered month 4 
+2015-05-28 10:02:47,092 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:02:47,102 INFO  [ValidateRegistration] entered year 1900 
+2015-05-28 10:02:47,242 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:02:47,369 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:02:47,549 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:02:47,659 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:02:47,829 INFO  [LogInPage] Returned element company 
+2015-05-28 10:02:47,949 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:02:48,209 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:02:48,319 INFO  [ValidateRegistration] entered adress1  
+2015-05-28 10:02:48,479 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:02:48,639 INFO  [ValidateRegistration] entered adress2 9 luth st 
+2015-05-28 10:02:48,922 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:02:50,103 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:02:50,103 INFO  [ValidateRegistration] entered state 5 
+2015-05-28 10:02:50,265 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:02:50,415 INFO  [ValidateRegistration] entered postcode 45678 
+2015-05-28 10:02:51,157 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:02:51,267 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:02:51,437 INFO  [LogInPage] Returned element other 
+2015-05-28 10:02:51,557 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:02:51,737 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:02:51,847 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:02:52,050 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:02:52,229 INFO  [ValidateRegistration] entered mobile abcdestaga 
+2015-05-28 10:02:52,632 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:02:52,779 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:02:53,004 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:03:02,724 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:03:05,225 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:03:05,673 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:03:05,993 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:03:07,538 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:03:08,273 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:03:08,444 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:03:08,688 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:03:08,860 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:03:09,108 INFO  [LogInPage] Returned element email 
+2015-05-28 10:03:09,416 INFO  [LogInPage] Returned element email 
+2015-05-28 10:03:09,556 INFO  [ValidateRegistration] entered new email adress 
+2015-05-28 10:03:09,816 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:03:09,956 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:03:10,876 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:03:10,876 INFO  [ValidateRegistration] entered day 5 
+2015-05-28 10:03:11,928 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:03:11,928 INFO  [ValidateRegistration] entered month 5 
+2015-05-28 10:03:12,926 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:03:12,926 INFO  [ValidateRegistration] entered year 2000 
+2015-05-28 10:03:13,086 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:03:13,216 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:03:13,396 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:03:13,506 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:03:13,676 INFO  [LogInPage] Returned element company 
+2015-05-28 10:03:13,786 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:03:14,046 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:03:14,196 INFO  [ValidateRegistration] entered adress1 10 luth st 
+2015-05-28 10:03:14,376 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:03:14,523 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:03:14,795 INFO  [ValidateRegistration] entered city  
+2015-05-28 10:03:15,851 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:03:15,851 INFO  [ValidateRegistration] entered state 6 
+2015-05-28 10:03:16,021 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:03:16,161 INFO  [ValidateRegistration] entered postcode 12345 
+2015-05-28 10:03:16,873 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:03:16,973 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:03:17,123 INFO  [LogInPage] Returned element other 
+2015-05-28 10:03:17,243 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:03:17,413 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:03:17,533 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:03:17,715 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:03:17,892 INFO  [ValidateRegistration] entered mobile 08762345b 
+2015-05-28 10:03:18,103 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:03:18,248 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:03:18,485 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:03:21,953 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:03:24,230 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:03:24,706 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:03:25,021 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:03:26,547 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:03:27,208 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:03:27,410 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:03:27,702 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:03:27,890 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:03:28,106 INFO  [LogInPage] Returned element email 
+2015-05-28 10:03:28,447 INFO  [LogInPage] Returned element email 
+2015-05-28 10:03:28,594 INFO  [ValidateRegistration] entered new email adress 
+2015-05-28 10:03:28,854 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:03:29,004 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:03:29,886 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:03:29,886 INFO  [ValidateRegistration] entered day 6 
+2015-05-28 10:03:30,957 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:03:30,957 INFO  [ValidateRegistration] entered month 6 
+2015-05-28 10:03:31,959 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:03:31,969 INFO  [ValidateRegistration] entered year 2015 
+2015-05-28 10:03:32,129 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:03:32,269 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:03:32,449 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:03:32,559 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:03:32,729 INFO  [LogInPage] Returned element company 
+2015-05-28 10:03:32,839 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:03:33,117 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:03:33,267 INFO  [ValidateRegistration] entered adress1 11 luth st 
+2015-05-28 10:03:33,437 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:03:33,557 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:03:33,837 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:03:34,061 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:03:34,061 INFO  [ValidateRegistration] entered state  
+2015-05-28 10:03:34,255 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:03:34,426 INFO  [ValidateRegistration] entered postcode 01234 
+2015-05-28 10:03:35,255 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:03:35,355 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:03:35,515 INFO  [LogInPage] Returned element other 
+2015-05-28 10:03:35,625 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:03:35,795 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:03:35,915 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:03:36,075 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:03:36,255 INFO  [ValidateRegistration] entered mobile c71234567 
+2015-05-28 10:03:36,445 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:03:36,575 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:03:36,755 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:03:45,054 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:03:47,716 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:03:48,064 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:03:48,294 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:03:49,836 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:03:50,675 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:03:50,833 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:03:51,024 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:03:51,164 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:03:51,354 INFO  [LogInPage] Returned element email 
+2015-05-28 10:03:51,637 INFO  [LogInPage] Returned element email 
+2015-05-28 10:03:51,777 INFO  [ValidateRegistration] entered new email adress 
+2015-05-28 10:03:52,027 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:03:52,177 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:03:53,110 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:03:53,110 INFO  [ValidateRegistration] entered day 7 
+2015-05-28 10:03:54,178 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:03:54,178 INFO  [ValidateRegistration] entered month 7 
+2015-05-28 10:03:54,731 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:03:54,731 INFO  [ValidateRegistration] entered year 1900 
+2015-05-28 10:03:54,881 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:03:55,011 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:03:55,181 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:03:55,291 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:03:55,461 INFO  [LogInPage] Returned element company 
+2015-05-28 10:03:55,571 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:03:55,831 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:03:55,981 INFO  [ValidateRegistration] entered adress1 12 luth st 
+2015-05-28 10:03:56,164 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:03:56,306 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:03:56,625 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:03:57,635 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:03:57,635 INFO  [ValidateRegistration] entered state 8 
+2015-05-28 10:03:57,795 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:03:57,905 INFO  [ValidateRegistration] entered postcode  
+2015-05-28 10:03:58,675 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:03:58,775 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:03:58,925 INFO  [LogInPage] Returned element other 
+2015-05-28 10:03:59,045 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:03:59,215 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:03:59,339 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:03:59,581 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:03:59,767 INFO  [ValidateRegistration] entered mobile 871cd4567 
+2015-05-28 10:03:59,979 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:04:00,132 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:04:00,361 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:04:04,499 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:04:07,378 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:04:07,748 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:04:07,988 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:04:11,351 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:04:12,001 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:04:12,141 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:04:12,380 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:04:12,531 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:04:12,754 INFO  [LogInPage] Returned element email 
+2015-05-28 10:04:13,111 INFO  [LogInPage] Returned element email 
+2015-05-28 10:04:13,284 INFO  [ValidateRegistration] entered new email adress 
+2015-05-28 10:04:13,553 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:04:13,713 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:04:14,573 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:04:14,573 INFO  [ValidateRegistration] entered day 8 
+2015-05-28 10:04:15,466 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:04:15,466 INFO  [ValidateRegistration] entered month 8 
+2015-05-28 10:04:16,571 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:04:16,571 INFO  [ValidateRegistration] entered year 2000 
+2015-05-28 10:04:16,730 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:04:16,850 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:04:17,030 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:04:17,150 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:04:17,330 INFO  [LogInPage] Returned element company 
+2015-05-28 10:04:17,450 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:04:17,730 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:04:17,880 INFO  [ValidateRegistration] entered adress1 13 luth st 
+2015-05-28 10:04:18,060 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:04:18,190 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:04:18,430 INFO  [ValidateRegistration] entered city Balbriggan 
+2015-05-28 10:04:19,516 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:04:19,516 INFO  [ValidateRegistration] entered state 9 
+2015-05-28 10:04:19,714 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:04:19,868 INFO  [ValidateRegistration] entered postcode 45678 
+2015-05-28 10:04:20,590 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:04:20,690 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:04:20,850 INFO  [LogInPage] Returned element other 
+2015-05-28 10:04:20,960 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:04:21,130 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:04:21,250 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:04:21,440 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:04:21,550 INFO  [ValidateRegistration] entered mobile  
+2015-05-28 10:04:21,750 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:04:21,887 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:04:22,109 INFO  [LogInPage] Returned element submitAccount 
+2015-05-28 10:04:30,723 INFO  [HomePage] Returned LogIn 
+2015-05-28 10:04:33,354 INFO  [LogInPage] Returned element email_create 
+2015-05-28 10:04:33,714 INFO  [LogInPage] Returned element SubmitCreate 
+2015-05-28 10:04:33,944 INFO  [ValidateRegistration] email adress entered and create button clicked 
+2015-05-28 10:04:35,679 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:04:36,345 INFO  [LogInPage] Returned element customer_firstname 
+2015-05-28 10:04:36,485 INFO  [ValidateRegistration] entered first name 
+2015-05-28 10:04:36,665 INFO  [LogInPage] Returned element customer_lastname 
+2015-05-28 10:04:36,785 INFO  [ValidateRegistration] entered last name 
+2015-05-28 10:04:37,075 INFO  [LogInPage] Returned element passwd 
+2015-05-28 10:04:37,215 INFO  [ValidateRegistration] entered new password 34567 
+2015-05-28 10:04:38,217 INFO  [LogInPage] Returned element uniform-days 
+2015-05-28 10:04:38,217 INFO  [ValidateRegistration] entered day 9 
+2015-05-28 10:04:39,263 INFO  [LogInPage] Returned element uniform-months 
+2015-05-28 10:04:39,263 INFO  [ValidateRegistration] entered month 9 
+2015-05-28 10:04:40,163 INFO  [LogInPage] Returned element uniform-years 
+2015-05-28 10:04:40,163 INFO  [ValidateRegistration] entered year 2015 
+2015-05-28 10:04:40,323 INFO  [LogInPage] Returned element firstname 
+2015-05-28 10:04:40,453 INFO  [ValidateRegistration] entered firstName2  
+2015-05-28 10:04:40,633 INFO  [LogInPage] Returned element lastname 
+2015-05-28 10:04:40,743 INFO  [ValidateRegistration] entered lastName2  
+2015-05-28 10:04:40,913 INFO  [LogInPage] Returned element company 
+2015-05-28 10:04:41,041 INFO  [ValidateRegistration] entered company  
+2015-05-28 10:04:41,360 INFO  [LogInPage] Returned element address1 
+2015-05-28 10:04:41,499 INFO  [ValidateRegistration] entered adress1  
+2015-05-28 10:04:41,712 INFO  [LogInPage] Returned element address2 
+2015-05-28 10:04:41,850 INFO  [ValidateRegistration] entered adress2  
+2015-05-28 10:04:42,132 INFO  [ValidateRegistration] entered city  
+2015-05-28 10:04:43,114 INFO  [LogInPage] Returned element uniform-id_state 
+2015-05-28 10:04:43,114 INFO  [ValidateRegistration] entered state 10 
+2015-05-28 10:04:43,274 INFO  [LogInPage] Returned element postcode 
+2015-05-28 10:04:43,414 INFO  [ValidateRegistration] entered postcode 87654 
+2015-05-28 10:04:44,218 INFO  [LogInPage] Returned element uniform-id_country 
+2015-05-28 10:04:44,369 INFO  [ValidateRegistration] entered country  
+2015-05-28 10:04:44,589 INFO  [LogInPage] Returned element other 
+2015-05-28 10:04:44,730 INFO  [ValidateRegistration] entered addinfo  
+2015-05-28 10:04:44,958 INFO  [LogInPage] Returned element phone 
+2015-05-28 10:04:45,110 INFO  [ValidateRegistration] entered phone  
+2015-05-28 10:04:45,336 INFO  [LogInPage] Returned element phone_mobile 
+2015-05-28 10:04:45,507 INFO  [ValidateRegistration] entered mobile 0871234567 
+2015-05-28 10:04:45,687 INFO  [LogInPage] Returned element alias 
+2015-05-28 10:04:45,817 INFO  [ValidateRegistration] entered alias  
+2015-05-28 10:04:45,987 INFO  [LogInPage] Returned element submitAccount 

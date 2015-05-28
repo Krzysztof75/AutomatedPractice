@@ -43,7 +43,6 @@ public class test {
 		HomePage page1 = new HomePage(driver);
 		LogInPage page2 = new LogInPage(driver);
 
-		
 // Find broken links
 		
 //		List <WebElement> links = Utility.Links.findAllLinks(driver);

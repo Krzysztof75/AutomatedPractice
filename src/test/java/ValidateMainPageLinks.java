@@ -1,4 +1,4 @@
-package Tests;
+package test.java;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
@@ -136,7 +136,7 @@ public class ValidateMainPageLinks {
   
   @Test
   public void test11M(){
-	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women("Dresses")));
+	  wait.until(ExpectedConditions.elementToBeClickable(HomePage.Header.women()));
 	  HomePage.Header.women("Dresses").click();
 	  String expectedTitle ="Dresses - My Store";
 	  Assert.assertEquals(driver.getTitle(), expectedTitle);
@@ -586,27 +586,27 @@ public class ValidateMainPageLinks {
 //	
 //	wait.until(s);
 	
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
+//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a")).isDisplayed());
 	log.info("First image on the slider displayed");
 	HomePage.ContainerTop.sliderNext().click();
 	
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
+//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[3]/a")).isDisplayed());
 	log.info("Slider-next: Second image on the slider displayed");
 	HomePage.ContainerTop.sliderNext().click();
 	
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[4]/a")));
+//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[4]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[4]/a")).isDisplayed());
 	log.info("Slider-next: Third image on the slider displayed");
 	HomePage.ContainerTop.sliderPrev().click();
 	
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
+//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[3]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[3]/a")).isDisplayed());
 	log.info("Slider-prev: Second image on the slider displayed");
 	HomePage.ContainerTop.sliderPrev().click();
 	
-	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
+//	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='homeslider']/li[2]/a")));
 	Assert.assertTrue(driver.findElement(By.xpath("//*[@id='homeslider']/li[2]/a")).isDisplayed());
 	log.info("Slider-prev: First image on the slider displayed");
 	Reporter.log("Slider manual function correct | ");
@@ -631,25 +631,29 @@ public class ValidateMainPageLinks {
 	  
 	  log = LogManager.getLogger(ValidateMainPageLinks.class.getName());
 	  DOMConfigurator.configure("log4j.xml");
-	  ProfilesIni profile = new ProfilesIni();
 	  
-	  switch(browserName)
-		{
-		case "IE":
-			driver = new InternetExplorerDriver();
-			log.info("Instantiated Internet Explorere driver");
-			break;
-		case "FF":		
-			FirefoxProfile ffprofile = profile.getProfile("SeleniumTest");
-			driver = new FirefoxDriver(ffprofile);
-			log.info("Instantiated Firefox driver");
-			break;
-		case "CH":
-			driver = new ChromeDriver();
-			log.info("Instantiated Chrome driver");
-			break;
-		}
-	  driver.manage().window().maximize();
+	  driver = Utility.LaunchBrowser.getBrowser(browserName);
+	  
+//	  ProfilesIni profile = new ProfilesIni();
+//	  
+//	  switch(browserName)
+//		{
+//		case "IE":
+//			driver = new InternetExplorerDriver();
+//			log.info("Instantiated Internet Explorere driver");
+//			break;
+//		case "FF":		
+//			FirefoxProfile ffprofile = profile.getProfile("SeleniumTest");
+//			driver = new FirefoxDriver(ffprofile);
+//			log.info("Instantiated Firefox driver");
+//			break;
+//		case "CH":
+//			driver = new ChromeDriver();
+//			log.info("Instantiated Chrome driver");
+//			break;
+//		}
+	  
+	  
 //	  new Utility.ImpWait(driver, 15);
 	  wait = new WebDriverWait(driver, 10);
 	  driver.get("http://www.automationpractice.com/");	
